@@ -111,7 +111,8 @@ class TransactionSet:
 			'start_date': start_date,
 			'end_date': end_date,
 			'rendering_provider': claim.rendering_provider.name if claim.rendering_provider else None,
-			'payer_classification': str(claim.claim.status.payer_classification)
+			'payer_classification': str(claim.claim.status.payer_classification),
+			'was_forwarded': claim.claim.status.was_forwarded
 		}
 
 		return datum
