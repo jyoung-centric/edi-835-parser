@@ -31,7 +31,7 @@ def parse(path: str, debug: bool = False) -> TransactionSets:
 	return TransactionSets(transaction_sets)
 
 
-def _find_edi_835_files(path: str) -> List[str]:
+def _find_edi_835_files(path: str) -> List[str]	:
 	files = []
 	for file in os.listdir(path):
 		if file.endswith('.txt') or file.endswith('.835'):

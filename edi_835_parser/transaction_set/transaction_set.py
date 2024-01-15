@@ -104,6 +104,7 @@ class TransactionSet:
 			'allowed_units': service.service.allowed_units,
 			'billed_units': service.service.billed_units,
 			'transaction_date': financial_information.transaction_date,
+			'icn': claim.claim.icn,
 			'charge_amount': service.service.charge_amount,
 			'allowed_amount': service.allowed_amount,
 			'paid_amount': service.service.paid_amount,
