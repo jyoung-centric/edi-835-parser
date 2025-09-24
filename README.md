@@ -1,23 +1,15 @@
 # EDI 835 Parser
 
-[![Python - 3.9.0+](https://img.shields.io/badge/Python-3.9.0%2B-orange)](https://www.python.org/downloads/release/python-390/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/keironstoddart/edi-835-parser)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/keironstoddart/edi-835-parser)
-[![Downloads](https://static.pepy.tech/badge/edi-835-parser)](https://pepy.tech/project/edi-835-parser)
 
 ### edi-835-parser: a lightweight EDI 835 file parser
 
-This package provides a simple-to-use Python interface to EDI 835 Health Care Claim Payment and Remittance Advice files.
+This package provides a Python interface to EDI 835 Health Care Claim Payment and Remittance Advice files.
 
-*This package is made publicly available by [Senscio Systems](https://www.sensciosystems.com/), the company behind the [Ibis Program](https://www.ibisprogram.com/), an industry leading healthcare initiative that helps people take control of their chronic condition management.*
-
-**Please consider taking two minutes to [give feedback](https://og5vg099r1x.typeform.com/to/k49iVBI2).**
+*This package is distributed for internal use only. It is not available as open source or for public download.*
 
 ### Installation
-Binary installers for the latest released version are at the Python Package Index. Please note that you need to run Python 3.9 or higher to install the edi-835-parser.
-```
-pip install edi-835-parser
-```
+Please note that you need to run Python 3.9 or higher to use the edi-835-parser.
+Contact your administrator for installation instructions or access to the package.
 
 ### Usage
 To parse an EDI 835 file simply execute the `parse` function.
@@ -52,17 +44,28 @@ data.to_csv('~/Desktop/my_edi_file.csv')
 The complete set of `TransactionSets` functionality can be found by inspecting the `TransactionSets` 
 class found at `edi_parser/transaction_set/transaction_sets.py`
 
+#### Parse to JSON (New)
+You can also parse an EDI 835 file directly to JSON:
+```python
+import edi_835_parser
+json_data = edi_835_parser.parse_to_json('testfiles/PT13882.0022345 1.DT20250710')
+print(json_data)
+```
+
+#### Batch Test Runner
+To run all test files in `tests/test_edi_835_files` and save JSON outputs, use the included test runner script:
+```bash
+python ShubhamTest.py
+```
+This will process all files in `tests/test_edi_835_files`, save outputs to `tests/output`, and generate summary reports (`test_summary_report.json` and `test_summary.txt`).
+
+You can add additional test files to `tests/test_edi_835_files` to include them in the batch run.
+
 ### Tests
 Example EDI 835 files can be found in `tests/test_edi_835/files`. To run the tests use `pytest`.
 ```
 python -m pytest
 ```
 
-### Contributing to edi-835-parser
-All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome.
-
-Not all EDI 835 elements and segments are currently parsable and not all EDI codes are mapped. If you are interested in
-contributing to edi-835-parser, please feel free to fork the project and/or reach out by emailing edi835parser@gmail.com.
-
-### Acknowledgements
-A special thank you to Github user `gizquier2` for his interest in this project and continued feedback.
+### License and Attribution
+This project is based on the original open source [edi-835-parser](https://github.com/keironstoddart/edi-835-parser) by Keiron Stoddart. This version is maintained as a closed-source, internal tool.
