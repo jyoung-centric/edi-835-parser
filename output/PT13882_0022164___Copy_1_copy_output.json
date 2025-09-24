@@ -1,0 +1,660 @@
+{
+  "interchange": {
+    "ISA": {
+      "authorization_information_qualifier": "00",
+      "authorization_information": "1234567890",
+      "security_information_qualifier": "00",
+      "security_information": "1234567890",
+      "interchange_sender_id_qualifier": "14",
+      "interchange_sender_id": "7906630900001  ",
+      "interchange_receiver_id_qualifier": "30",
+      "interchange_receiver_id": "251729714      ",
+      "interchange_date": "250205",
+      "interchange_time": "1336",
+      "interchange_control_standards_identifier": "^",
+      "interchange_control_version_number": "00501",
+      "interchange_control_number": "000000408",
+      "acknowledgement_requested": "0",
+      "usage_indicator": "P",
+      "component_element_separator": ">"
+    },
+    "GS": {
+      "functional_identifier_code": "HP",
+      "application_sender_code": "7906630900001",
+      "application_receiver_id": "251729714",
+      "date": "20250205",
+      "time": "1336",
+      "group_control_number": "408",
+      "responsible_agency_code": "X",
+      "version_release_industry_identifier": "005010X221A1"
+    },
+    "transactions": [
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "0408"
+        },
+        "BPR": {
+          "transaction_handling_code": "I",
+          "monetary_amount": "10921.94",
+          "credit_debit_flag": "C",
+          "payment_method_code": "ACH",
+          "payment_format_code": "CCP",
+          "dfi_id_number_qualifier": "01",
+          "dfi_identification_number": "041203824",
+          "account_number_qualifier": "DA",
+          "sender_bank_account_number": "9628000813",
+          "originating_company_identifier": "1752882129",
+          "originating_company_supplemental_code": "000000001",
+          "dfi_identification_number_qualifier": "01",
+          "receiver_or_provider_bank_id_number": "043000261",
+          "account_number_qualifier_2": "DA",
+          "receiver_or_provider_account_number": "0304215",
+          "check_issue_or_eft_effective_date": "20250207"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "2500067170",
+          "originating_company_identifier": "1752882129",
+          "originating_company_supplemental_code": "000000001"
+        },
+        "DTM": [
+          {
+            "date_time_qualifier": "405",
+            "date": "20250205",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "232",
+            "date": "20250203",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "232",
+            "date": "20250204",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "232",
+            "date": "20250204",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "232",
+            "date": "20250204",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "232",
+            "date": "20250204",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          }
+        ],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "CAREMARK",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "9501 E. Shea Blvd.",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "SCOTTSDALE",
+              "state_code": "AZ",
+              "postal_code": "852606719",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": {
+              "contact_function_code": "IC",
+              "contact_name": "",
+              "communication_number_qualifier_1": "UR",
+              "communication_number_1": "www.rxservices.cvscaremark.com",
+              "communication_number_qualifier_2": "",
+              "communication_number_2": "",
+              "communication_number_qualifier_3": "",
+              "communication_number_3": "",
+              "contact_inquiry_reference": ""
+            }
+          },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "XX",
+              "identification_code": "1033166244"
+            },
+            "N3": {
+              "address_line_1": "1001 OAKDALE RD",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "OAKDALE",
+              "state_code": "PA",
+              "postal_code": "15071",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
+          {
+            "CLP": {
+              "patient_control_number": "0520073",
+              "claim_status_code": "4",
+              "total_claim_charge_amount": "23677.45",
+              "total_claim_payment_amount": "0",
+              "patient_responsibility_amount": "",
+              "claim_filing_indicator_code": "13",
+              "payer_claim_control_number": "2503441562493132339",
+              "facility_type_code": "",
+              "claim_frequency_code": "",
+              "patient_status_code": "",
+              "diagnosis_related_group_code": "",
+              "drg_weight": "",
+              "discharge_fraction": ""
+            },
+            "CAS": [],
+            "NM1": [
+              {
+                "entity_identifier_code": "QC",
+                "entity_type_qualifier": "1",
+                "last_name": "ARTIS",
+                "first_name": "BARBARA",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "MI",
+                "identification_code": "12781076701",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              }
+            ],
+            "DTM": [],
+            "AMT": [],
+            "REF": [],
+            "SVC_loop": [
+              {
+                "SVC": {
+                  "service_type_code": "N4>61314045420",
+                  "charge_amount": "23677.45",
+                  "payment_amount": "0",
+                  "revenue_code": "",
+                  "units_of_service_paid": "2.40",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "90",
+                    "adjustment_amount": "23675.40",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "91",
+                    "adjustment_amount_2": "2.05",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "CLP": {
+              "patient_control_number": "10371452",
+              "claim_status_code": "1",
+              "total_claim_charge_amount": "9005.52",
+              "total_claim_payment_amount": "9000.47",
+              "patient_responsibility_amount": "3",
+              "claim_filing_indicator_code": "13",
+              "payer_claim_control_number": "2503538065803152339",
+              "facility_type_code": "",
+              "claim_frequency_code": "",
+              "patient_status_code": "",
+              "diagnosis_related_group_code": "",
+              "drg_weight": "",
+              "discharge_fraction": ""
+            },
+            "CAS": [],
+            "NM1": [
+              {
+                "entity_identifier_code": "QC",
+                "entity_type_qualifier": "1",
+                "last_name": "LOZUPONE",
+                "first_name": "KENNETH",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "MI",
+                "identification_code": "12971065501",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              }
+            ],
+            "DTM": [],
+            "AMT": [],
+            "REF": [
+              {
+                "reference_identification_qualifier": "CE",
+                "reference_identification": "CMKONE1001",
+                "description": "",
+                "reference_identifier": ""
+              }
+            ],
+            "SVC_loop": [
+              {
+                "SVC": {
+                  "service_type_code": "N4>00078100768",
+                  "charge_amount": "9005.52",
+                  "payment_amount": "9000.47",
+                  "revenue_code": "",
+                  "units_of_service_paid": "0.40",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "91",
+                    "adjustment_amount": "2.05",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustment_reason_code": "3",
+                    "adjustment_amount": "3",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "CLP": {
+              "patient_control_number": "0520503",
+              "claim_status_code": "1",
+              "total_claim_charge_amount": "4750.08",
+              "total_claim_payment_amount": "1921.47",
+              "patient_responsibility_amount": "3",
+              "claim_filing_indicator_code": "13",
+              "payer_claim_control_number": "2503538566441172339",
+              "facility_type_code": "",
+              "claim_frequency_code": "",
+              "patient_status_code": "",
+              "diagnosis_related_group_code": "",
+              "drg_weight": "",
+              "discharge_fraction": ""
+            },
+            "CAS": [],
+            "NM1": [
+              {
+                "entity_identifier_code": "QC",
+                "entity_type_qualifier": "1",
+                "last_name": "WERNER",
+                "first_name": "COURTNEY",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "MI",
+                "identification_code": "12715078201",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              }
+            ],
+            "DTM": [],
+            "AMT": [],
+            "REF": [
+              {
+                "reference_identification_qualifier": "CE",
+                "reference_identification": "CMKONE1001",
+                "description": "",
+                "reference_identifier": ""
+              }
+            ],
+            "SVC_loop": [
+              {
+                "SVC": {
+                  "service_type_code": "N4>60505618800",
+                  "charge_amount": "4750.08",
+                  "payment_amount": "1921.47",
+                  "revenue_code": "",
+                  "units_of_service_paid": "2.40",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "90",
+                    "adjustment_amount": "2829.56",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "91",
+                    "adjustment_amount_2": "-3.95",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustment_reason_code": "3",
+                    "adjustment_amount": "3",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "CLP": {
+              "patient_control_number": "0520503",
+              "claim_status_code": "22",
+              "total_claim_charge_amount": "-4750.08",
+              "total_claim_payment_amount": "-1921.47",
+              "patient_responsibility_amount": "",
+              "claim_filing_indicator_code": "13",
+              "payer_claim_control_number": "2503538566441172339",
+              "facility_type_code": "",
+              "claim_frequency_code": "",
+              "patient_status_code": "",
+              "diagnosis_related_group_code": "",
+              "drg_weight": "",
+              "discharge_fraction": ""
+            },
+            "CAS": [],
+            "NM1": [
+              {
+                "entity_identifier_code": "QC",
+                "entity_type_qualifier": "1",
+                "last_name": "WERNER",
+                "first_name": "COURTNEY",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "MI",
+                "identification_code": "12715078201",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              }
+            ],
+            "DTM": [],
+            "AMT": [],
+            "REF": [
+              {
+                "reference_identification_qualifier": "CE",
+                "reference_identification": "CMKONE1001",
+                "description": "",
+                "reference_identifier": ""
+              }
+            ],
+            "SVC_loop": [
+              {
+                "SVC": {
+                  "service_type_code": "N4>60505618800",
+                  "charge_amount": "-4750.08",
+                  "payment_amount": "-1921.47",
+                  "revenue_code": "",
+                  "units_of_service_paid": "-2.40",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "90",
+                    "adjustment_amount": "-2829.56",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "91",
+                    "adjustment_amount_2": "3.95",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "3",
+                    "adjustment_amount": "-3",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "CLP": {
+              "patient_control_number": "10393558",
+              "claim_status_code": "1",
+              "total_claim_charge_amount": "3823.26",
+              "total_claim_payment_amount": "1921.47",
+              "patient_responsibility_amount": "3",
+              "claim_filing_indicator_code": "13",
+              "payer_claim_control_number": "2503545824863802339",
+              "facility_type_code": "",
+              "claim_frequency_code": "",
+              "patient_status_code": "",
+              "diagnosis_related_group_code": "",
+              "drg_weight": "",
+              "discharge_fraction": ""
+            },
+            "CAS": [],
+            "NM1": [
+              {
+                "entity_identifier_code": "QC",
+                "entity_type_qualifier": "1",
+                "last_name": "WERNER",
+                "first_name": "COURTNEY",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "MI",
+                "identification_code": "12715078201",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              }
+            ],
+            "DTM": [],
+            "AMT": [],
+            "REF": [
+              {
+                "reference_identification_qualifier": "CE",
+                "reference_identification": "CMKONE1001",
+                "description": "",
+                "reference_identifier": ""
+              }
+            ],
+            "SVC_loop": [
+              {
+                "SVC": {
+                  "service_type_code": "N4>60505618800",
+                  "charge_amount": "3823.26",
+                  "payment_amount": "1921.47",
+                  "revenue_code": "",
+                  "units_of_service_paid": "2.40",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "90",
+                    "adjustment_amount": "1902.74",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "91",
+                    "adjustment_amount_2": "-3.95",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustment_reason_code": "3",
+                    "adjustment_amount": "3",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "51",
+          "transaction_set_control_number": "0408"
+        }
+      }
+    ],
+    "GE": {
+      "number_of_transaction_sets_included": "1",
+      "group_control_number": "408"
+    },
+    "IEA": {
+      "number_of_included_functional_groups": "1",
+      "interchange_control_number": "000000408"
+    }
+  }
+}

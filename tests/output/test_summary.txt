@@ -1,0 +1,114 @@
+EDI 835 PARSER - TEST SUMMARY REPORT
+================================================================================
+Test Run: 2025-09-22 14:47:22
+Test Directory: tests\test_edi_835_files
+Output Directory: tests\output
+
+📊 SUMMARY STATISTICS
+----------------------------------------
+Total Files Tested: 11
+Successful Tests:   11
+Failed Tests:       0
+Success Rate:       100.0%
+
+📋 DETAILED RESULTS
+----------------------------------------
+
+File: blue_cross_nc_sample.txt
+Status: SUCCESS
+  Processing Time: 0.001s
+  File Size: 703 bytes
+  Transactions: 1
+  Claims: 1
+  Services: 3
+  Output File: tests\output\blue_cross_nc_sample_output.json
+
+File: emedny_sample.txt
+Status: SUCCESS
+  Processing Time: 0.001s
+  File Size: 1,813 bytes
+  Transactions: 1
+  Claims: 3
+  Services: 10
+  Output File: tests\output\emedny_sample_output.json
+
+File: PT13882.0021984 1.DT20240821
+Status: SUCCESS
+  Processing Time: 0.061s
+  File Size: 167,900 bytes
+  Transactions: 1
+  Claims: 778
+  Services: 778
+  Output File: tests\output\PT13882_0021984_1_output.json
+
+File: PT13882.0021984 1_processed.DT20240821
+Status: SUCCESS
+  Processing Time: 0.040s
+  File Size: 163,804 bytes
+  Transactions: 1
+  Claims: 778
+  Services: 778
+  Output File: tests\output\PT13882_0021984_1_processed_output.json
+
+File: PT13882.0022164 - Copy 1 copy.DT20250207
+Status: SUCCESS
+  Processing Time: 0.001s
+  File Size: 1,749 bytes
+  Transactions: 1
+  Claims: 5
+  Services: 5
+  Output File: tests\output\PT13882_0022164___Copy_1_copy_output.json
+
+File: PT13882.0022164 - Copy.DT20250207
+Status: SUCCESS
+  Processing Time: 0.003s
+  File Size: 1,793 bytes
+  Transactions: 1
+  Claims: 5
+  Services: 5
+  Output File: tests\output\PT13882_0022164___Copy_output.json
+
+File: PT13882.0022345 1 copy.DT20250710
+Status: SUCCESS
+  Processing Time: 0.009s
+  File Size: 36,067 bytes
+  Transactions: 1
+  Claims: 171
+  Services: 171
+  Output File: tests\output\PT13882_0022345_1_copy_output.json
+
+File: PT13882.0022345 1.DT20250710
+Status: SUCCESS
+  Processing Time: 0.017s
+  File Size: 36,969 bytes
+  Transactions: 1
+  Claims: 171
+  Services: 171
+  Output File: tests\output\PT13882_0022345_1_output.json
+
+File: PT13882_0022164_Copy1_pretty.txt
+Status: SUCCESS
+  Processing Time: 0.001s
+  File Size: 1,807 bytes
+  Transactions: 1
+  Claims: 5
+  Services: 5
+  Output File: tests\output\PT13882_0022164_Copy1_pretty_output.json
+
+File: SB865.13167.20250622.061330708.ERA.835NP.edi
+Status: SUCCESS
+  Processing Time: 0.112s
+  File Size: 419,110 bytes
+  Transactions: 19
+  Claims: 707
+  Services: 1883
+  Output File: tests\output\SB865_13167_20250622_061330708_ERA_835NP_output.json
+
+File: united_healthcare_legacy_sample.txt
+Status: SUCCESS
+  Processing Time: 0.001s
+  File Size: 1,693 bytes
+  Transactions: 1
+  Claims: 2
+  Services: 5
+  Output File: tests\output\united_healthcare_legacy_sample_output.json

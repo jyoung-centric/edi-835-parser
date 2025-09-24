@@ -1,0 +1,132 @@
+{
+  "test_run": {
+    "timestamp": "2025-09-22T14:46:04.763183",
+    "total_files": 11,
+    "successful": 11,
+    "failed": 0,
+    "success_rate": 100.0
+  },
+  "results": [
+    {
+      "file": "blue_cross_nc_sample.txt",
+      "status": "SUCCESS",
+      "output_file": "output\\blue_cross_nc_sample_output.json",
+      "processing_time": 0.000846,
+      "file_size": 703,
+      "transactions": 1,
+      "claims": 1,
+      "services": 3,
+      "error": null
+    },
+    {
+      "file": "emedny_sample.txt",
+      "status": "SUCCESS",
+      "output_file": "output\\emedny_sample_output.json",
+      "processing_time": 0.001043,
+      "file_size": 1813,
+      "transactions": 1,
+      "claims": 3,
+      "services": 10,
+      "error": null
+    },
+    {
+      "file": "PT13882.0021984 1.DT20240821",
+      "status": "SUCCESS",
+      "output_file": "output\\PT13882_0021984_1_output.json",
+      "processing_time": 0.061661,
+      "file_size": 167900,
+      "transactions": 1,
+      "claims": 778,
+      "services": 778,
+      "error": null
+    },
+    {
+      "file": "PT13882.0021984 1_processed.DT20240821",
+      "status": "SUCCESS",
+      "output_file": "output\\PT13882_0021984_1_processed_output.json",
+      "processing_time": 0.039625,
+      "file_size": 163804,
+      "transactions": 1,
+      "claims": 778,
+      "services": 778,
+      "error": null
+    },
+    {
+      "file": "PT13882.0022164 - Copy 1 copy.DT20250207",
+      "status": "SUCCESS",
+      "output_file": "output\\PT13882_0022164___Copy_1_copy_output.json",
+      "processing_time": 0.001004,
+      "file_size": 1749,
+      "transactions": 1,
+      "claims": 5,
+      "services": 5,
+      "error": null
+    },
+    {
+      "file": "PT13882.0022164 - Copy.DT20250207",
+      "status": "SUCCESS",
+      "output_file": "output\\PT13882_0022164___Copy_output.json",
+      "processing_time": 0.003086,
+      "file_size": 1793,
+      "transactions": 1,
+      "claims": 5,
+      "services": 5,
+      "error": null
+    },
+    {
+      "file": "PT13882.0022345 1 copy.DT20250710",
+      "status": "SUCCESS",
+      "output_file": "output\\PT13882_0022345_1_copy_output.json",
+      "processing_time": 0.010089,
+      "file_size": 36067,
+      "transactions": 1,
+      "claims": 171,
+      "services": 171,
+      "error": null
+    },
+    {
+      "file": "PT13882.0022345 1.DT20250710",
+      "status": "SUCCESS",
+      "output_file": "output\\PT13882_0022345_1_output.json",
+      "processing_time": 0.017114,
+      "file_size": 36969,
+      "transactions": 1,
+      "claims": 171,
+      "services": 171,
+      "error": null
+    },
+    {
+      "file": "PT13882_0022164_Copy1_pretty.txt",
+      "status": "SUCCESS",
+      "output_file": "output\\PT13882_0022164_Copy1_pretty_output.json",
+      "processing_time": 0.001407,
+      "file_size": 1807,
+      "transactions": 1,
+      "claims": 5,
+      "services": 5,
+      "error": null
+    },
+    {
+      "file": "SB865.13167.20250622.061330708.ERA.835NP.edi",
+      "status": "SUCCESS",
+      "output_file": "output\\SB865_13167_20250622_061330708_ERA_835NP_output.json",
+      "processing_time": 0.121588,
+      "file_size": 419110,
+      "transactions": 19,
+      "claims": 707,
+      "services": 1883,
+      "error": null
+    },
+    {
+      "file": "united_healthcare_legacy_sample.txt",
+      "status": "SUCCESS",
+      "output_file": "output\\united_healthcare_legacy_sample_output.json",
+      "processing_time": 0.00584,
+      "file_size": 1693,
+      "transactions": 1,
+      "claims": 2,
+      "services": 5,
+      "error": null
+    }
+  ]
+}

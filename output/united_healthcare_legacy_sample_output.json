@@ -1,0 +1,649 @@
+{
+  "interchange": {
+    "ISA": {
+      "authorization_information_qualifier": "00",
+      "authorization_information": "          ",
+      "security_information_qualifier": "00",
+      "security_information": "          ",
+      "interchange_sender_id_qualifier": "ZZ",
+      "interchange_sender_id": "ENS_EDI        ",
+      "interchange_receiver_id_qualifier": "ZZ",
+      "interchange_receiver_id": "GATE0110       ",
+      "interchange_date": "210203",
+      "interchange_time": "0330",
+      "interchange_control_standards_identifier": "^",
+      "interchange_control_version_number": "00501",
+      "interchange_control_number": "444444444",
+      "acknowledgement_requested": "0",
+      "usage_indicator": "P",
+      "component_element_separator": ">"
+    },
+    "GS": {
+      "functional_identifier_code": "HP",
+      "application_sender_code": "ENS_EDI",
+      "application_receiver_id": "GATE0110",
+      "date": "20210203",
+      "time": "0330",
+      "group_control_number": "444444444",
+      "responsible_agency_code": "X",
+      "version_release_industry_identifier": "005010X221A1"
+    },
+    "transactions": [
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "000000064"
+        },
+        "BPR": {
+          "transaction_handling_code": "I",
+          "monetary_amount": "349.99",
+          "credit_debit_flag": "C",
+          "payment_method_code": "ACH",
+          "payment_format_code": "CCP",
+          "dfi_id_number_qualifier": "01",
+          "dfi_identification_number": "124384877",
+          "account_number_qualifier": "DA",
+          "sender_bank_account_number": "1234567890",
+          "originating_company_identifier": "1234567890",
+          "originating_company_supplemental_code": "000088888",
+          "dfi_identification_number_qualifier": "01",
+          "receiver_or_provider_bank_id_number": "071000013",
+          "account_number_qualifier_2": "DA",
+          "receiver_or_provider_account_number": "218857199",
+          "check_issue_or_eft_effective_date": "20210204"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1234567890",
+          "originating_company_identifier": "1234567890",
+          "originating_company_supplemental_code": "000088888"
+        },
+        "DTM": [
+          {
+            "date_time_qualifier": "405",
+            "date": "20210201",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "232",
+            "date": "20201221",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "233",
+            "date": "20210113",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "050",
+            "date": "20210114",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "232",
+            "date": "20201218",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "233",
+            "date": "20210110",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "050",
+            "date": "20210114",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          }
+        ],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "UNITED HEALTHCARE INSURANCE COMPANY",
+              "identification_code_qualifier": "XV",
+              "identification_code": "87726"
+            },
+            "N3": {
+              "address_line_1": "9900 BREN ROAD",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "MINNETONKA",
+              "state_code": "MN",
+              "postal_code": "553439664",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": {
+              "contact_function_code": "BL",
+              "contact_name": "",
+              "communication_number_qualifier_1": "UR",
+              "communication_number_1": "WWW.UNITEDHEALTHCAREONLINE.COM/B2C/CONTACTUS.DO",
+              "communication_number_qualifier_2": "",
+              "communication_number_2": "",
+              "communication_number_qualifier_3": "",
+              "communication_number_3": "",
+              "contact_inquiry_reference": ""
+            }
+          },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "KLAUS MEDICAL CENTER",
+              "identification_code_qualifier": "XX",
+              "identification_code": "1922164458"
+            },
+            "N3": {
+              "address_line_1": "NORTH POLE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "NORTH POLE",
+              "state_code": "NP",
+              "postal_code": "00000",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
+          {
+            "CLP": {
+              "patient_control_number": "001-18573-358",
+              "claim_status_code": "1",
+              "total_claim_charge_amount": "341.28",
+              "total_claim_payment_amount": "88.92",
+              "patient_responsibility_amount": "105.26",
+              "claim_filing_indicator_code": "16",
+              "payer_claim_control_number": "ATL2819897200",
+              "facility_type_code": "12",
+              "claim_frequency_code": "1",
+              "patient_status_code": "",
+              "diagnosis_related_group_code": "",
+              "drg_weight": "",
+              "discharge_fraction": ""
+            },
+            "CAS": [],
+            "NM1": [
+              {
+                "entity_identifier_code": "QC",
+                "entity_type_qualifier": "1",
+                "last_name": "MR",
+                "first_name": "COOL",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "MI",
+                "identification_code": "123456789",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              },
+              {
+                "entity_identifier_code": "74",
+                "entity_type_qualifier": "1",
+                "last_name": "",
+                "first_name": "",
+                "middle_name": "C",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "",
+                "identification_code": "",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              }
+            ],
+            "DTM": [],
+            "AMT": [
+              {
+                "amount_qualifier_code": "AU",
+                "monetary_amount": "194.18",
+                "credit_debit_flag_code": ""
+              }
+            ],
+            "REF": [
+              {
+                "reference_identification_qualifier": "1L",
+                "reference_identification": "12345",
+                "description": "",
+                "reference_identifier": ""
+              },
+              {
+                "reference_identification_qualifier": "CE",
+                "reference_identification": "ILLINOIS DEPARTMENT OF CMS",
+                "description": "",
+                "reference_identifier": ""
+              }
+            ],
+            "SVC_loop": [
+              {
+                "SVC": {
+                  "service_type_code": "HC>B4152",
+                  "charge_amount": "156.42",
+                  "payment_amount": "88.92",
+                  "revenue_code": "",
+                  "units_of_service_paid": "234",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20201221",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "45",
+                    "adjustment_amount": "67.5",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ],
+                "REF": [
+                  {
+                    "reference_identification_qualifier": "6R",
+                    "reference_identification": "800941258001",
+                    "description": "",
+                    "reference_identifier": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "88.92",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              },
+              {
+                "SVC": {
+                  "service_type_code": "HC>B4152",
+                  "charge_amount": "184.86",
+                  "payment_amount": "0",
+                  "revenue_code": "",
+                  "units_of_service_paid": "277",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20210101",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustment_reason_code": "1",
+                    "adjustment_amount": "105.26",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "45",
+                    "adjustment_amount": "79.6",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ],
+                "REF": [
+                  {
+                    "reference_identification_qualifier": "6R",
+                    "reference_identification": "800941258002",
+                    "description": "",
+                    "reference_identifier": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "105.26",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "CLP": {
+              "patient_control_number": "001-18604-358",
+              "claim_status_code": "1",
+              "total_claim_charge_amount": "816.24",
+              "total_claim_payment_amount": "261.07",
+              "patient_responsibility_amount": "115.13",
+              "claim_filing_indicator_code": "16",
+              "payer_claim_control_number": "ATL2819897800",
+              "facility_type_code": "12",
+              "claim_frequency_code": "1",
+              "patient_status_code": "",
+              "diagnosis_related_group_code": "",
+              "drg_weight": "",
+              "discharge_fraction": ""
+            },
+            "CAS": [],
+            "NM1": [
+              {
+                "entity_identifier_code": "QC",
+                "entity_type_qualifier": "1",
+                "last_name": "MR",
+                "first_name": "COOL",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "MI",
+                "identification_code": "234567890",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              },
+              {
+                "entity_identifier_code": "74",
+                "entity_type_qualifier": "1",
+                "last_name": "",
+                "first_name": "",
+                "middle_name": "D",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "",
+                "identification_code": "",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              }
+            ],
+            "DTM": [],
+            "AMT": [
+              {
+                "amount_qualifier_code": "AU",
+                "monetary_amount": "376.2",
+                "credit_debit_flag_code": ""
+              }
+            ],
+            "REF": [
+              {
+                "reference_identification_qualifier": "1L",
+                "reference_identification": "12345",
+                "description": "",
+                "reference_identifier": ""
+              },
+              {
+                "reference_identification_qualifier": "CE",
+                "reference_identification": "ILLINOIS DEPARTMENT OF CMS",
+                "description": "",
+                "reference_identifier": ""
+              }
+            ],
+            "SVC_loop": [
+              {
+                "SVC": {
+                  "service_type_code": "HC>B4154",
+                  "charge_amount": "459.9",
+                  "payment_amount": "204.18",
+                  "revenue_code": "",
+                  "units_of_service_paid": "249",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20201218",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "45",
+                    "adjustment_amount": "255.72",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ],
+                "REF": [
+                  {
+                    "reference_identification_qualifier": "6R",
+                    "reference_identification": "123456789012",
+                    "description": "",
+                    "reference_identifier": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "204.18",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              },
+              {
+                "SVC": {
+                  "service_type_code": "HC>B4034",
+                  "charge_amount": "27.84",
+                  "payment_amount": "27.84",
+                  "revenue_code": "",
+                  "units_of_service_paid": "12",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20201218",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "REF": [
+                  {
+                    "reference_identification_qualifier": "6R",
+                    "reference_identification": "123456789013",
+                    "description": "",
+                    "reference_identifier": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "27.84",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              },
+              {
+                "SVC": {
+                  "service_type_code": "HC>B4154",
+                  "charge_amount": "328.5",
+                  "payment_amount": "29.05",
+                  "revenue_code": "",
+                  "units_of_service_paid": "178",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20210101",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustment_reason_code": "2",
+                    "adjustment_amount": "5.13",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "1",
+                    "adjustment_amount_2": "110",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "45",
+                    "adjustment_amount": "184.32",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ],
+                "REF": [
+                  {
+                    "reference_identification_qualifier": "6R",
+                    "reference_identification": "123456789014",
+                    "description": "",
+                    "reference_identifier": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "144.18",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "61",
+          "transaction_set_control_number": "000000064"
+        }
+      }
+    ],
+    "GE": {
+      "number_of_transaction_sets_included": "1",
+      "group_control_number": "444444444"
+    },
+    "IEA": {
+      "number_of_included_functional_groups": "1",
+      "interchange_control_number": "444444444"
+    }
+  }
+}

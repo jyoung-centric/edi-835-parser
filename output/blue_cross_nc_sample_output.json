@@ -1,0 +1,326 @@
+{
+  "interchange": {
+    "ISA": null,
+    "GS": null,
+    "transactions": [
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "I",
+          "monetary_amount": "1922.86",
+          "credit_debit_flag": "C",
+          "payment_method_code": "CHK",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20110108"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "02790758",
+          "originating_company_identifier": "560894904",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [
+          {
+            "date_time_qualifier": "405",
+            "date": "20110104",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "050",
+            "date": "20110103",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          }
+        ],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "BLUE CROSS AND BLUE SHIELD OF NORTH CAROLINA",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "P O BOX 2291",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "DURHAM",
+              "state_code": "NC",
+              "postal_code": "27702",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": {
+              "contact_function_code": "CX",
+              "contact_name": "TE",
+              "communication_number_qualifier_1": "8005554844",
+              "communication_number_1": "",
+              "communication_number_qualifier_2": "",
+              "communication_number_2": "",
+              "communication_number_qualifier_3": "",
+              "communication_number_3": "",
+              "contact_inquiry_reference": ""
+            }
+          },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "XYZ HEALTHCARE CORPORATION",
+              "identification_code_qualifier": "XX",
+              "identification_code": "0987654321"
+            },
+            "N3": {
+              "address_line_1": "P O BOX XYZ",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "CHARLOTTE",
+              "state_code": "NC",
+              "postal_code": "28234",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
+          {
+            "CLP": {
+              "patient_control_number": "200200964A52",
+              "claim_status_code": "1",
+              "total_claim_charge_amount": "2100",
+              "total_claim_payment_amount": "1922.86",
+              "patient_responsibility_amount": "142.54",
+              "claim_filing_indicator_code": "15",
+              "payer_claim_control_number": "94151100100",
+              "facility_type_code": "",
+              "claim_frequency_code": "",
+              "patient_status_code": "",
+              "diagnosis_related_group_code": "",
+              "drg_weight": "",
+              "discharge_fraction": ""
+            },
+            "CAS": [],
+            "NM1": [
+              {
+                "entity_identifier_code": "QC",
+                "entity_type_qualifier": "1",
+                "last_name": "Dough",
+                "first_name": "Mary",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "MI",
+                "identification_code": " YPB123456789001",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              }
+            ],
+            "DTM": [],
+            "AMT": [],
+            "REF": [],
+            "SVC_loop": [
+              {
+                "SVC": {
+                  "service_type_code": "HC:59430",
+                  "charge_amount": "1210",
+                  "payment_amount": "1057.86",
+                  "revenue_code": "",
+                  "units_of_service_paid": "1",
+                  "original_units_of_service": "HC:59410",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20101231",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "42",
+                    "adjustment_amount": "34.6",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustment_reason_code": "2",
+                    "adjustment_amount": "117.54",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ],
+                "REF": [
+                  {
+                    "reference_identification_qualifier": "6R",
+                    "reference_identification": "0001",
+                    "description": "",
+                    "reference_identifier": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "1175.4",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              },
+              {
+                "SVC": {
+                  "service_type_code": "HC:59440",
+                  "charge_amount": "890",
+                  "payment_amount": "865",
+                  "revenue_code": "",
+                  "units_of_service_paid": "1",
+                  "original_units_of_service": "HC:59410",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20101231",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustment_reason_code": "3",
+                    "adjustment_amount": "25",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ],
+                "REF": [
+                  {
+                    "reference_identification_qualifier": "6R",
+                    "reference_identification": "0002",
+                    "description": "",
+                    "reference_identifier": ""
+                  }
+                ]
+              },
+              {
+                "SVC": {
+                  "service_type_code": "HC:59426",
+                  "charge_amount": "",
+                  "payment_amount": "",
+                  "revenue_code": "",
+                  "units_of_service_paid": "",
+                  "original_units_of_service": "",
+                  "adjudicated_date": "742"
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20101231",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "REF": [
+                  {
+                    "reference_identification_qualifier": "6R",
+                    "reference_identification": "0003",
+                    "description": "",
+                    "reference_identifier": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "742",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      }
+    ],
+    "GE": null,
+    "IEA": null
+  }
+}

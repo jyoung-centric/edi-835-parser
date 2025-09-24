@@ -1,0 +1,84 @@
+
+**denormalized schema**:
+
+CREATE TABLE payments_835 (
+    id SERIAL PRIMARY KEY,
+    file_id UUID NOT NULL DEFAULT gen_random_uuid(),
+    file_name TEXT,
+    received_at TIMESTAMP,
+    check_number TEXT,
+    payment_date DATE,
+    payment_amount NUMERIC(12,2),
+    payer_id TEXT,
+    payee_id TEXT,
+    json_transaction JSONB NOT NULL,          
+    raw_edi TEXT,                     
+    created_at TIMESTAMP DEFAULT now(),
+);
+
+-- Helpful indexes
+CREATE INDEX idx_payments_check_number ON payments_835(check_number);
+CREATE INDEX idx_payments_json ON payments_835 USING gin (raw_json jsonb_path_ops);
+
+
+
+
+**normalized schema**:
+
+###  Raw Files
+CREATE TABLE raw_835_files (
+    id SERIAL PRIMARY KEY,
+    file_id UUID NOT NULL DEFAULT gen_random_uuid(),
+    received_at TIMESTAMP DEFAULT now(),
+    raw_edi TEXT NOT NULL
+);
+
+
+###  Transactions (BPR/TRN level)
+CREATE TABLE transactions (
+    id SERIAL PRIMARY KEY,
+    raw_file_id INT REFERENCES raw_835_files(id) ON DELETE CASCADE,
+    trace_number TEXT,
+    payment_method TEXT,
+    payment_amount NUMERIC(12,2),
+    payment_date DATE,
+    payer_id TEXT,
+    payee_id TEXT,
+    check_number TEXT,
+
+);
+
+###  Claims (CLP level)
+CREATE TABLE claims (
+    id SERIAL PRIMARY KEY,
+    transaction_id INT REFERENCES transactions(id) ON DELETE CASCADE,
+    claim_number TEXT,
+    patient_control_number TEXT,
+    claim_amount NUMERIC(12,2),
+    paid_amount NUMERIC(12,2),
+    status_code TEXT,
+    raw_json JSONB,
+    posted_at TIMESTAMP,
+    source_system_claim_id TEXT
+);
+
+###  Service Lines (SVC + CAS level)
+
+CREATE TABLE service_lines (
+    id SERIAL PRIMARY KEY,
+    claim_id INT REFERENCES claims(id) ON DELETE CASCADE,
+    procedure_code TEXT,
+    charge_amount NUMERIC(12,2),
+    paid_amount NUMERIC(12,2),
+    adjustment_reason_codes JSONB,
+    raw_json JSONB,
+    posted_at TIMESTAMP,
+    source_system_line_id TEXT
+);
+
+###  Indexes
+
+CREATE INDEX idx_transactions_trace ON transactions(trace_number);
+CREATE INDEX idx_claims_claim_number ON claims(claim_number);
+CREATE INDEX idx_service_lines_proc ON service_lines(procedure_code);
+

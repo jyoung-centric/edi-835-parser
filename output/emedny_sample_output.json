@@ -1,0 +1,717 @@
+{
+  "interchange": {
+    "ISA": {
+      "authorization_information_qualifier": "00",
+      "authorization_information": "          ",
+      "security_information_qualifier": "00",
+      "security_information": "          ",
+      "interchange_sender_id_qualifier": "ZZ",
+      "interchange_sender_id": "EMEDNYBAT      ",
+      "interchange_receiver_id_qualifier": "ZZ",
+      "interchange_receiver_id": "ETIN           ",
+      "interchange_date": "100101",
+      "interchange_time": "1000",
+      "interchange_control_standards_identifier": "^",
+      "interchange_control_version_number": "00501",
+      "interchange_control_number": "006000600",
+      "acknowledgement_requested": "0",
+      "usage_indicator": "T",
+      "component_element_separator": ":"
+    },
+    "GS": {
+      "functional_identifier_code": "HP",
+      "application_sender_code": "EMEDNYBAT",
+      "application_receiver_id": "ETIN",
+      "date": "20100101",
+      "time": "1050",
+      "group_control_number": "6000600",
+      "responsible_agency_code": "X",
+      "version_release_industry_identifier": "005010X221A1"
+    },
+    "transactions": [
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1740"
+        },
+        "BPR": {
+          "transaction_handling_code": "I",
+          "monetary_amount": "45.75",
+          "credit_debit_flag": "C",
+          "payment_method_code": "ACH",
+          "payment_format_code": "CCP",
+          "dfi_id_number_qualifier": "01",
+          "dfi_identification_number": "111",
+          "account_number_qualifier": "DA",
+          "sender_bank_account_number": "33",
+          "originating_company_identifier": "1234567890",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "01",
+          "receiver_or_provider_bank_id_number": "111",
+          "account_number_qualifier_2": "DA",
+          "receiver_or_provider_account_number": "22",
+          "check_issue_or_eft_effective_date": "20100101"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "10100000000",
+          "originating_company_identifier": "1000000000",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [
+          {
+            "date_time_qualifier": "405",
+            "date": "20100101",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "232",
+            "date": "20100101",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "233",
+            "date": "20100101",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "232",
+            "date": "20100101",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "233",
+            "date": "20100101",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "232",
+            "date": "20100101",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          },
+          {
+            "date_time_qualifier": "233",
+            "date": "20100101",
+            "time": "",
+            "time_code": "",
+            "date_time_period_format": "",
+            "date_time_period": ""
+          }
+        ],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "NYSDOH",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "OFFICE OF HEALTH INSURANCE PROGRAMS",
+              "address_line_2": "CORNING TOWER, EMPIRE STATE PLAZA"
+            },
+            "N4": {
+              "city_name": "ALBANY",
+              "state_code": "NY",
+              "postal_code": "122370080",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": {
+              "contact_function_code": "BL",
+              "contact_name": "PROVIDER SERVICES",
+              "communication_number_qualifier_1": "TE",
+              "communication_number_1": "8003439000",
+              "communication_number_qualifier_2": "UR",
+              "communication_number_2": "www.emedny.org",
+              "communication_number_qualifier_3": "",
+              "communication_number_3": "",
+              "contact_inquiry_reference": ""
+            }
+          },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "MAJOR MEDICAL PROVIDER",
+              "identification_code_qualifier": "XX",
+              "identification_code": "9999999995"
+            },
+            "N3": null,
+            "N4": null,
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
+          {
+            "CLP": {
+              "patient_control_number": "PATIENT ACCOUNT NUMBER",
+              "claim_status_code": "1",
+              "total_claim_charge_amount": "34.25",
+              "total_claim_payment_amount": "34.25",
+              "patient_responsibility_amount": "",
+              "claim_filing_indicator_code": "MC",
+              "payer_claim_control_number": "1000210000000030",
+              "facility_type_code": "11",
+              "claim_frequency_code": "",
+              "patient_status_code": "",
+              "diagnosis_related_group_code": "",
+              "drg_weight": "",
+              "discharge_fraction": ""
+            },
+            "CAS": [],
+            "NM1": [
+              {
+                "entity_identifier_code": "QC",
+                "entity_type_qualifier": "1",
+                "last_name": "SUBMITTED LAST",
+                "first_name": "SUBMITTED FIRST",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "MI",
+                "identification_code": "LL99999L",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              },
+              {
+                "entity_identifier_code": "74",
+                "entity_type_qualifier": "1",
+                "last_name": "CORRECTED LAST",
+                "first_name": "CORRECTED FIRST",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "",
+                "identification_code": "",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              }
+            ],
+            "DTM": [],
+            "AMT": [
+              {
+                "amount_qualifier_code": "AU",
+                "monetary_amount": "34.25",
+                "credit_debit_flag_code": ""
+              }
+            ],
+            "REF": [
+              {
+                "reference_identification_qualifier": "EA",
+                "reference_identification": "PATIENT ACCOUNT NUMBER",
+                "description": "",
+                "reference_identifier": ""
+              }
+            ],
+            "SVC_loop": [
+              {
+                "SVC": {
+                  "service_type_code": "HC:V2020:RB",
+                  "charge_amount": "6",
+                  "payment_amount": "6",
+                  "revenue_code": "",
+                  "units_of_service_paid": "1",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20100101",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "6",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              },
+              {
+                "SVC": {
+                  "service_type_code": "HC:V2700:RB",
+                  "charge_amount": "2.75",
+                  "payment_amount": "2.75",
+                  "revenue_code": "",
+                  "units_of_service_paid": "1",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20100101",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "2.75",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              },
+              {
+                "SVC": {
+                  "service_type_code": "HC:V2103:RB",
+                  "charge_amount": "5.5",
+                  "payment_amount": "5.5",
+                  "revenue_code": "",
+                  "units_of_service_paid": "1",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20100101",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "5.5",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              },
+              {
+                "SVC": {
+                  "service_type_code": "HC:S0580",
+                  "charge_amount": "20",
+                  "payment_amount": "20",
+                  "revenue_code": "",
+                  "units_of_service_paid": "2",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20100101",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "20",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "CLP": {
+              "patient_control_number": "PATIENT ACCOUNT NUMBER",
+              "claim_status_code": "2",
+              "total_claim_charge_amount": "34",
+              "total_claim_payment_amount": "0",
+              "patient_responsibility_amount": "",
+              "claim_filing_indicator_code": "MC",
+              "payer_claim_control_number": "1000220000000020",
+              "facility_type_code": "11",
+              "claim_frequency_code": "",
+              "patient_status_code": "",
+              "diagnosis_related_group_code": "",
+              "drg_weight": "",
+              "discharge_fraction": ""
+            },
+            "CAS": [],
+            "NM1": [
+              {
+                "entity_identifier_code": "QC",
+                "entity_type_qualifier": "1",
+                "last_name": "SUBMITTED LAST",
+                "first_name": "SUBMITTED FIRST",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "MI",
+                "identification_code": "LL88888L",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              },
+              {
+                "entity_identifier_code": "74",
+                "entity_type_qualifier": "1",
+                "last_name": "CORRECTED LAST",
+                "first_name": "CORRECTED FIRST",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "",
+                "identification_code": "",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              }
+            ],
+            "DTM": [],
+            "AMT": [],
+            "REF": [
+              {
+                "reference_identification_qualifier": "EA",
+                "reference_identification": "PATIENT ACCOUNT NUMBER",
+                "description": "",
+                "reference_identifier": ""
+              }
+            ],
+            "SVC_loop": [
+              {
+                "SVC": {
+                  "service_type_code": "HC:V2020",
+                  "charge_amount": "12",
+                  "payment_amount": "0",
+                  "revenue_code": "",
+                  "units_of_service_paid": "0",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20100101",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "29",
+                    "adjustment_amount": "12",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ]
+              },
+              {
+                "SVC": {
+                  "service_type_code": "HC:V2103",
+                  "charge_amount": "22",
+                  "payment_amount": "0",
+                  "revenue_code": "",
+                  "units_of_service_paid": "0",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20100101",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "29",
+                    "adjustment_amount": "22",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "CLP": {
+              "patient_control_number": "PATIENT ACCOUNT NUMBER",
+              "claim_status_code": "2",
+              "total_claim_charge_amount": "34.25",
+              "total_claim_payment_amount": "11.5",
+              "patient_responsibility_amount": "",
+              "claim_filing_indicator_code": "MC",
+              "payer_claim_control_number": "1000230000000020",
+              "facility_type_code": "11",
+              "claim_frequency_code": "",
+              "patient_status_code": "",
+              "diagnosis_related_group_code": "",
+              "drg_weight": "",
+              "discharge_fraction": ""
+            },
+            "CAS": [],
+            "NM1": [
+              {
+                "entity_identifier_code": "QC",
+                "entity_type_qualifier": "1",
+                "last_name": "SUBMITTED LAST",
+                "first_name": "SUBMITTED FIRST",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "MI",
+                "identification_code": "LL77777L",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              },
+              {
+                "entity_identifier_code": "74",
+                "entity_type_qualifier": "1",
+                "last_name": "CORRECTED LAST",
+                "first_name": "CORRECTED FIRST",
+                "middle_name": "",
+                "name_prefix": "",
+                "name_suffix": "",
+                "identification_code_qualifier": "",
+                "identification_code": "",
+                "entity_relationship_code": "",
+                "entity_identifier_code_2": "",
+                "identification_code_qualifier_2": ""
+              }
+            ],
+            "DTM": [],
+            "AMT": [
+              {
+                "amount_qualifier_code": "AU",
+                "monetary_amount": "11.5",
+                "credit_debit_flag_code": ""
+              }
+            ],
+            "REF": [
+              {
+                "reference_identification_qualifier": "EA",
+                "reference_identification": "PATIENT ACCOUNT NUMBER",
+                "description": "",
+                "reference_identifier": ""
+              }
+            ],
+            "SVC_loop": [
+              {
+                "SVC": {
+                  "service_type_code": "HC:V2020:RB",
+                  "charge_amount": "6",
+                  "payment_amount": "6",
+                  "revenue_code": "",
+                  "units_of_service_paid": "1",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20100101",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "6",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              },
+              {
+                "SVC": {
+                  "service_type_code": "HC:V2103:RB",
+                  "charge_amount": "5.5",
+                  "payment_amount": "5.5",
+                  "revenue_code": "",
+                  "units_of_service_paid": "1",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20130917",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "AMT": [
+                  {
+                    "amount_qualifier_code": "B6",
+                    "monetary_amount": "5.5",
+                    "credit_debit_flag_code": ""
+                  }
+                ]
+              },
+              {
+                "SVC": {
+                  "service_type_code": "HC:V2700:RB",
+                  "charge_amount": "2.75",
+                  "payment_amount": "0",
+                  "revenue_code": "",
+                  "units_of_service_paid": "0",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20100101",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "251",
+                    "adjustment_amount": "2.75",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ]
+              },
+              {
+                "SVC": {
+                  "service_type_code": "HC:S0580",
+                  "charge_amount": "20",
+                  "payment_amount": "0",
+                  "revenue_code": "",
+                  "units_of_service_paid": "0",
+                  "original_units_of_service": "",
+                  "adjudicated_date": ""
+                },
+                "DTM": [
+                  {
+                    "date_time_qualifier": "472",
+                    "date": "20100101",
+                    "time": "",
+                    "time_code": "",
+                    "date_time_period_format": "",
+                    "date_time_period": ""
+                  }
+                ],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustment_reason_code": "251",
+                    "adjustment_amount": "20",
+                    "adjustment_quantity": "",
+                    "adjustment_reason_code_2": "",
+                    "adjustment_amount_2": "",
+                    "adjustment_quantity_2": "",
+                    "adjustment_reason_code_3": "",
+                    "adjustment_amount_3": "",
+                    "adjustment_quantity_3": "",
+                    "adjustment_reason_code_4": "",
+                    "adjustment_amount_4": "",
+                    "adjustment_quantity_4": "",
+                    "adjustment_reason_code_5": "",
+                    "adjustment_amount_5": "",
+                    "adjustment_quantity_5": "",
+                    "adjustment_reason_code_6": "",
+                    "adjustment_amount_6": "",
+                    "adjustment_quantity_6": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "65",
+          "transaction_set_control_number": "1740"
+        }
+      }
+    ],
+    "GE": {
+      "number_of_transaction_sets_included": "1",
+      "group_control_number": "6000600"
+    },
+    "IEA": {
+      "number_of_included_functional_groups": "1",
+      "interchange_control_number": "006000600"
+    }
+  }
+}
