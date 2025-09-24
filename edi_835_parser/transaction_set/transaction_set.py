@@ -188,10 +188,15 @@ class TransactionSet:
 			elif identifier == "DTM" and current_transaction:
 				dtm_data = self._convert_dtm_segment(segment)
 				if current_svc_loop:
+					# DTM within service loop goes to service level
 					if "DTM" not in current_svc_loop:
 						current_svc_loop["DTM"] = []
 					current_svc_loop["DTM"].append(dtm_data)
+				elif current_clp_loop:
+					# DTM within claim loop (but no service yet) goes to claim level
+					current_clp_loop["DTM"].append(dtm_data)
 				else:
+					# DTM at transaction level goes to transaction level
 					current_transaction["DTM"].append(dtm_data)
 			elif identifier == "N1" and current_transaction:
 				current_n1_loop = {

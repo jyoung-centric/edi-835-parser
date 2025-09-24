@@ -1,6 +1,4 @@
-
-**denormalized schema**:
-
+### Single Table to hold 835 Payment EDI files and summary information
 CREATE TABLE payments_835 (
     id SERIAL PRIMARY KEY,
     file_id UUID NOT NULL DEFAULT gen_random_uuid(),
@@ -16,21 +14,17 @@ CREATE TABLE payments_835 (
     created_at TIMESTAMP DEFAULT now(),
 );
 
--- Helpful indexes
-CREATE INDEX idx_payments_check_number ON payments_835(check_number);
-CREATE INDEX idx_payments_json ON payments_835 USING gin (raw_json jsonb_path_ops);
 
-
-
-
-**normalized schema**:
-
+###********************************************************************************************************
+### Normalized Tables for detailed 835 EDI data storage
 ###  Raw Files
 CREATE TABLE raw_835_files (
     id SERIAL PRIMARY KEY,
     file_id UUID NOT NULL DEFAULT gen_random_uuid(),
     received_at TIMESTAMP DEFAULT now(),
     raw_edi TEXT NOT NULL
+    json_transaction JSONB NOT NULL,
+    created_at TIMESTAMP DEFAULT now()
 );
 
 
@@ -44,7 +38,7 @@ CREATE TABLE transactions (
     payment_date DATE,
     payer_id TEXT,
     payee_id TEXT,
-    check_number TEXT,
+    json_TR JSONB NOT NULL,
 
 );
 
@@ -57,7 +51,7 @@ CREATE TABLE claims (
     claim_amount NUMERIC(12,2),
     paid_amount NUMERIC(12,2),
     status_code TEXT,
-    raw_json JSONB,
+    json_CLM JSONB,
     posted_at TIMESTAMP,
     source_system_claim_id TEXT
 );
@@ -71,14 +65,7 @@ CREATE TABLE service_lines (
     charge_amount NUMERIC(12,2),
     paid_amount NUMERIC(12,2),
     adjustment_reason_codes JSONB,
-    raw_json JSONB,
+    json_SVC JSONB NOT NULL,
     posted_at TIMESTAMP,
     source_system_line_id TEXT
 );
-
-###  Indexes
-
-CREATE INDEX idx_transactions_trace ON transactions(trace_number);
-CREATE INDEX idx_claims_claim_number ON claims(claim_number);
-CREATE INDEX idx_service_lines_proc ON service_lines(procedure_code);
-
