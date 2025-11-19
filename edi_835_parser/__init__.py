@@ -102,16 +102,16 @@ def parse_to_json(path: str, debug: bool = False, preprocess: bool = True) -> Di
 		transaction_set = _build_transaction_set(file_path, preprocess)
 		return transaction_set.to_json()
 	else:
+		transaction_set = None
 		try:
 			transaction_set = _build_transaction_set(file_path, preprocess)
 			return transaction_set.to_json()
 		except Exception as e:
 			warn(f'Failed to build a transaction set from {file_path} with error: {e}')
 			raise
-		# If we reach here, it means the transaction set was built successfully
-		# delete temporary file if it was created
 		finally:
-			if hasattr(transaction_set, 'file_path') and transaction_set.file_path.endswith('.processed.tmp'):
+			# Clean up temporary file if it was created
+			if transaction_set and hasattr(transaction_set, 'file_path') and transaction_set.file_path.endswith('.processed.tmp'):
 				temp_file_path = transaction_set.file_path
 				if os.path.exists(temp_file_path):
 					os.unlink(temp_file_path)
@@ -172,6 +172,9 @@ def _find_edi_835_files(path: str) -> List[str]	:
 			files.append(file)
 
 	return files
+
+	
+
 
 
 def main():

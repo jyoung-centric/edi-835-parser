@@ -10,6 +10,9 @@ import traceback
 from pathlib import Path
 from datetime import datetime
 import edi_835_parser
+from edi_835_parser.transaction_set.transaction_set import TransactionSet
+from edi_835_parser.loops.claim import Claim as ClaimLoop
+from edi_835_parser.loops.service import Service as ServiceLoop
 
 def create_test_runner():
     """Run all test files and save JSON outputs"""
@@ -28,7 +31,7 @@ def create_test_runner():
         print(f"❌ Test directory not found: {test_dir}")
         return
     
-    test_files = [f for f in test_dir.iterdir() if f.is_file() and not f.name.startswith('.')]
+    test_files = [f for f in test_dir.iterdir() if f.is_file() and not f.name.startswith('.') and not f.name.endswith('.processed.tmp')]
     
     print("🧪 EDI 835 PARSER - COMPREHENSIVE TEST RUNNER")
     print("=" * 80)
@@ -53,25 +56,35 @@ def create_test_runner():
             end_time = datetime.now()
             processing_time = (end_time - start_time).total_seconds()
             
-            # Count data structures
-            interchange = json_data.get("interchange", {})
-            transactions = interchange.get("transactions", [])
-            
+            # Count claims and services from JSON structure
             total_claims = 0
             total_services = 0
+            
+            # Get transactions from the JSON structure
+            transactions = json_data.get("interchange", {}).get("transactions", [])
             
             for transaction in transactions:
                 clp_loops = transaction.get("CLP_loop", [])
                 total_claims += len(clp_loops)
                 
+                # Count services in each claim
                 for clp_loop in clp_loops:
                     svc_loops = clp_loop.get("SVC_loop", [])
                     total_services += len(svc_loops)
             
+            # Debug print for first claim's first date if available
+            if transactions and transactions[0].get("CLP_loop") and transactions[0]["CLP_loop"][0].get("DTM"):
+                first_dtm = transactions[0]["CLP_loop"][0]["DTM"][0]
+                print(f"***************************************DTM*{first_dtm.get('date_time_qualifier', '')}*{first_dtm.get('date', '')}")
+            else:
+                print("***************************************No DTM data found")
             # Create safe filename for output
             safe_name = test_file.stem.replace(' ', '_').replace('-', '_').replace('.', '_')
             output_file = output_dir / f"{safe_name}_output.json"
             
+
+
+
             # Save JSON output
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(json_data, f, indent=2, ensure_ascii=False)
