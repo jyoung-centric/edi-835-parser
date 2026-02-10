@@ -61,6 +61,15 @@ if [ $ATTEMPT -eq $MAX_ATTEMPTS ]; then
     exit 1
 fi
 
+# Activate virtual environment if it exists
+if [ -d ".venv" ]; then
+    echo "🐍 Activating virtual environment..."
+    source .venv/bin/activate
+elif [ -d "venv" ]; then
+    echo "🐍 Activating virtual environment..."
+    source venv/bin/activate
+fi
+
 # Run tests
 echo ""
 echo "🧪 Running tests with database seeding..."

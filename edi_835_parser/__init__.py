@@ -76,14 +76,15 @@ def parse(path: str, debug: bool = False, preprocess: bool = True) -> Transactio
 def parse_to_json(path: str, debug: bool = False, preprocess: bool = True) -> Dict[str, Any]:
 	"""
 	Parse EDI 835 file(s) and return JSON structured data.
-	
+	Properly handles files with multiple ST...SE transaction segments.
+
 	Args:
 		path (str): Path to EDI file or directory
 		debug (bool): Enable debug mode
 		preprocess (bool): Automatically preprocess files with special characters
-	
+
 	Returns:
-		Dict[str, Any]: JSON structured data
+		Dict[str, Any]: JSON structured data with all transactions
 	"""
 	if path[0] == '~':
 		path = os.path.expanduser(path)
@@ -99,70 +100,120 @@ def parse_to_json(path: str, debug: bool = False, preprocess: bool = True) -> Di
 		file_path = path
 
 	if debug:
-		transaction_set = _build_transaction_set(file_path, preprocess)
-		return transaction_set.to_json()
+		transaction_sets = _build_transaction_sets(file_path, preprocess)
+		return _merge_transaction_sets_to_json(transaction_sets)
 	else:
-		transaction_set = None
+		transaction_sets = None
 		try:
-			transaction_set = _build_transaction_set(file_path, preprocess)
-			return transaction_set.to_json()
+			transaction_sets = _build_transaction_sets(file_path, preprocess)
+			return _merge_transaction_sets_to_json(transaction_sets)
 		except Exception as e:
-			warn(f'Failed to build a transaction set from {file_path} with error: {e}')
+			warn(f'Failed to build transaction sets from {file_path} with error: {e}')
 			raise
 		finally:
 			# Clean up temporary file if it was created
-			if transaction_set and hasattr(transaction_set, 'file_path') and transaction_set.file_path.endswith('.processed.tmp'):
-				temp_file_path = transaction_set.file_path
-				if os.path.exists(temp_file_path):
-					os.unlink(temp_file_path)
-					print(f"Temporary file deleted: {temp_file_path}")
+			if transaction_sets and len(transaction_sets) > 0:
+				first_ts = transaction_sets[0]
+				if hasattr(first_ts, 'file_path') and first_ts.file_path.endswith('.processed.tmp'):
+					temp_file_path = first_ts.file_path
+					if os.path.exists(temp_file_path):
+						os.unlink(temp_file_path)
+						print(f"Temporary file deleted: {temp_file_path}")
+
+
+def _merge_transaction_sets_to_json(transaction_sets: List[TransactionSet]) -> Dict[str, Any]:
+	"""
+	Merge multiple TransactionSet objects into a single JSON structure.
+
+	Args:
+		transaction_sets: List of TransactionSet objects
+
+	Returns:
+		Dict with interchange containing all transactions
+	"""
+	if not transaction_sets:
+		return {"interchange": {"transactions": []}}
+
+	# Get the first transaction set's JSON to extract envelope info
+	first_json = transaction_sets[0].to_json()
+
+	# Start with the interchange structure from first transaction
+	merged_json = {
+		"interchange": {
+			"ISA": first_json.get("interchange", {}).get("ISA"),
+			"GS": first_json.get("interchange", {}).get("GS"),
+			"transactions": [],
+			"GE": first_json.get("interchange", {}).get("GE"),
+			"IEA": first_json.get("interchange", {}).get("IEA")
+		}
+	}
+
+	# Collect all transactions from all transaction sets
+	for ts in transaction_sets:
+		ts_json = ts.to_json()
+		transactions = ts_json.get("interchange", {}).get("transactions", [])
+		merged_json["interchange"]["transactions"].extend(transactions)
+
+	return merged_json
+
+
+def _build_transaction_sets(file_path: str, preprocess: bool = True) -> List[TransactionSet]:
+	"""
+	Build TransactionSet(s) from a file, with optional preprocessing.
+	Handles files with multiple ST...SE segments.
+
+	Args:
+		file_path (str): Path to the EDI file
+		preprocess (bool): Whether to preprocess the file content
+
+	Returns:
+		List[TransactionSet]: List of built transaction sets (one per ST...SE segment)
+	"""
+	# Check if file needs preprocessing by looking for special characters
+	with open(file_path, 'r', encoding='utf-8', errors='replace') as f:
+		content = f.read()
+
+	# Check for special characters that need preprocessing
+	needs_preprocessing = any(char in content for char in ['\x1d', '\x1e', '\x1f'])
+
+	if needs_preprocessing and preprocess:
+		# Preprocess the content
+		processed_content = preprocess_edi_content(content)
+
+		# Create a temporary file with processed content that won't be auto-deleted
+		temp_file_path = file_path + '.processed.tmp'
+
+		with open(temp_file_path, 'w', encoding='utf-8') as temp_file:
+			temp_file.write(processed_content)
+
+		try:
+			# Build transaction sets from processed file
+			transaction_sets = TransactionSet.build_multiple(temp_file_path)
+			# Update the file_path in each transaction set to the original path
+			for ts in transaction_sets:
+				ts.file_path = temp_file_path
+			return transaction_sets
+		finally:
+			print(f"Temporary file retained for debugging: {temp_file_path}")
+	else:
+		# No preprocessing needed - use build_multiple to handle multi-transaction files
+		return TransactionSet.build_multiple(file_path)
 
 
 def _build_transaction_set(file_path: str, preprocess: bool = True) -> TransactionSet:
 	"""
-	Build a TransactionSet from a file, with optional preprocessing.
-	
+	Build a single TransactionSet from a file (legacy method for backward compatibility).
+	If file contains multiple transactions, returns only the first one.
+
 	Args:
 		file_path (str): Path to the EDI file
 		preprocess (bool): Whether to preprocess the file content
-	
+
 	Returns:
 		TransactionSet: Built transaction set
 	"""
-	if not preprocess:
-		return TransactionSet.build(file_path)
-	
-	# Check if file needs preprocessing by looking for special characters
-	with open(file_path, 'r', encoding='utf-8', errors='replace') as f:
-		content = f.read()
-	
-	# Check for special characters that need preprocessing
-	needs_preprocessing = any(char in content for char in ['\x1d', '\x1e', '\x1f'])
-	
-	if needs_preprocessing:
-		# Preprocess the content
-		processed_content = preprocess_edi_content(content)
-		
-		# Create a temporary file with processed content that won't be auto-deleted
-		temp_file_path = file_path + '.processed.tmp'
-		
-		with open(temp_file_path, 'w', encoding='utf-8') as temp_file:
-			temp_file.write(processed_content)
-		
-		try:
-			# Build transaction set from processed file
-			transaction_set = TransactionSet.build(temp_file_path)
-			# Update the file_path in the transaction set to the original path for reference
-			transaction_set.file_path = temp_file_path
-			return transaction_set
-		finally:
-			# Clean up temporary file
-			#if os.path.exists(temp_file_path):
-			#	os.unlink(temp_file_path)
-			print(f"Temporary file retained for debugging: {temp_file_path}")
-	else:
-		# No preprocessing needed
-		return TransactionSet.build(file_path)
+	transaction_sets = _build_transaction_sets(file_path, preprocess)
+	return transaction_sets[0] if transaction_sets else None
 
 
 def _find_edi_835_files(path: str) -> List[str]	:

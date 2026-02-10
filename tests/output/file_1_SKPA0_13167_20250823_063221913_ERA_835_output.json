@@ -10,7 +10,7 @@
         },
         "BPR": {
           "transaction_handling_code": "BPR",
-          "monetary_amount": "55.0",
+          "monetary_amount": "396017.18",
           "credit_debit_flag": "C",
           "payment_method_code": "automatic deposit",
           "payment_format_code": "",
@@ -28,7 +28,7 @@
         },
         "TRN": {
           "trace_type_code": "1",
-          "reference_identification": "51007507001766",
+          "reference_identification": "51007507001764",
           "originating_company_identifier": "1236003113",
           "originating_company_supplemental_code": ""
         },
@@ -61,90 +61,6 @@
               "name": "CHARTWELL PENNSYLVANIA LP",
               "identification_code_qualifier": "",
               "identification_code": "1033166244"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "152516552",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "DEPARTMENT OF HUMAN SERVICES",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "OFFICE OF MEDICAL ASSISTANCE PROGRAMS",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "HARRISBURG",
-              "state_code": "PA",
-              "postal_code": "171069022",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA LP",
-              "identification_code_qualifier": "",
-              "identification_code": "1447528641"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "152516552",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "DEPARTMENT OF HUMAN SERVICES",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "OFFICE OF MEDICAL ASSISTANCE PROGRAMS",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "HARRISBURG",
-              "state_code": "PA",
-              "postal_code": "171069022",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA LP",
-              "identification_code_qualifier": "",
-              "identification_code": "1467871418"
             },
             "N3": {
               "address_line_1": "PO BOX 360552",
@@ -17279,7 +17195,89 @@
             "AMT": [],
             "REF": [],
             "SVC_loop": []
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "51.21",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250827"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "51007507001765",
+          "originating_company_identifier": "1236003113",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "DEPARTMENT OF HUMAN SERVICES",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "OFFICE OF MEDICAL ASSISTANCE PROGRAMS",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "HARRISBURG",
+              "state_code": "PA",
+              "postal_code": "171069022",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA LP",
+              "identification_code_qualifier": "",
+              "identification_code": "1447528641"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "152516552",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1914734-2000-159748",
@@ -17690,7 +17688,89 @@
             "AMT": [],
             "REF": [],
             "SVC_loop": []
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "55.0",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250827"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "51007507001766",
+          "originating_company_identifier": "1236003113",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "DEPARTMENT OF HUMAN SERVICES",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "OFFICE OF MEDICAL ASSISTANCE PROGRAMS",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "HARRISBURG",
+              "state_code": "PA",
+              "postal_code": "171069022",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA LP",
+              "identification_code_qualifier": "",
+              "identification_code": "1467871418"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "152516552",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1914716-4000-158897",

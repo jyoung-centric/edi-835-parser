@@ -162,6 +162,113 @@ class TransactionSet:
 		return datum
 
 	@classmethod
+	def build_multiple(cls, file_path: str) -> List['TransactionSet']:
+		"""
+		Build multiple TransactionSet objects from a file containing multiple ST...SE segments.
+
+		Args:
+			file_path: Path to the EDI file
+
+		Returns:
+			List of TransactionSet objects, one per ST...SE segment
+		"""
+		import tempfile
+		import os
+
+		with open(file_path) as f:
+			file_content = f.read()
+
+		# Split into segments
+		all_segments = file_content.split('~')
+		all_segments = [seg.strip() for seg in all_segments if seg.strip()]
+
+		# Find ISA, GS, GE, IEA segments (envelope)
+		isa_segment = None
+		gs_segment = None
+		ge_segment = None
+		iea_segment = None
+
+		for seg in all_segments:
+			identifier = find_identifier(seg)
+			if identifier == 'ISA':
+				isa_segment = seg
+			elif identifier == 'GS':
+				gs_segment = seg
+			elif identifier == 'GE':
+				ge_segment = seg
+			elif identifier == 'IEA':
+				iea_segment = seg
+
+		# Find all ST...SE transaction blocks
+		transaction_blocks = []
+		current_block = []
+		in_transaction = False
+
+		for seg in all_segments:
+			identifier = find_identifier(seg)
+
+			# Skip envelope segments
+			if identifier in ['ISA', 'GS', 'GE', 'IEA']:
+				continue
+
+			if identifier == 'ST':
+				# Start new transaction block
+				in_transaction = True
+				current_block = [seg]
+			elif identifier == 'SE':
+				# End current transaction block
+				current_block.append(seg)
+				transaction_blocks.append(current_block)
+				current_block = []
+				in_transaction = False
+			elif in_transaction:
+				# Add segment to current block
+				current_block.append(seg)
+
+		# If only one transaction block found, use original build method
+		if len(transaction_blocks) <= 1:
+			return [cls.build(file_path)]
+
+		# Build a TransactionSet for each block
+		transaction_sets = []
+
+		for idx, block in enumerate(transaction_blocks):
+			# Create temporary file with single transaction
+			# Wrap with ISA/GS/GE/IEA envelope
+			segments_list = []
+
+			if isa_segment:
+				segments_list.append(isa_segment)
+			if gs_segment:
+				segments_list.append(gs_segment)
+
+			segments_list.extend(block)
+
+			if ge_segment:
+				segments_list.append(ge_segment)
+			if iea_segment:
+				segments_list.append(iea_segment)
+
+			temp_content = '~'.join(segments_list) + '~'
+
+			# Create temp file
+			temp_fd, temp_path = tempfile.mkstemp(suffix='.edi', text=True)
+			try:
+				with os.fdopen(temp_fd, 'w') as temp_file:
+					temp_file.write(temp_content)
+
+				# Build transaction set from temp file
+				transaction_set = cls.build(temp_path)
+				transaction_set.file_path = file_path  # Keep original file path
+				transaction_sets.append(transaction_set)
+			finally:
+				# Clean up temp file
+				if os.path.exists(temp_path):
+					os.unlink(temp_path)
+
+		return transaction_sets
+
+	@classmethod
 	def build(cls, file_path: str) -> 'TransactionSet':
 		interchange = None
 		financial_information = None

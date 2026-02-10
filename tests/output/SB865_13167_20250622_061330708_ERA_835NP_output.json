@@ -10,12 +10,12 @@
         },
         "BPR": {
           "transaction_handling_code": "BPR",
-          "monetary_amount": "2320.79",
+          "monetary_amount": "0.0",
           "credit_debit_flag": "C",
-          "payment_method_code": "automatic deposit",
+          "payment_method_code": "no payment",
           "payment_format_code": "",
           "dfi_id_number_qualifier": "",
-          "dfi_identification_number": "43000261",
+          "dfi_identification_number": "None",
           "account_number_qualifier": "",
           "sender_bank_account_number": "",
           "originating_company_identifier": "",
@@ -28,7 +28,7 @@
         },
         "TRN": {
           "trace_type_code": "1",
-          "reference_identification": "1195847231",
+          "reference_identification": "285307867",
           "originating_company_identifier": "1341858379",
           "originating_company_supplemental_code": ""
         },
@@ -49,762 +49,6 @@
               "city_name": "CAMP HILL",
               "state_code": "PA",
               "postal_code": "17089",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1033166244"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "1800 CENTER STREET",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "CAMP HILL",
-              "state_code": "PA",
-              "postal_code": "17089",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1467871418"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "1800 CENTER STREET",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "CAMP HILL",
-              "state_code": "PA",
-              "postal_code": "17089",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1447528641"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "1800 CENTER STREET",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "CAMP HILL",
-              "state_code": "PA",
-              "postal_code": "17089",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1033166244"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1467871418"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1033166244"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1467871418"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1033166244"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1447528641"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1033166244"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1467871418"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1033166244"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1033166244"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1033166244"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1033166244"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1447528641"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1467871418"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PE",
-              "name": "CHARTWELL PENNSYLVANIA",
-              "identification_code_qualifier": "",
-              "identification_code": "1447528641"
-            },
-            "N3": {
-              "address_line_1": "PO BOX 360552",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15251",
-              "country_code": "",
-              "location_qualifier": "",
-              "location_identifier": ""
-            },
-            "PER": null
-          },
-          {
-            "N1": {
-              "entity_identifier_code": "PR",
-              "name": "HIGHMARK BLUE SHIELD",
-              "identification_code_qualifier": "",
-              "identification_code": ""
-            },
-            "N3": {
-              "address_line_1": "120 FIFTH AVENUE",
-              "address_line_2": ""
-            },
-            "N4": {
-              "city_name": "PITTSBURGH",
-              "state_code": "PA",
-              "postal_code": "15222",
               "country_code": "",
               "location_qualifier": "",
               "location_identifier": ""
@@ -1001,7 +245,89 @@
                 "AMT": []
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "36226.12",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847220",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "1800 CENTER STREET",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "CAMP HILL",
+              "state_code": "PA",
+              "postal_code": "17089",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1467871418"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1885655-4000-155440",
@@ -22619,7 +21945,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "34118.63",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847221",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "1800 CENTER STREET",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "CAMP HILL",
+              "state_code": "PA",
+              "postal_code": "17089",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1447528641"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1887138-2000-157953",
@@ -35213,7 +34621,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "685469.43",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847219",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "1800 CENTER STREET",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "CAMP HILL",
+              "state_code": "PA",
+              "postal_code": "17089",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1033166244"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1659807-0053-014999",
@@ -95597,7 +95087,89 @@
                 "AMT": []
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "0.0",
+          "credit_debit_flag": "C",
+          "payment_method_code": "no payment",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "None",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "285307875",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1467871418"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1889562-4000-156942",
@@ -97663,7 +97235,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "0.0",
+          "credit_debit_flag": "C",
+          "payment_method_code": "no payment",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "None",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "285307877",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1033166244"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1766262-0053-132818",
@@ -98133,7 +97787,89 @@
                 "AMT": []
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "0.0",
+          "credit_debit_flag": "C",
+          "payment_method_code": "no payment",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "None",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "285307876",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1467871418"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1762512-4000-148783",
@@ -98401,7 +98137,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "5674.29",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847222",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1033166244"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1395882-1781",
@@ -100683,7 +100501,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "1456.4",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847223",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1447528641"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1886275-2000-154134",
@@ -101657,7 +101557,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "0.0",
+          "credit_debit_flag": "C",
+          "payment_method_code": "no payment",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "None",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "285307880",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1033166244"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1372572-1901",
@@ -101785,7 +101767,89 @@
                 "AMT": []
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "0.0",
+          "credit_debit_flag": "C",
+          "payment_method_code": "no payment",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "None",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "285307881",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1467871418"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1882299-4000-152472",
@@ -102085,7 +102149,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "759.0",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847224",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1033166244"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1379615-2154",
@@ -102225,7 +102371,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "1693.78",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847225",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1033166244"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1269940-1901",
@@ -102769,7 +102997,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "721.33",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847226",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1033166244"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1885870-0053-149425",
@@ -103025,7 +103335,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "671.0",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847227",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1033166244"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1387845-1901",
@@ -103165,7 +103557,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "276.5",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847228",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1447528641"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1881110-2000-144627",
@@ -103305,7 +103779,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "294.0",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847229",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1467871418"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1882488-4000-154126",
@@ -103823,7 +104379,89 @@
                 "AMT": []
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "2830.36",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847230",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1447528641"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1879717-2000-157405",
@@ -104681,7 +105319,89 @@
                 ]
               }
             ]
+          }
+        ],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      },
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": {
+          "transaction_handling_code": "BPR",
+          "monetary_amount": "2320.79",
+          "credit_debit_flag": "C",
+          "payment_method_code": "automatic deposit",
+          "payment_format_code": "",
+          "dfi_id_number_qualifier": "",
+          "dfi_identification_number": "43000261",
+          "account_number_qualifier": "",
+          "sender_bank_account_number": "",
+          "originating_company_identifier": "",
+          "originating_company_supplemental_code": "",
+          "dfi_identification_number_qualifier": "",
+          "receiver_or_provider_bank_id_number": "",
+          "account_number_qualifier_2": "",
+          "receiver_or_provider_account_number": "",
+          "check_issue_or_eft_effective_date": "20250624"
+        },
+        "TRN": {
+          "trace_type_code": "1",
+          "reference_identification": "1195847231",
+          "originating_company_identifier": "1341858379",
+          "originating_company_supplemental_code": ""
+        },
+        "DTM": [],
+        "N1_loop": [
+          {
+            "N1": {
+              "entity_identifier_code": "PR",
+              "name": "HIGHMARK BLUE SHIELD",
+              "identification_code_qualifier": "",
+              "identification_code": ""
+            },
+            "N3": {
+              "address_line_1": "120 FIFTH AVENUE",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15222",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
           },
+          {
+            "N1": {
+              "entity_identifier_code": "PE",
+              "name": "CHARTWELL PENNSYLVANIA",
+              "identification_code_qualifier": "",
+              "identification_code": "1033166244"
+            },
+            "N3": {
+              "address_line_1": "PO BOX 360552",
+              "address_line_2": ""
+            },
+            "N4": {
+              "city_name": "PITTSBURGH",
+              "state_code": "PA",
+              "postal_code": "15251",
+              "country_code": "",
+              "location_qualifier": "",
+              "location_identifier": ""
+            },
+            "PER": null
+          }
+        ],
+        "CLP_loop": [
           {
             "CLP": {
               "patient_control_number": "1887079-0053-116927",
