@@ -1,0 +1,129 @@
+pipeline {
+	agent {
+		node {
+			label 'linux-main-build'
+		}
+	}
+
+	environment {
+		GIT_USER_EMAIL = 'jenkinsprx@pipelinerx.com'
+		GIT_USER_NAME = 'Jenkins User'
+		GIT_CREDENTIALS_ID = 'github-jenkinsprx'
+		BASE_TAG = ''
+		DOCKER_TAG = ''
+		COMMIT_HASH = ''
+	}
+
+	stages {
+		stage('Checkout') {
+			steps {
+				checkout scm
+			}
+		}
+
+		stage('Initialize') {
+			steps {
+				script {
+					BASE_TAG = sh(
+						script: 'git tag --list "[0-9]*.[0-9]*.[0-9]*" --sort=-v:refname | head -n 1',
+						returnStdout: true
+					).trim()
+
+// 					if (!BASE_TAG) {
+// 						error "No semantic version tag found in the history of this branch"
+// 					}
+                    if (!BASE_TAG) {
+                        echo "⚠️ No semantic version tag found. Initializing to 1.0.0"
+                        BASE_TAG = "1.0.0"
+                    }
+
+					COMMIT_HASH = sh(
+						script: 'git rev-parse HEAD',
+						returnStdout: true
+					).trim()
+					echo "Base tag: ${BASE_TAG}"
+					echo "Current commit hash: ${COMMIT_HASH}"
+				}
+			}
+		}
+
+		stage('Increment Tag') {
+			steps {
+				script {
+					// Increment the tag version
+					def versionParts = BASE_TAG.tokenize('.')
+					echo "version parts ${versionParts}"
+					def versionIncrement = versionParts[2].toInteger() + 1
+
+					DOCKER_TAG = "${versionParts[0]}.${versionParts[1]}.${versionIncrement}"
+
+					if (!DOCKER_TAG.matches('^\\d+\\.\\d+\\.\\d+\$')) {
+						error "Generated version ${DOCKER_TAG} does not match expected format"
+					}
+					currentBuild.displayName = "${DOCKER_TAG}"
+					echo "New tag: ${DOCKER_TAG}"
+				}
+			}
+		}
+
+		stage('Push Tag') {
+			steps {
+				script {
+					sh """
+                        git tag ${DOCKER_TAG} ${COMMIT_HASH}
+                        git push origin tag ${DOCKER_TAG}
+                    """
+				}
+			}
+		}
+	}
+
+	post {
+		success {
+			script {
+				build job: 'Deploy - Schema Bot Automation',
+				wait: false,
+				parameters: [
+					string(name: 'ENVIRONMENT', value: 'dev'),
+					string(name: 'GIT_TAG', value: "${DOCKER_TAG}")
+				]
+			}
+			slackSend(
+				color: 'good',
+				message: "${env.JOB_NAME} - ${DOCKER_TAG} Success after ${currentBuild.durationString} (${env.BUILD_URL})"
+			)
+		}
+		aborted {
+			slackSend(
+				color: '#808080',
+				message: "${env.JOB_NAME} - ${DOCKER_TAG} Aborted after ${currentBuild.durationString} (${env.BUILD_URL})"
+			)
+		}
+		unstable {
+			slackSend(
+				color: '#FFFE89',
+				message: "${env.JOB_NAME} - ${DOCKER_TAG} Unstable after ${currentBuild.durationString} (${env.BUILD_URL})"
+			)
+		}
+		failure {
+			script {
+				if (currentBuild.previousBuild?.result == 'SUCCESS') {
+					// First failure
+					slackSend(
+						color: 'danger',
+						message: "${env.JOB_NAME} - ${DOCKER_TAG} First Failure after ${currentBuild.durationString} (${env.BUILD_URL})"
+					)
+				}
+			}
+		}
+		fixed {
+			slackSend(
+				color: 'good',
+				message: "${env.JOB_NAME} - ${DOCKER_TAG} Back to Normal after ${currentBuild.durationString} (${env.BUILD_URL})"
+			)
+		}
+		always {
+			cleanWs()
+		}
+	}
+}

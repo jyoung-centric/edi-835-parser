@@ -1,1 +1,0 @@
-"""FastAPI mock service for EDI 835 data."""
