@@ -94,7 +94,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "3847.44",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -149,7 +160,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "19461.09",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -204,7 +226,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "38922.17",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -259,7 +292,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-3847.44",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -369,7 +413,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-19461.09",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -479,7 +534,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "58788.24",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -534,7 +600,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "42513.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -589,7 +666,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "42513.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -644,7 +732,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "42513.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -699,7 +798,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-42513.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -809,7 +919,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-42513.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -919,7 +1040,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "19383",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -974,7 +1106,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "12145.49",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1087,7 +1230,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "21.88",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -1117,7 +1271,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "329",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -1145,7 +1310,28 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "190.12",
+                    "quantity": ""
+                  }
+                ]
+              },
+              {
+                "claim_adjustment_group_code": "PR",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "3",
+                    "monetary_amount": "3",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1200,7 +1386,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "4703.05",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1255,7 +1452,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "59263.26",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1310,7 +1518,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "59263.26",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1365,7 +1584,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "96",
+                    "monetary_amount": "9756.48",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1428,7 +1658,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "5917.59",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1483,7 +1724,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "51134.73",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1538,7 +1790,23 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "911.64",
+                    "quantity": ""
+                  },
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "2.58",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1593,7 +1861,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "3992.51",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1648,7 +1927,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "3992.43",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1703,7 +1993,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "3992.43",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1758,7 +2059,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-3992.51",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -1868,7 +2180,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-3992.43",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2036,7 +2359,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "97",
+                        "monetary_amount": "243.76",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2058,7 +2392,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "3834.3",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2113,7 +2458,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "3834.3",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2168,7 +2524,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "2744.29",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2223,7 +2590,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "3834.3",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2278,7 +2656,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "3834.3",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2333,7 +2722,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "3834.3",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2388,7 +2788,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "3834.3",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2443,7 +2854,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "2744.29",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2498,7 +2920,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "3834.3",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2553,7 +2986,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-2744.29",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2663,7 +3107,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "28752.16",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2718,7 +3173,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "7547.45",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2773,7 +3239,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "7497.45",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -2894,7 +3371,23 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "115.16",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "23",
+                        "monetary_amount": "37.84",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -2932,7 +3425,23 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "880.95",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "23",
+                        "monetary_amount": "71.24",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -2962,7 +3471,23 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "51.09",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "23",
+                        "monetary_amount": "51.09",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -3048,7 +3573,23 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "229.04",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "23",
+                        "monetary_amount": "65.28",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -3076,7 +3617,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "35512.92",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3131,7 +3683,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "28831.74",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3186,7 +3749,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "62987.4",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3241,7 +3815,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "42513.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3296,7 +3881,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "62987.4",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3351,7 +3947,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "62987.4",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3406,7 +4013,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "42513.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3461,7 +4079,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-42513.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3571,7 +4200,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "1588.32",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3626,7 +4266,23 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "1195.39",
+                    "quantity": ""
+                  },
+                  {
+                    "claim_adjustment_reason_code": "119",
+                    "monetary_amount": "1588.32",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3681,7 +4337,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "1588.32",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3736,7 +4403,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "2744.29",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3791,7 +4469,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "2744.29",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3846,7 +4535,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-2744.29",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -3956,7 +4656,23 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "1588.58",
+                    "quantity": ""
+                  },
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "2615.45",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4011,7 +4727,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "15390",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4066,7 +4793,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "9854.12",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4121,7 +4859,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "39585.22",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4176,7 +4925,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "39585.22",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4231,7 +4991,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-39585.22",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4341,7 +5112,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "45759.17",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4454,7 +5236,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "109",
+                        "monetary_amount": "378.48",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4476,7 +5269,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "14376.08",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4531,7 +5335,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "42513.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4586,7 +5401,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-42513.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4696,7 +5522,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "84994.56",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4751,7 +5588,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "84994.56",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4806,7 +5654,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "49570.36",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4861,7 +5720,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "6751.65",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4916,7 +5786,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "6751.65",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -4971,7 +5852,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-6751.65",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5081,7 +5973,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "40501.31",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5136,7 +6039,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "14376.08",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5191,7 +6105,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "50829.79",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5246,7 +6171,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "50829.79",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5301,7 +6237,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-50829.79",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5411,7 +6358,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "11485.91",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5524,7 +6482,28 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "11576.04",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "23",
+                        "monetary_amount": "460.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "23",
+                        "monetary_amount": "155.4",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -5552,7 +6531,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "46076.8",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5607,7 +6597,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "72482.57",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5662,7 +6663,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "46076.8",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5717,7 +6729,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "72482.57",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5772,7 +6795,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "63360",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5827,7 +6861,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "63360",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5882,7 +6927,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "100829.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5937,7 +6993,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "100829.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -5992,7 +7059,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "72482.57",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -6047,7 +7125,23 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "72482.57",
+                    "quantity": ""
+                  },
+                  {
+                    "claim_adjustment_reason_code": "96",
+                    "monetary_amount": "100829.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -6102,7 +7196,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "46076.8",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -6157,7 +7262,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-46076.8",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -6267,7 +7383,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-72482.57",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -6377,7 +7504,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-46076.8",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -6487,7 +7625,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-72482.57",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -6655,7 +7804,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "PI",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "16",
+                        "monetary_amount": "5512.8",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6677,7 +7837,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "42513.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -6732,7 +7903,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "62496",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -6787,7 +7969,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "13144.32",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -6842,7 +8035,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "13138.83",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -6897,7 +8101,23 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "96.25",
+                    "quantity": ""
+                  },
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "21391.9",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -6952,7 +8172,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "3026.4",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7007,7 +8238,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "16522.7",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7062,7 +8304,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "9944.4",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7117,7 +8370,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "9944.4",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7172,7 +8436,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "9944.4",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7227,7 +8502,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "29833.2",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7282,7 +8568,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "9944.4",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7337,7 +8634,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "29833.2",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7392,7 +8700,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "10401.89",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7447,7 +8766,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "3375.83",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7502,7 +8832,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "3375.83",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7557,7 +8898,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-3375.83",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7667,7 +9019,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-3375.83",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7777,7 +9140,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "2276.27",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7832,7 +9206,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "4552.54",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7887,7 +9272,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "4552.54",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -7942,7 +9338,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-2276.27",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -8052,7 +9459,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-4552.54",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -8162,7 +9580,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "42821.01",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -8283,7 +9712,28 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "282",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "3.8",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -8311,7 +9761,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "34924.09",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -8366,7 +9827,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "1017.02",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -8421,7 +9893,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "19906.32",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -8476,7 +9959,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "19906.32",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -8531,7 +10025,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "24921.42",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -8586,7 +10091,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "4681.36",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -8641,7 +10157,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "29253",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -8754,7 +10281,28 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "282.35",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "2.55",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -8848,7 +10396,28 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "141",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "3.8",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -8878,7 +10447,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "1702.8",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -8906,7 +10486,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "96",
+                    "monetary_amount": "3999.3",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -8969,7 +10560,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "21633.92",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9024,7 +10626,23 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "946.56",
+                    "quantity": ""
+                  },
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "3.42",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9079,7 +10697,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "4681.36",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9134,7 +10763,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "6687.65",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9189,7 +10829,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "24",
+                    "monetary_amount": "134597.76",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9244,7 +10895,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "42821.01",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9299,7 +10961,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "32374.31",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9354,7 +11027,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "37725.76",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9409,7 +11093,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "55260",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9464,7 +11159,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "80580.57",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9519,7 +11225,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "59188.67",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9632,7 +11349,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "PI",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "197",
+                        "monetary_amount": "1811.4",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9712,7 +11440,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "109",
+                        "monetary_amount": "1267.2",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               },
@@ -9736,7 +11475,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "109",
+                        "monetary_amount": "378.48",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9758,7 +11508,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "1019.2",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9813,7 +11574,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "59263.26",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9876,7 +11648,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "4687.2",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9931,7 +11714,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "4687.2",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -9986,7 +11780,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "4687.2",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10041,7 +11846,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "33152.4",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10096,7 +11912,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "33152.4",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10151,7 +11978,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "33152.4",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10206,7 +12044,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "46037.38",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10261,7 +12110,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "60912.71",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10316,7 +12176,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "60912.71",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10371,7 +12242,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-60912.71",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10481,7 +12363,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "4987.92",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10536,7 +12429,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "14683.68",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10591,7 +12495,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "3440.47",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10646,7 +12561,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "238",
+                    "monetary_amount": "735",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10734,7 +12660,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "476.48",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10789,7 +12726,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "143.35",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10844,7 +12792,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "143.35",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10899,7 +12858,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "476.48",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -10954,7 +12924,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "143.35",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11009,7 +12990,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "143.35",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11064,7 +13056,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "143.35",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11119,7 +13122,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "143.35",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11174,7 +13188,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "143.35",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11229,7 +13254,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "143.35",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11284,7 +13320,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "143.35",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11339,7 +13386,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "476.48",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11394,7 +13452,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "143.35",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11449,7 +13518,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "143.35",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11504,7 +13584,23 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "6.75",
+                    "quantity": ""
+                  },
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "23.35",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11559,7 +13655,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "21597.96",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11614,7 +13721,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "70077.6",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11669,7 +13787,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "50829.79",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11724,7 +13853,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "1344",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11779,7 +13919,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "1344",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11834,7 +13985,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "1344",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11889,7 +14051,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "1344",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11944,7 +14117,23 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "48.7",
+                    "quantity": ""
+                  },
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "1080",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -11999,7 +14188,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "26784",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -12054,7 +14254,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "26732.81",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -12109,7 +14320,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "26732.81",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -12164,7 +14386,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-26732.81",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -12274,7 +14507,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "4449.74",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -12329,7 +14573,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "2224.87",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -12384,7 +14639,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "6674.6",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -12439,7 +14705,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-4449.74",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -12549,7 +14826,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-2224.87",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -12725,7 +15013,28 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "84.6",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "3.8",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -12755,7 +15064,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "876",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -12785,7 +15105,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "208.08",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -12813,7 +15144,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "14376.08",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -12868,7 +15210,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "1097.71",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -12923,7 +15276,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-1097.71",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -13033,7 +15397,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "68760.72",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -13096,7 +15471,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "68760.72",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -13159,7 +15545,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "68760.72",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -13280,7 +15677,23 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "28.79",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "23",
+                        "monetary_amount": "9.46",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -13318,7 +15731,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "PI",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "16",
+                        "monetary_amount": "709.92",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -13406,7 +15830,23 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "748.54",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "23",
+                        "monetary_amount": "245.96",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -13444,7 +15884,23 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "6144.66",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "23",
+                        "monetary_amount": "387.92",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -13472,7 +15928,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "5623.1",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -13527,7 +15994,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "21207.84",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -13648,7 +16126,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "96",
+                        "monetary_amount": "2100",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               },
@@ -13672,7 +16161,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "PI",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "6",
+                        "monetary_amount": "661.5",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -13694,7 +16194,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "33152.4",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -13749,7 +16260,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "6568.5",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -13804,7 +16326,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "28635.45",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -13859,7 +16392,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "26732.81",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -13914,7 +16458,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "26732.81",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -13969,7 +16524,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-26732.81",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -14079,7 +16645,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "14244.09",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -14134,7 +16711,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "33045.41",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -14189,7 +16777,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "23",
+                    "monetary_amount": "4599.41",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -14244,7 +16843,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "22",
+                    "monetary_amount": "18267.12",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -14365,7 +16975,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "204",
+                        "monetary_amount": "945",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               },
@@ -14389,7 +17010,28 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "1092.33",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "23",
+                        "monetary_amount": "259.2",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "23",
+                        "monetary_amount": "139.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -14417,7 +17059,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "852.3",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -14472,7 +17125,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "9455.26",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -14527,7 +17191,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "850.09",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -14582,7 +17257,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "852.3",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -14637,7 +17323,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "850.43",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -14692,7 +17389,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-850.09",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -14868,7 +17576,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "384.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -14906,7 +17625,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "1231.8",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -14934,7 +17664,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "53661",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -14989,7 +17730,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "13984.8",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15044,7 +17796,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "13984.8",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15099,7 +17862,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "4987.92",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15154,7 +17928,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "13984.8",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15209,7 +17994,23 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "9975.83",
+                    "quantity": ""
+                  },
+                  {
+                    "claim_adjustment_reason_code": "96",
+                    "monetary_amount": "13984.8",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15264,7 +18065,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "9975.83",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15319,7 +18131,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-4987.92",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15487,7 +18310,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "109",
+                        "monetary_amount": "823.5",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -15509,7 +18343,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "13707.6",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15564,7 +18409,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "12985.8",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15619,7 +18475,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "15012",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15674,7 +18541,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "1687.91",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15729,7 +18607,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "1687.91",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15784,7 +18673,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "1687.91",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15839,7 +18739,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-1687.91",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -15949,7 +18860,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-1687.91",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -16059,7 +18981,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "197",
+                    "monetary_amount": "62867.04",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -16114,7 +19047,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "40333.6",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -16169,7 +19113,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "40333.6",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -16224,7 +19179,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-40333.6",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -16334,7 +19300,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "10401.89",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -16389,7 +19366,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "10401.89",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -16444,7 +19432,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-10401.89",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -16554,7 +19553,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "207",
+                    "monetary_amount": "316.8",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -16692,7 +19702,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "PI",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "5",
+                        "monetary_amount": "316.8",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -16780,7 +19801,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "PI",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "5",
+                        "monetary_amount": "316.8",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -16860,7 +19892,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "PI",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "16",
+                        "monetary_amount": "316.8",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -16882,7 +19925,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "3992.51",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -16937,7 +19991,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "3992.51",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -16992,7 +20057,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-3992.51",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -17102,7 +20178,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "-3992.51",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -17294,7 +20381,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "40",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -17374,7 +20472,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "40",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -17454,7 +20563,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "24",
+                    "monetary_amount": "2386",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -17509,7 +20629,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "24",
+                    "monetary_amount": "2170",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -17622,7 +20753,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "47",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -17650,7 +20792,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "208.47",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -17845,7 +20998,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "21.88",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -17931,7 +21095,23 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "119",
+                        "monetary_amount": "18.12",
+                        "quantity": "1.00"
+                      },
+                      {
+                        "claim_adjustment_reason_code": "45",
+                        "monetary_amount": "21.88",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -17953,7 +21133,28 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "CO",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "45",
+                    "monetary_amount": "81.54",
+                    "quantity": ""
+                  }
+                ]
+              },
+              {
+                "claim_adjustment_group_code": "PR",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "3",
+                    "monetary_amount": "3",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -18008,7 +21209,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "139.99",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",
@@ -18063,7 +21275,18 @@
               "drg_weight": "",
               "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": [
+              {
+                "claim_adjustment_group_code": "PI",
+                "adjustments": [
+                  {
+                    "claim_adjustment_reason_code": "16",
+                    "monetary_amount": "165.34",
+                    "quantity": ""
+                  }
+                ]
+              }
+            ],
             "NM1": [
               {
                 "entity_identifier_code": "patient",

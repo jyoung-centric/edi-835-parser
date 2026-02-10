@@ -6,6 +6,7 @@ from edi_835_parser.segments.entity import Entity as EntitySegment
 from edi_835_parser.segments.reference import Reference as ReferenceSegment
 from edi_835_parser.segments.date import Date as DateSegment
 from edi_835_parser.segments.amount import Amount as AmountSegment
+from edi_835_parser.segments.service_adjustment import ServiceAdjustment as ServiceAdjustmentSegment
 from edi_835_parser.segments.utilities import find_identifier
 from edi_835_parser.loops.service import Service as ServiceLoop
 
@@ -25,6 +26,7 @@ class Claim:
 			references: List[ReferenceSegment] = None,
 			dates: List[DateSegment] = None,
 			amount: AmountSegment = None,
+			adjustments: List[ServiceAdjustmentSegment] = None,
 	):
 		self.claim = claim
 		self.entities = entities if entities else []
@@ -32,6 +34,7 @@ class Claim:
 		self.references = references if references else []
 		self.dates = dates if dates else []
 		self.amount = amount
+		self.adjustments = adjustments if adjustments else []
 
 	def __repr__(self):
 		return '\n'.join(str(item) for item in self.__dict__.items())
@@ -102,6 +105,11 @@ class Claim:
 				elif identifier == AmountSegment.identification:
 					amount = AmountSegment(segment)
 					claim.amount = amount
+					segment = None
+
+				elif identifier == ServiceAdjustmentSegment.identification:
+					adjustment = ServiceAdjustmentSegment(segment)
+					claim.adjustments.append(adjustment)
 					segment = None
 
 				elif identifier in cls.terminating_identifiers:

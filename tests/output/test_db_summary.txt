@@ -1,6 +1,6 @@
 EDI 835 PARSER - DATABASE SEEDING TEST REPORT
 ================================================================================
-Test Run: 2026-02-10 11:12:33
+Test Run: 2026-02-10 11:45:39
 Test Directory: tests/test_edi_835_files
 Output Directory: tests/output
 Database: localhost:5433/bot_automation
@@ -20,25 +20,25 @@ Total DB Records:   37
 
 File: PT13882.0021984 1.DT20240821
 Status: SUCCESS
-  Processing Time: 0.045s
+  Processing Time: 0.053s
   File Size: 167,900 bytes
   Transactions: 1
   Claims: 778
   Services: 778
   Output File: tests/output/PT13882_0021984_1_output.json
   DB Inserted: Yes
-  File ID: d144028d-84b8-4053-8be8-c90ed832d924
+  File ID: c126a2c4-d170-4461-830d-24a23bfe1604
 
 File: PT13882.0021984 1_processed.DT20240821
 Status: SUCCESS
-  Processing Time: 0.041s
+  Processing Time: 0.043s
   File Size: 163,804 bytes
   Transactions: 1
   Claims: 778
   Services: 778
   Output File: tests/output/PT13882_0021984_1_processed_output.json
   DB Inserted: Yes
-  File ID: a3f32bd1-cae8-487e-85f8-ef91ef80bbb1
+  File ID: aa12352f-1157-4fd1-8587-f549a989e1df
 
 File: PT13882.0022164 - Copy 1 copy.DT20250207
 Status: SUCCESS
@@ -49,7 +49,7 @@ Status: SUCCESS
   Services: 5
   Output File: tests/output/PT13882_0022164___Copy_1_copy_output.json
   DB Inserted: Yes
-  File ID: f1afcf66-ac26-43b1-98dc-3988f4416693
+  File ID: fa4739e6-f332-42d3-a920-2171b00fe9ad
 
 File: PT13882.0022164 - Copy.DT20250207
 Status: SUCCESS
@@ -60,29 +60,29 @@ Status: SUCCESS
   Services: 5
   Output File: tests/output/PT13882_0022164___Copy_output.json
   DB Inserted: Yes
-  File ID: 7d42bc6d-16f4-4379-b18e-c610e045f8d5
+  File ID: 29b45669-4b81-45e2-9d3c-18e3ea95339e
 
 File: PT13882.0022345 1 copy.DT20250710
 Status: SUCCESS
-  Processing Time: 0.008s
+  Processing Time: 0.009s
   File Size: 36,067 bytes
   Transactions: 1
   Claims: 171
   Services: 171
   Output File: tests/output/PT13882_0022345_1_copy_output.json
   DB Inserted: Yes
-  File ID: 00536c4e-2b05-4684-b8a6-d1a6fedb508c
+  File ID: 7d963e97-d94e-4f1f-b39a-8afcf6d7da12
 
 File: PT13882.0022345 1.DT20250710
 Status: SUCCESS
-  Processing Time: 0.008s
+  Processing Time: 0.010s
   File Size: 36,969 bytes
   Transactions: 1
   Claims: 171
   Services: 171
   Output File: tests/output/PT13882_0022345_1_output.json
   DB Inserted: Yes
-  File ID: 2635c3ae-8add-4d5d-88c3-6ad9eca822e8
+  File ID: fe28bfab-2ee4-4f68-8847-04b823b32b17
 
 File: PT13882_0022164_Copy1_pretty.txt
 Status: SUCCESS
@@ -93,29 +93,29 @@ Status: SUCCESS
   Services: 5
   Output File: tests/output/PT13882_0022164_Copy1_pretty_output.json
   DB Inserted: Yes
-  File ID: c201249e-4cf7-478f-91b0-16ce007308f9
+  File ID: 38b81fb6-b5b5-48bd-967b-3b25ae8447cb
 
 File: SB865.13167.20250622.061330708.ERA.835NP.edi
 Status: SUCCESS
-  Processing Time: 0.091s
+  Processing Time: 0.095s
   File Size: 419,110 bytes
   Transactions: 19
   Claims: 707
   Services: 1883
   Output File: tests/output/SB865_13167_20250622_061330708_ERA_835NP_output.json
   DB Inserted: Yes
-  File ID: a973f3c0-e31d-4a60-a9b8-ba6478f5082c
+  File ID: c2f568d5-74c4-49e0-a0f7-b1ee92b7d651
 
 File: SKPA0.13167.20250823.063221913.ERA.835.edi
 Status: SUCCESS
-  Processing Time: 0.016s
+  Processing Time: 0.018s
   File Size: 61,207 bytes
   Transactions: 3
   Claims: 301
   Services: 41
   Output File: tests/output/SKPA0_13167_20250823_063221913_ERA_835_output.json
   DB Inserted: Yes
-  File ID: 655e25fb-fcd9-462d-b388-692a1269390a
+  File ID: ffa13449-5520-4ca9-bf92-fdb9d0a34fc6
 
 File: blue_cross_nc_sample.txt
 Status: SUCCESS
@@ -126,7 +126,7 @@ Status: SUCCESS
   Services: 3
   Output File: tests/output/blue_cross_nc_sample_output.json
   DB Inserted: Yes
-  File ID: 6fadabc4-8fea-4223-81a0-d68fe25eb142
+  File ID: 9d5603aa-df85-43f0-84a2-8c58cd692dea
 
 File: emedny_sample.txt
 Status: FAILED
@@ -141,18 +141,18 @@ Status: SUCCESS
   Services: 41
   Output File: tests/output/file_1_SKPA0_13167_20250823_063221913_ERA_835_output.json
   DB Inserted: Yes
-  File ID: afada28a-04f2-424d-91ba-59d1e60fa7f7
+  File ID: ada5fdad-d88c-43f8-948b-45bba4c9a063
 
 File: file_2-SKPA0.13167.20250927.051824603.ERA.835.edi
 Status: SUCCESS
-  Processing Time: 0.017s
+  Processing Time: 0.019s
   File Size: 71,077 bytes
   Transactions: 3
   Claims: 317
   Services: 91
   Output File: tests/output/file_2_SKPA0_13167_20250927_051824603_ERA_835_output.json
   DB Inserted: Yes
-  File ID: 5fd83387-d28f-4ff0-abf6-e2497ba2cb0c
+  File ID: e5bd8ccc-8e7e-418b-abd2-5e1727ec30f9
 
 File: united_healthcare_legacy_sample.txt
 Status: SUCCESS
@@ -163,4 +163,4 @@ Status: SUCCESS
   Services: 5
   Output File: tests/output/united_healthcare_legacy_sample_output.json
   DB Inserted: Yes
-  File ID: 0ef97c33-d725-46c0-b1b6-0763044e0a74
+  File ID: 024906e6-c052-43ff-85bb-6c086ea6ccf4

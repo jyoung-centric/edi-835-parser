@@ -144,7 +144,28 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "42",
+                        "monetary_amount": "34.6",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "2",
+                        "monetary_amount": "117.54",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": [
                   {
@@ -174,7 +195,18 @@
                     "date_time_period": ""
                   }
                 ],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "25",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               },

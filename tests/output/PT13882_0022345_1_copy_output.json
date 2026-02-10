@@ -135,7 +135,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2609.73",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -198,7 +209,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "205.88",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -261,7 +283,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "154.28",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -324,7 +357,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "77.14",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -387,7 +431,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "30523.08",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -450,7 +505,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "162",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -513,7 +579,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "243",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -576,7 +653,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1958.42",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-3.95",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "3",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -639,7 +742,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "904.69",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -702,7 +816,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "36661.50",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -765,7 +900,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2512.80",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "2.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -828,7 +979,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "870.66",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.1",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "100",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -891,7 +1078,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "955.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -954,7 +1152,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "3286.08",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1017,7 +1236,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "3286.08",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1080,7 +1320,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "5.23",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1143,7 +1404,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "18420",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "6",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1206,7 +1483,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1578.36",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1269,7 +1567,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2396.01",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "2.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1332,7 +1646,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "182671.20",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "6",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1395,7 +1725,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "6089.04",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "6",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1458,7 +1804,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2250.52",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1521,7 +1888,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2250.52",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1584,7 +1972,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "9789.12",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1647,7 +2056,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "36661.50",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1710,7 +2140,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "8928",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1773,7 +2224,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "5311.42",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "3",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1836,7 +2308,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-5311.42",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-3",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1899,7 +2392,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "6",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "3",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -1962,7 +2476,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2852.82",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-3.95",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "1",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2025,7 +2565,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-2852.82",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "3.95",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-1",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2088,7 +2654,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2852.82",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-3.95",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "1",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2151,7 +2743,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-2852.82",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "3.95",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-1",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2214,7 +2832,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2250.52",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "2.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2277,7 +2911,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "258.40",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "3",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2340,7 +2995,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-258.40",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-3",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2403,7 +3079,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "17104.80",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "6",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2466,7 +3158,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "18360.52",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "6",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2529,7 +3237,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "258.40",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "3",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2592,7 +3321,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-258.40",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-3",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2655,7 +3405,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1826.94",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-3.95",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "3",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2718,7 +3494,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "6",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2781,7 +3568,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "9789.12",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2844,7 +3652,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "17427.62",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2907,7 +3736,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "12178.08",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "6",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -2970,7 +3815,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1926",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-3.95",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "3",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3033,7 +3904,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2647.78",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3096,7 +3993,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "987.16",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.1",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3159,7 +4082,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1311.80",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3222,7 +4171,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1975.44",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3285,7 +4260,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1223.52",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3348,7 +4349,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "534.60",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "46.91",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3411,7 +4448,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "26099.45",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3474,7 +4522,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2175.36",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.1",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3537,7 +4611,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2833.92",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3600,7 +4690,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-2833.92",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3663,7 +4769,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "649.87",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.1",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3726,7 +4868,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-649.87",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.1",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3789,7 +4967,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "8943.60",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "2.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3852,7 +5046,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "8943.60",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "2.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3915,7 +5125,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "25.46",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-2",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "1.60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -3978,7 +5224,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "84.79",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-2",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "1.60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4041,7 +5323,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "118.10",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4104,7 +5397,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "23899.22",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-1.5",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4167,7 +5486,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "223561.14",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-1.5",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4230,7 +5575,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "3846.14",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "1.95",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4293,7 +5664,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1256.92",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "1.95",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4356,7 +5753,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "4148.42",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "1.95",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4419,7 +5842,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2833.92",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4482,7 +5931,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "992.08",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.1",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4545,7 +6020,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-992.08",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.1",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4608,7 +6119,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "992.07",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.1",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4671,7 +6208,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "3800.63",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.1",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4734,7 +6297,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "463.61",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4797,7 +6381,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-463.61",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4860,7 +6465,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "11272.50",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4923,7 +6539,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1006.33",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "1.95",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -4986,7 +6628,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "647.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-62",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "87.61",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5049,7 +6727,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-647.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "62",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-87.61",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5112,7 +6826,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "28.77",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-28.77",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "1.60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5175,7 +6915,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-28.77",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "28.77",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-1.60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5238,7 +7004,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "40.45",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5301,7 +7078,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "82.02",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-62",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "1.60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5364,7 +7167,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-82.02",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "62",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-1.60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5427,7 +7256,38 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "63.74",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-62",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "95",
+                        "monetary_amount": "-0.01",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "1.60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5490,7 +7350,38 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-63.74",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "62",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "95",
+                        "monetary_amount": "0.01",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-1.60",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5553,7 +7444,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1495.29",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5616,7 +7533,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "17479.73",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5679,7 +7607,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "17479.73",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5742,7 +7681,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1341.57",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "1.95",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5805,7 +7770,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2405.52",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5868,7 +7859,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "700.13",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.1",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "30",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5931,7 +7958,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "10936.73",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.1",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "12",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -5994,7 +8057,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "10420.53",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6057,7 +8146,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1311.80",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6120,7 +8235,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "340.31",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "2.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6183,7 +8314,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-340.31",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-2.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6246,7 +8393,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2930.45",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.1",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6309,7 +8482,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "10886.57",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.1",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6372,7 +8571,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "4734.21",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6435,7 +8660,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1006.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "1.95",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6498,7 +8739,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-1006.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-1.95",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6561,7 +8818,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "3124.74",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6624,7 +8897,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-3124.74",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6687,7 +8976,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1268.40",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "2.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6750,7 +9055,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1056.60",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "2.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6813,7 +9134,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1268.40",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "2.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6876,7 +9213,28 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "8307.14",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -6939,7 +9297,38 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1121.46",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "7185.68",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7002,7 +9391,38 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-1121.46",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.32",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-7185.68",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7065,7 +9485,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "472.61",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7128,7 +9564,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-472.61",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7191,7 +9643,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1957.82",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7254,7 +9732,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "3322.86",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7317,7 +9821,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1495.29",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7380,7 +9910,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2849.25",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7443,7 +9999,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "9887.53",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "440.29",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7506,7 +10098,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1052.47",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7569,7 +10187,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2647.78",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7632,7 +10266,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-2647.78",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7695,7 +10345,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1350.94",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7758,7 +10424,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-1350.94",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7821,7 +10503,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "683.91",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7884,7 +10592,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "958.41",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -7947,7 +10681,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "17104.80",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8010,7 +10755,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "849.67",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8073,7 +10829,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1350.82",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8136,7 +10918,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2647.78",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8199,7 +11007,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "89.10",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-2",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8262,7 +11096,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "26485.24",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-1.5",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8325,7 +11185,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2683.04",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8388,7 +11274,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1957.82",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8451,7 +11353,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-1957.82",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8514,7 +11432,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2683.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8577,7 +11511,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-2683.32",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8640,7 +11590,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2683.04",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8703,7 +11679,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2405.52",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8766,7 +11768,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "11649",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8829,7 +11842,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1495.29",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8892,7 +11921,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-1495.29",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -8955,7 +12000,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1762.04",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9018,7 +12089,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "3047.86",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9081,7 +12178,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "8273.37",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9144,7 +12267,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1495.29",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9207,7 +12356,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1957.82",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9270,7 +12445,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-1957.82",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9333,7 +12534,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "489.46",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9396,7 +12613,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-489.46",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9459,7 +12692,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1061.85",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "1868.71",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9522,7 +12791,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2990.57",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9585,7 +12880,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1495.29",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9648,7 +12969,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2963.16",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9711,7 +13058,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "8273.37",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9774,7 +13147,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1298.25",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9837,7 +13221,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "3146.35",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "12.15",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9900,7 +13310,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-3146.35",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-12.15",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -9963,7 +13399,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "862.57",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10026,7 +13488,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "567.85",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10089,7 +13577,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1298.25",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10152,7 +13651,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1458.60",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10215,7 +13740,43 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "3124.81",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "1735.39",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10278,7 +13839,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "3146.35",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "PR",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "12.15",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10341,7 +13928,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-3146.35",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  },
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "3",
+                        "monetary_amount": "-12.15",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10404,7 +14017,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "958.41",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10467,7 +14106,18 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "11649",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10530,7 +14180,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2177.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10593,7 +14269,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "4497.24",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10656,7 +14348,23 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "-4497.24",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "0.05",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10719,7 +14427,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2811.71",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10782,7 +14516,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "2012.28",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }
@@ -10845,7 +14605,33 @@
                   "adjudicated_date": ""
                 },
                 "DTM": [],
-                "CAS": [],
+                "CAS": [
+                  {
+                    "claim_adjustment_group_code": "CO",
+                    "adjustments": [
+                      {
+                        "claim_adjustment_reason_code": "90",
+                        "monetary_amount": "1957.82",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "91",
+                        "monetary_amount": "-0.05",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "-0.34",
+                        "quantity": ""
+                      },
+                      {
+                        "claim_adjustment_reason_code": "130",
+                        "monetary_amount": "0.34",
+                        "quantity": ""
+                      }
+                    ]
+                  }
+                ],
                 "REF": [],
                 "AMT": []
               }

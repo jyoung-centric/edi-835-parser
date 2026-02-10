@@ -18,14 +18,16 @@ def apply_json_mixins():
     ClaimLoop.to_dict = ClaimLoopJsonMixin.to_dict
     ClaimLoop._get_nm1_data = ClaimLoopJsonMixin._get_nm1_data
     ClaimLoop._get_claim_dtm_data = ClaimLoopJsonMixin._get_claim_dtm_data
-    
+    ClaimLoop._get_claim_cas_data = ClaimLoopJsonMixin._get_claim_cas_data
+
     ServiceLoop.to_dict = ServiceLoopJsonMixin.to_dict
     ServiceLoop._get_service_dtm_data = ServiceLoopJsonMixin._get_service_dtm_data
     ServiceLoop._get_service_amt_data = ServiceLoopJsonMixin._get_service_amt_data
-    
+    ServiceLoop._get_service_cas_data = ServiceLoopJsonMixin._get_service_cas_data
+
     OrganizationLoop.to_dict = OrganizationLoopJsonMixin.to_dict
     OrganizationLoop._get_entity_identifier = OrganizationLoopJsonMixin._get_entity_identifier
-    
+
     FinancialInformationSegment.to_dict = FinancialInformationJsonMixin.to_dict
     TraceSegment.to_dict = TraceJsonMixin.to_dict
 

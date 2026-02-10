@@ -10,7 +10,7 @@ class JsonMixin(ABC):
 
 class ClaimLoopJsonMixin(JsonMixin):
     """JSON conversion mixin for ClaimLoop"""
-    
+
     def to_dict(self) -> Dict[str, Any]:
         return {
             "CLP": {
@@ -28,7 +28,7 @@ class ClaimLoopJsonMixin(JsonMixin):
                 "drg_weight": "",
                 "discharge_fraction": ""
             },
-            "CAS": [],
+            "CAS": self._get_claim_cas_data(),
             "NM1": self._get_nm1_data(),
             "DTM": self._get_claim_dtm_data(),
             "AMT": [],
@@ -83,9 +83,30 @@ class ClaimLoopJsonMixin(JsonMixin):
                 })
         return amt_data
 
+    def _get_claim_cas_data(self) -> List[Dict[str, Any]]:
+        """Extract CAS (Claim Adjustment) data for the claim"""
+        cas_data = []
+        if hasattr(self, 'adjustments') and self.adjustments:
+            for adjustment in self.adjustments:
+                # Extract group code - handle both Code objects and strings
+                group_code = adjustment.group_code
+                if hasattr(group_code, 'code'):
+                    group_code = group_code.code
+
+                cas_entry = {
+                    "claim_adjustment_group_code": str(group_code),
+                    "adjustments": []
+                }
+                # Add all adjustment groups
+                if hasattr(adjustment, 'adjustment_groups'):
+                    for adj_group in adjustment.adjustment_groups:
+                        cas_entry["adjustments"].append(adj_group.to_dict())
+                cas_data.append(cas_entry)
+        return cas_data
+
 class ServiceLoopJsonMixin(JsonMixin):
     """JSON conversion mixin for ServiceLoop"""
-    
+
     def to_dict(self) -> Dict[str, Any]:
         return {
             "SVC": {
@@ -98,7 +119,7 @@ class ServiceLoopJsonMixin(JsonMixin):
                 "adjudicated_date": ""
             },
             "DTM": self._get_service_dtm_data(),
-            "CAS": [],
+            "CAS": self._get_service_cas_data(),
             "REF": [],
             "AMT": self._get_service_amt_data()
         }
@@ -128,6 +149,27 @@ class ServiceLoopJsonMixin(JsonMixin):
                 "credit_debit_flag_code": ""
             })
         return amt_data
+
+    def _get_service_cas_data(self) -> List[Dict[str, Any]]:
+        """Extract CAS (Claim Adjustment) data for the service"""
+        cas_data = []
+        if hasattr(self, 'adjustments') and self.adjustments:
+            for adjustment in self.adjustments:
+                # Extract group code - handle both Code objects and strings
+                group_code = adjustment.group_code
+                if hasattr(group_code, 'code'):
+                    group_code = group_code.code
+
+                cas_entry = {
+                    "claim_adjustment_group_code": str(group_code),
+                    "adjustments": []
+                }
+                # Add all adjustment groups
+                if hasattr(adjustment, 'adjustment_groups'):
+                    for adj_group in adjustment.adjustment_groups:
+                        cas_entry["adjustments"].append(adj_group.to_dict())
+                cas_data.append(cas_entry)
+        return cas_data
 
 class OrganizationLoopJsonMixin(JsonMixin):
     """JSON conversion mixin for OrganizationLoop"""
