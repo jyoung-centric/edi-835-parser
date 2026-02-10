@@ -1,0 +1,23 @@
+*.iml
+.ipr
+.idea
+.iws
+.project
+.settings/*
+__pycache__
+target
+logs/*.log
+.gradle
+.DS_Store
+.env
+
+# So that we ignore the m2 repository directory in Jenkins builds
+.repository
+
+# for python virtual envs
+venv
+
+# these files are produced as a part of the Jenkins build - we can ignore them
+buildname.txt
+releaseversion.properties
+

@@ -1,0 +1,13 @@
+services:
+  flyway:
+    image: flyway/flyway:11.2.0-alpine
+    container_name: flyway-bot-automation
+    volumes:
+      - ./migrations:/flyway/sql
+    environment:
+      - FLYWAY_URL=${DB_URL}
+      - FLYWAY_USER=${DB_USER}
+      - FLYWAY_PASSWORD=${DB_PASSWORD}
+      - FLYWAY_LOCATIONS=filesystem:/flyway/sql
+      - FLYWAY_BASELINE_ON_MIGRATE=true
+    command: ["repair", "migrate", "validate"]

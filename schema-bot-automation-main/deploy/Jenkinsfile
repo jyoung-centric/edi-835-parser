@@ -1,0 +1,131 @@
+pipeline {
+	agent {
+		node {
+			label 'linux-main-build'
+		}
+	}
+
+	parameters {
+		choice(
+			name: 'ENVIRONMENT',
+			choices: ['dev', 'stage', 'prod'],
+			description: 'Select the environment to deploy to'
+		)
+		gitParameter(
+			name: 'GIT_TAG',
+			description: 'Select the Git tag to deploy',
+			defaultValue: '',
+			sortMode: 'DESCENDING_SMART',
+			type: 'PT_TAG',
+		)
+	}
+
+	environment {
+		GIT_USER_EMAIL = 'jenkinsprx@pipelinerx.com'
+		GIT_USER_NAME = 'Jenkins User'
+		GIT_CREDENTIALS_ID = 'github-jenkinsprx'
+	}
+
+	stages {
+		stage('Setup Configuration') {
+			steps {
+				script {
+					env.GIT_TAG = params.GIT_TAG
+					env.ENVIRONMENT = params.ENVIRONMENT
+					currentBuild.displayName = "${env.GIT_TAG}"
+					echo "Deploying to environment: ${env.ENVIRONMENT}"
+					echo "Using tag: ${env.GIT_TAG}"
+				}
+			}
+		}
+
+		stage('Checkout') {
+			steps {
+				checkout scm
+			}
+		}
+
+		stage('Initialize') {
+			steps {
+				script {
+					sh """
+                        git fetch --tags
+                        git checkout ${env.GIT_TAG}
+                    """
+					echo "Checked out commit for tag: ${env.GIT_TAG}"
+				}
+			}
+		}
+
+		stage('Deploy Migration') {
+			steps {
+				script {
+					def dbCredentialsId = ""
+					def dbUrl = ""
+
+					if (env.ENVIRONMENT == 'dev') {
+						dbCredentialsId = '378aa3e5-a13d-48d0-9482-867626d5f314'
+						dbUrl = 'jdbc:postgresql://botdb.prxdev.com:5432/bot_automation?currentSchema=bot'
+					} else if (env.ENVIRONMENT == 'stage') {
+						dbCredentialsId = '512c756f-c064-4ed5-8efc-645f5c396d58'
+						dbUrl = 'jdbc:postgresql://stgus-pgrx.cluster-c3ipbdtccll1.us-east-1.rds.amazonaws.com:5432/bot_automation?currentSchema=bot'
+					} else if (env.ENVIRONMENT == 'prod') {
+						dbCredentialsId = 'dc252cee-bf56-44d3-aca1-066b5972f6a7'
+						dbUrl = 'jdbc:postgresql://produs-pgrx.cluster-cugpq61llyth.us-west-2.rds.amazonaws.com:5432/bot_automation?currentSchema=bot'
+					}
+
+					withCredentials([usernamePassword(credentialsId: dbCredentialsId, usernameVariable: 'DB_USER', passwordVariable: 'DB_PASSWORD')]) {
+						withEnv(['DB_URL=' + dbUrl, 'DB_USER=' + DB_USER, 'DB_PASSWORD=' + DB_PASSWORD]) {
+							sh '''
+                                docker stop flyway-bot-automation || true
+                                docker rm flyway-bot-automation || true
+                                docker compose up --abort-on-container-exit
+                            '''
+						}
+					}
+				}
+			}
+		}
+	}
+
+	post {
+		success {
+			slackSend(
+				color: 'good',
+				message: "${env.JOB_NAME} - ${env.GIT_TAG} Successfully deployed to ${env.ENVIRONMENT} (${env.BUILD_URL})"
+			)
+		}
+		aborted {
+			slackSend(
+				color: '#808080',
+				message: "${env.JOB_NAME} - ${env.GIT_TAG} Aborted after ${currentBuild.durationString} (${env.BUILD_URL})"
+			)
+		}
+		unstable {
+			slackSend(
+				color: '#FFFE89',
+				message: "${env.JOB_NAME} - ${env.GIT_TAG} Unstable after ${currentBuild.durationString} (${env.BUILD_URL})"
+			)
+		}
+		failure {
+			script {
+				if (currentBuild.previousBuild?.result == 'SUCCESS') {
+					// First failure
+					slackSend(
+						color: 'danger',
+						message: "${env.JOB_NAME} - ${env.GIT_TAG} First Failure deploy to ${env.ENVIRONMENT} (${env.BUILD_URL})"
+					)
+				}
+			}
+		}
+		fixed {
+			slackSend(
+				color: 'good',
+				message: "${env.JOB_NAME} - ${env.GIT_TAG} Back to Normal after ${currentBuild.durationString} (${env.BUILD_URL})"
+			)
+		}
+		always {
+			cleanWs()
+		}
+	}
+}
