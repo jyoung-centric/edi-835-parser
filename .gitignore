@@ -16,6 +16,7 @@ edi_processor.log
 .env.test.local
 db/data/
 *.sql.backup
+/tests/output/
 
 # Docker volumes
 postgres_test_data/
