@@ -22,6 +22,9 @@ class Entity:
 		self.type = segment[2]
 		self.last_name = segment[3]
 		self.first_name = get_element(segment, 4)
+		self.middle_name = get_element(segment, 5)
+		self.name_prefix = get_element(segment, 6)
+		self.name_suffix = get_element(segment, 7)
 		self.identification_code_qualifier = get_element(segment, 8)
 		self.identification_code = get_element(segment, 9)
 
@@ -30,7 +33,9 @@ class Entity:
 
 	@property
 	def name(self) -> str:
-		return f'{self.first_name} {self.last_name}'.title()
+		name_parts = [self.first_name, self.middle_name, self.last_name]
+		full_name = ' '.join(part for part in name_parts if part)
+		return full_name.title()
 
 
 if __name__ == '__main__':
