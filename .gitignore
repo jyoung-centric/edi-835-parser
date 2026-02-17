@@ -13,6 +13,7 @@ git-password
 edi_processor.log
 
 # Test database
+.env.test
 .env.test.local
 db/data/
 *.sql.backup

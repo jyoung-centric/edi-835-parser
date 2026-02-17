@@ -1,0 +1,52 @@
+name: Build Windows Executable
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pyinstaller
+          pip install -e .
+
+      - name: Build executable
+        run: >
+          pyinstaller
+          --onefile
+          --name edi835-parser
+          --hidden-import psycopg2
+          --hidden-import psycopg2.extras
+          --hidden-import dotenv
+          --hidden-import edi_835_parser
+          --hidden-import core
+          --hidden-import db
+          main.py
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: edi835-parser-windows
+          path: dist/edi835-parser.exe
+          retention-days: 30
+
+      - name: Create release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/edi835-parser.exe
+          generate_release_notes: true

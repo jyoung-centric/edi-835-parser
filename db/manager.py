@@ -1,9 +1,4 @@
-#!/usr/bin/env python3
-
-"""
-Database utilities for EDI 835 parser testing
-Handles database connections and data seeding operations
-"""
+"""Database manager for EDI 835 testing and operations."""
 
 import os
 import uuid
@@ -167,6 +162,7 @@ class DatabaseManager:
                 else:
                     namespace = uuid.UUID('6ba7b810-9dad-11d1-80b4-00c04fd430c8')
                     file_id = uuid.uuid5(namespace, f"{file_name}::txn_{txn_index}")
+
                 bpr = transaction.get("BPR", {})
                 trn = transaction.get("TRN", {})
 
@@ -300,17 +296,18 @@ def get_database_manager() -> DatabaseManager:
     Factory function to create DatabaseManager with environment variable support
 
     Environment variables:
-    - TEST_DB_HOST (default: localhost)
-    - TEST_DB_PORT (default: 5433)
-    - TEST_DB_NAME (default: bot_automation)
-    - TEST_DB_USER (default: bot)
-    - TEST_DB_PASSWORD (default: bot_test_password)
+    - DB_HOST (default: localhost)
+    - DB_PORT (default: 5433)
+    - DB_NAME (default: bot_automation)
+    - DB_USER (default: bot)
+    - DB_PASSWORD (default: bot_test_password)
+    - DB_SCHEMA (default: bot)
     """
     return DatabaseManager(
-        host=os.getenv("TEST_DB_HOST", "localhost"),
-        port=int(os.getenv("TEST_DB_PORT", "5433")),
-        database=os.getenv("TEST_DB_NAME", "bot_automation"),
-        user=os.getenv("TEST_DB_USER", "bot"),
-        password=os.getenv("TEST_DB_PASSWORD", "bot_test_password"),
-        schema=os.getenv("TEST_DB_SCHEMA", "bot")
+        host=os.getenv("DB_HOST", "localhost"),
+        port=int(os.getenv("DB_PORT", "5433")),
+        database=os.getenv("DB_NAME", "bot_automation"),
+        user=os.getenv("DB_USER", "bot"),
+        password=os.getenv("DB_PASSWORD", "bot_test_password"),
+        schema=os.getenv("DB_SCHEMA", "bot")
     )

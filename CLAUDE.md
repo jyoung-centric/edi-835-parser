@@ -17,10 +17,6 @@ An EDI 835 Healthcare Payment Parser with enhanced JSON output capabilities and 
 # Run pytest test suite
 python -m pytest
 
-# Run comprehensive test runner (processes all test files, generates JSON outputs and reports)
-python ShubhamTest.py
-
-# Outputs: tests/output/*.json, test_summary_report.json, test_summary.txt
 ```
 
 ### Database Schema Management (PostgreSQL)
@@ -194,11 +190,8 @@ Located in `tests/test_edi_835_files/`:
 - `edi_835_parser/__init__.py`: Main entry points (`parse`, `parse_to_json`)
 - `edi_835_parser/transaction_set/transaction_set.py`: Core TransactionSet class with `to_json()` method
 - `core/parser_extension.py`: JSON conversion mixins
-- `ShubhamTest.py`: Comprehensive test runner
-- `main.py`: Placeholder for S3+PostgreSQL processing
 - `schema-bot-automation-main/migrations/V1.0.2__create edi bot tables.sql`: PostgreSQL schema definition
 - `schema-bot-automation-main/compose.yaml`: Flyway deployment configuration
-- `Mirgrations`: Notes on database schema structure (reference document)
 
 ## Data Flow
 

@@ -11,7 +11,7 @@ import traceback
 from pathlib import Path
 from datetime import datetime
 import edi_835_parser
-from tests.db_utils import get_database_manager
+from db.manager import get_database_manager
 
 
 def test_with_database_seeding(clear_data: bool = True):
