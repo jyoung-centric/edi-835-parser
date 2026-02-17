@@ -18,6 +18,7 @@ DB credentials are read from .env (DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWO
 """
 
 import argparse
+import json
 import logging
 import os
 import sys
@@ -53,6 +54,7 @@ def process_file(
     file_path: str,
     seed_db: bool,
     conn=None,
+    output_dir: Optional[str] = None,
 ) -> dict:
     """
     Parse a single EDI 835 file and optionally seed all normalized DB tables.
@@ -85,6 +87,13 @@ def process_file(
         db_stats = seed_file(conn, file_id, file_name, json_data, raw_edi)
         result['db_stats'] = db_stats
 
+    if output_dir is not None:
+        stem = os.path.splitext(file_name)[0]
+        out_path = os.path.join(output_dir, f"{stem}_output.json")
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump(json_data, f, indent=2)
+        result['output_file'] = out_path
+
     return result
 
 
@@ -105,6 +114,8 @@ def print_result(result: dict, seed_db: bool) -> None:
             f"{db.get('service_lines', 0)} svc lines / "
             f"{db.get('cas_adjustments', 0)} adjustments"
         )
+    if 'output_file' in result:
+        parts.append(f"→ {result['output_file']}")
     print(f"  OK  {result['file']}: {', '.join(parts)}")
 
 
@@ -142,6 +153,11 @@ def main() -> None:
         help='Insert parsed data into all normalized database tables',
     )
     parser.add_argument(
+        '--output-dir',
+        metavar='DIR',
+        help='Write parsed JSON for each file to this directory',
+    )
+    parser.add_argument(
         '--log-level',
         default='INFO',
         choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'],
@@ -155,6 +171,12 @@ def main() -> None:
         format='%(asctime)s  %(levelname)-8s  %(name)s: %(message)s',
         datefmt='%H:%M:%S',
     )
+
+    # ------------------------------------------------------------------
+    # Validate --output-dir
+    # ------------------------------------------------------------------
+    if args.output_dir:
+        os.makedirs(args.output_dir, exist_ok=True)
 
     # ------------------------------------------------------------------
     # Resolve files to process
@@ -201,7 +223,7 @@ def main() -> None:
     for file_path in files:
         file_name = os.path.basename(file_path)
         try:
-            result = process_file(file_path, args.seed_db, conn)
+            result = process_file(file_path, args.seed_db, conn, args.output_dir)
             total['files'] += 1
             total['transactions'] += result['transactions']
             total['claims'] += result['claims']
