@@ -1,6 +1,8 @@
 """Database connection configuration and factory."""
 
 import os
+import sys
+from pathlib import Path
 from typing import Dict
 from dotenv import load_dotenv
 import psycopg2
@@ -19,7 +21,12 @@ def load_config() -> Dict[str, str]:
     Raises:
         ValueError: If DB_PASSWORD is not set
     """
-    load_dotenv()
+    if getattr(sys, 'frozen', False):
+        # Bundled exe — load .env from the same directory as the exe
+        load_dotenv(Path(sys.executable).parent / '.env')
+    else:
+        # Dev — load from cwd (existing behaviour)
+        load_dotenv()
 
     config = {
         'DB_HOST': os.getenv('DB_HOST', 'botdb.prxdev.com'),
@@ -33,8 +40,8 @@ def load_config() -> Dict[str, str]:
 
     if not config['DB_PASSWORD'] or config['DB_PASSWORD'] == 'changeme':
         raise ValueError(
-            "DB_PASSWORD must be set in .env file or environment variables. "
-            "Do not use the default 'changeme' value."
+            "DB_PASSWORD is not set. Copy .env.example to .env in the same folder as "
+            "edi835-parser.exe and fill in your credentials."
         )
 
     return config
