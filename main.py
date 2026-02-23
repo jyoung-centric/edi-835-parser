@@ -21,7 +21,9 @@ import argparse
 import json
 import logging
 import os
+import re
 import sys
+from datetime import datetime
 from typing import List, Optional, Tuple
 
 import edi_835_parser
@@ -29,19 +31,19 @@ from db.models import generate_file_id
 
 logger = logging.getLogger(__name__)
 
-EDI_EXTENSIONS = {'.txt', '.835', '.edi', '.DAT'}
+DEFAULT_EXTENSION_PATTERN = r'\.(DAT|txt|edi|DT\d{8})$'
 
 
 # ---------------------------------------------------------------------------
 # File discovery
 # ---------------------------------------------------------------------------
 
-def find_edi_files(directory: str) -> List[str]:
-    """Return sorted list of EDI file paths found in directory."""
+def find_edi_files(directory: str, extension_pattern: str = DEFAULT_EXTENSION_PATTERN) -> List[str]:
+    """Return sorted list of EDI file paths found in directory using regex pattern."""
+    pattern = re.compile(extension_pattern)
     results = []
     for name in sorted(os.listdir(directory)):
-        _, ext = os.path.splitext(name)
-        if ext in EDI_EXTENSIONS:
+        if pattern.search(name):
             results.append(os.path.join(directory, name))
     return results
 
@@ -55,6 +57,7 @@ def process_file(
     seed_db: bool,
     conn=None,
     output_dir: Optional[str] = None,
+    extension_pattern: str = DEFAULT_EXTENSION_PATTERN,
 ) -> dict:
     """
     Parse a single EDI 835 file and optionally seed all normalized DB tables.
@@ -63,7 +66,7 @@ def process_file(
     """
     file_name = os.path.basename(file_path)
 
-    json_data = edi_835_parser.parse_to_json(file_path)
+    json_data = edi_835_parser.parse_to_json(file_path, extension_pattern=extension_pattern)
 
     transactions = json_data.get('interchange', {}).get('transactions', [])
     claims = sum(len(t.get('CLP_loop', [])) for t in transactions)
@@ -163,6 +166,11 @@ def main() -> None:
         choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'],
         help='Logging verbosity (default: INFO)',
     )
+    parser.add_argument(
+        '--extensions',
+        default=DEFAULT_EXTENSION_PATTERN,
+        help=r'Regex pattern for file extensions (default: \.(DAT|txt|edi|DT\d{8})$)',
+    )
 
     args = parser.parse_args()
 
@@ -191,7 +199,7 @@ def main() -> None:
         if not os.path.isdir(directory):
             print(f"ERROR: Directory not found: {directory}", file=sys.stderr)
             sys.exit(1)
-        files = find_edi_files(directory)
+        files = find_edi_files(directory, args.extensions)
         if not files:
             print(f"No EDI files found in {directory}", file=sys.stderr)
             sys.exit(1)
@@ -219,20 +227,36 @@ def main() -> None:
     # ------------------------------------------------------------------
     total = {'files': 0, 'transactions': 0, 'claims': 0, 'service_lines': 0}
     errors: List[Tuple[str, str]] = []
+    file_results = []
 
     for file_path in files:
         file_name = os.path.basename(file_path)
         try:
-            result = process_file(file_path, args.seed_db, conn, args.output_dir)
+            result = process_file(file_path, args.seed_db, conn, args.output_dir, args.extensions)
             total['files'] += 1
             total['transactions'] += result['transactions']
             total['claims'] += result['claims']
             total['service_lines'] += result['service_lines']
             print_result(result, args.seed_db)
+            file_results.append({
+                'FileName': file_name,
+                'Status': 'Success' if result['claims'] > 0 else 'Fail',
+                'Transactions': result['transactions'],
+                'Claims': result['claims'],
+                'ServiceLines': result['service_lines'],
+            })
         except Exception as exc:
             logger.debug("Exception processing %s", file_name, exc_info=True)
             errors.append((file_name, str(exc)))
             print(f"  FAIL {file_name}: {exc}", file=sys.stderr)
+            file_results.append({
+                'FileName': file_name,
+                'Status': 'Error',
+                'Transactions': 0,
+                'Claims': 0,
+                'ServiceLines': 0,
+                'Error': str(exc),
+            })
 
     # ------------------------------------------------------------------
     # Cleanup and summary
@@ -241,6 +265,16 @@ def main() -> None:
         conn.close()
 
     print_summary(total, len(files), errors)
+
+    # ------------------------------------------------------------------
+    # Write results JSON to output directory
+    # ------------------------------------------------------------------
+    if args.output_dir and file_results:
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        results_path = os.path.join(args.output_dir, f'results_{timestamp}.json')
+        with open(results_path, 'w', encoding='utf-8') as f:
+            json.dump(file_results, f, indent=2)
+        print(f"Results saved → {results_path}")
 
     if errors:
         sys.exit(1)

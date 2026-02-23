@@ -5,9 +5,13 @@ from warnings import warn
 
 from edi_835_parser.transaction_set.transaction_set import TransactionSet
 from edi_835_parser.transaction_set.transaction_sets import TransactionSets
+import re
 
 # Export the main functions
 __all__ = ['parse', 'parse_to_json', 'preprocess_edi_content']
+
+# Default extension pattern for EDI files
+DEFAULT_EXTENSION_PATTERN = r'\.(DAT|txt|edi|DT\d{8})$'
 
 
 def preprocess_edi_content(content: str) -> str:
@@ -36,8 +40,33 @@ def preprocess_edi_content(content: str) -> str:
 	
 	return processed_content
 
+def preprocess_edi_content2(content: str) -> str:
+	"""
+	Preprocess EDI content by replacing special characters with standard separators.
+	
+	Character mappings (as requested by user):
+	- \\x1C (Group Separator) → | (element separator)
+	- \\* (Record Separator) → ~ (component separator)  
+	- \\x1A (newline) → ^ (remove line breaks)
+	- \\x1B (Unit Separator) → ^ (segment terminator)
+	
+	Args:
+		content (str): Raw EDI content string
+	
+	Returns:
+		str: Processed EDI content with replaced separators
+	"""
+	processed_content = content
+	print("Preprocessing EDI content with second set of character mappings...")
+	# Apply character replacements as requested by user
+	processed_content = processed_content.replace('\x1C', '|')  # Element separator
+	processed_content = processed_content.replace('*', '~')  # Component separator
+	processed_content = processed_content.replace('\x1A', '^')     # Remove newlines
+	processed_content = processed_content.replace('\x1B', '^')  # Segment terminator (user request)
 
-def parse(path: str, debug: bool = False, preprocess: bool = True) -> TransactionSets:
+	return processed_content
+
+def parse(path: str, debug: bool = False, preprocess: bool = True, extension_pattern: str = DEFAULT_EXTENSION_PATTERN) -> TransactionSets:
 	"""
 	Parse EDI 835 file(s) and return TransactionSets object.
 	
@@ -45,6 +74,7 @@ def parse(path: str, debug: bool = False, preprocess: bool = True) -> Transactio
 		path (str): Path to EDI file or directory
 		debug (bool): Enable debug mode
 		preprocess (bool): Automatically preprocess files with special characters
+		extension_pattern (str): Regex pattern for file extensions
 	
 	Returns:
 		TransactionSets: Parsed transaction sets
@@ -54,7 +84,7 @@ def parse(path: str, debug: bool = False, preprocess: bool = True) -> Transactio
 
 	transaction_sets = []
 	if os.path.isdir(path):
-		files = _find_edi_835_files(path)
+		files = _find_edi_835_files(path, extension_pattern)
 		for file in files:
 			file_path = f'{path}/{file}'
 			if debug:
@@ -73,7 +103,7 @@ def parse(path: str, debug: bool = False, preprocess: bool = True) -> Transactio
 	return TransactionSets(transaction_sets)
 
 
-def parse_to_json(path: str, debug: bool = False, preprocess: bool = True) -> Dict[str, Any]:
+def parse_to_json(path: str, debug: bool = False, preprocess: bool = True, extension_pattern: str = DEFAULT_EXTENSION_PATTERN) -> Dict[str, Any]:
 	"""
 	Parse EDI 835 file(s) and return JSON structured data.
 	Properly handles files with multiple ST...SE transaction segments.
@@ -82,6 +112,7 @@ def parse_to_json(path: str, debug: bool = False, preprocess: bool = True) -> Di
 		path (str): Path to EDI file or directory
 		debug (bool): Enable debug mode
 		preprocess (bool): Automatically preprocess files with special characters
+		extension_pattern (str): Regex pattern for file extensions
 
 	Returns:
 		Dict[str, Any]: JSON structured data with all transactions
@@ -91,7 +122,7 @@ def parse_to_json(path: str, debug: bool = False, preprocess: bool = True) -> Di
 
 	# For now, handle single file. Directory handling can be added later if needed
 	if os.path.isdir(path):
-		files = _find_edi_835_files(path)
+		files = _find_edi_835_files(path, extension_pattern)
 		if not files:
 			raise ValueError(f"No EDI 835 files found in directory: {path}")
 		# Use the first file found
@@ -176,9 +207,16 @@ def _build_transaction_sets(file_path: str, preprocess: bool = True) -> List[Tra
 	# Check for special characters that need preprocessing
 	needs_preprocessing = any(char in content for char in ['\x1d', '\x1e', '\x1f'])
 
-	if needs_preprocessing and preprocess:
+	needs_preprocessing2 = any(char in content for char in ['\x1C','\x1A','\x1B'])
+
+	if (needs_preprocessing or needs_preprocessing2) and preprocess:
 		# Preprocess the content
-		processed_content = preprocess_edi_content(content)
+		if needs_preprocessing:
+			processed_content = preprocess_edi_content(content)
+		elif needs_preprocessing2:
+			processed_content = preprocess_edi_content2(content)
+		else:
+			raise ValueError("Unexpected preprocessing condition")	
 
 		# Create a temporary file with processed content that won't be auto-deleted
 		temp_file_path = file_path + '.processed.tmp'
@@ -216,12 +254,21 @@ def _build_transaction_set(file_path: str, preprocess: bool = True) -> Transacti
 	return transaction_sets[0] if transaction_sets else None
 
 
-def _find_edi_835_files(path: str) -> List[str]	:
+def _find_edi_835_files(path: str, extension_pattern: str = DEFAULT_EXTENSION_PATTERN) -> List[str]:
+	"""Find EDI 835 files in a directory using regex pattern matching.
+	
+	Args:
+		path: Directory path to search
+		extension_pattern: Regex pattern to match file extensions
+		
+	Returns:
+		List of matching filenames
+	"""
+	pattern = re.compile(extension_pattern)
 	files = []
 	for file in os.listdir(path):
-		if file.endswith('.txt') or file.endswith('.835') or file.endswith('.DAT'):
+		if pattern.search(file):
 			files.append(file)
-
 	return files
 
 	
