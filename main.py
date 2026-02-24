@@ -38,14 +38,21 @@ DEFAULT_EXTENSION_PATTERN = r'\.(DAT|txt|edi|DT\d{8})$'
 # File discovery
 # ---------------------------------------------------------------------------
 
-def find_edi_files(directory: str, extension_pattern: str = DEFAULT_EXTENSION_PATTERN) -> List[str]:
-    """Return sorted list of EDI file paths found in directory using regex pattern."""
-    pattern = re.compile(extension_pattern)
+def find_edi_files(directory: str, extension_pattern: str = DEFAULT_EXTENSION_PATTERN) -> Tuple[List[str], List[str]]:
+    """Return sorted list of EDI file paths found in directory using regex pattern.
+    
+    Returns:
+        Tuple of (matched_files, skipped_files)
+    """
+    pattern = re.compile(extension_pattern, re.IGNORECASE)
     results = []
+    skipped = []
     for name in sorted(os.listdir(directory)):
         if pattern.search(name):
             results.append(os.path.join(directory, name))
-    return results
+        else:
+            skipped.append(name)
+    return results, skipped
 
 
 # ---------------------------------------------------------------------------
@@ -189,6 +196,7 @@ def main() -> None:
     # ------------------------------------------------------------------
     # Resolve files to process
     # ------------------------------------------------------------------
+    skipped_files: List[str] = []
     if args.file:
         if not os.path.isfile(args.file):
             print(f"ERROR: File not found: {args.file}", file=sys.stderr)
@@ -199,11 +207,13 @@ def main() -> None:
         if not os.path.isdir(directory):
             print(f"ERROR: Directory not found: {directory}", file=sys.stderr)
             sys.exit(1)
-        files = find_edi_files(directory, args.extensions)
+        files, skipped_files = find_edi_files(directory, args.extensions)
         if not files:
             print(f"No EDI files found in {directory}", file=sys.stderr)
             sys.exit(1)
         print(f"Found {len(files)} EDI file(s) in {directory}")
+        if skipped_files:
+            print(f"Skipped {len(skipped_files)} file(s) with non-matching extensions")
 
     # ------------------------------------------------------------------
     # Open DB connection (shared across all files for efficiency)
@@ -228,6 +238,14 @@ def main() -> None:
     total = {'files': 0, 'transactions': 0, 'claims': 0, 'service_lines': 0}
     errors: List[Tuple[str, str]] = []
     file_results = []
+
+    # Add skipped files to results
+    for name in skipped_files:
+        file_results.append({
+            'FileName': name,
+            'Status': 'Skipped',
+            'Reason': 'Extension did not match pattern',
+        })
 
     for file_path in files:
         file_name = os.path.basename(file_path)

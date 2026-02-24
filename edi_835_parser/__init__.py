@@ -13,6 +13,54 @@ __all__ = ['parse', 'parse_to_json', 'preprocess_edi_content']
 # Default extension pattern for EDI files
 DEFAULT_EXTENSION_PATTERN = r'\.(DAT|txt|edi|DT\d{8})$'
 
+def normalize_x12_delimiters(edi_text: str) -> str:
+    """
+    Convert any X12 file delimiters to standard delimiters:
+        Element    -> *
+        Segment    -> ~
+        Component  -> :
+        Repetition -> ^
+
+    This function correctly updates both:
+        - The ISA delimiter definition positions
+        - The entire file content
+
+    Args:
+        edi_text (str): Raw X12 EDI content
+
+    Returns:
+        str: Normalized X12 content
+    """
+    # Extract original delimiters from ISA fixed positions
+    isa = edi_text[:106]
+
+    element = isa[3]
+    repetition = isa[82]
+    component = isa[104]
+    segment = isa[105]
+
+    mapping = {
+        element: "*",
+        repetition: "^",
+        component: ":",
+        segment: "~",
+    }
+
+    return "".join(mapping.get(c, c) for c in edi_text)
+
+def needs_x12_normalization(file_path: str) -> str:
+    with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+        isa = f.read(106)
+
+    if len(isa) < 106 or not isa.startswith("ISA"):
+        raise ValueError("Invalid X12 file")
+
+    return not (
+        isa[3] == "*"
+        and isa[82] == "^"
+        and isa[104] == ":"
+        and isa[105] == "~"
+    )
 
 def preprocess_edi_content(content: str) -> str:
 	"""
@@ -31,7 +79,7 @@ def preprocess_edi_content(content: str) -> str:
 		str: Processed EDI content with replaced separators
 	"""
 	processed_content = content
-	
+	print("Preprocessing EDI content with character mappings...")
 	# Apply character replacements as requested by user
 	processed_content = processed_content.replace('\x1d', '*')  # Element separator
 	processed_content = processed_content.replace('\x1e', '~')  # Component separator
@@ -46,7 +94,7 @@ def preprocess_edi_content2(content: str) -> str:
 	
 	Character mappings (as requested by user):
 	- \\x1C (Group Separator) → | (element separator)
-	- \\* (Record Separator) → ~ (component separator)  
+	- \\x1D (Record Separator) → ~ (component separator)  
 	- \\x1A (newline) → ^ (remove line breaks)
 	- \\x1B (Unit Separator) → ^ (segment terminator)
 	
@@ -60,7 +108,7 @@ def preprocess_edi_content2(content: str) -> str:
 	print("Preprocessing EDI content with second set of character mappings...")
 	# Apply character replacements as requested by user
 	processed_content = processed_content.replace('\x1C', '|')  # Element separator
-	processed_content = processed_content.replace('*', '~')  # Component separator
+	processed_content = processed_content.replace('\x1D', '~')  # Component separator
 	processed_content = processed_content.replace('\x1A', '^')     # Remove newlines
 	processed_content = processed_content.replace('\x1B', '^')  # Segment terminator (user request)
 
@@ -205,19 +253,13 @@ def _build_transaction_sets(file_path: str, preprocess: bool = True) -> List[Tra
 		content = f.read()
 
 	# Check for special characters that need preprocessing
-	needs_preprocessing = any(char in content for char in ['\x1d', '\x1e', '\x1f'])
+	needs_norm = needs_x12_normalization(file_path)	
 
-	needs_preprocessing2 = any(char in content for char in ['\x1C','\x1A','\x1B'])
-
-	if (needs_preprocessing or needs_preprocessing2) and preprocess:
+	if (needs_norm) and preprocess:
 		# Preprocess the content
-		if needs_preprocessing:
-			processed_content = preprocess_edi_content(content)
-		elif needs_preprocessing2:
-			processed_content = preprocess_edi_content2(content)
-		else:
-			raise ValueError("Unexpected preprocessing condition")	
-
+		
+		processed_content = normalize_x12_delimiters(content)
+		
 		# Create a temporary file with processed content that won't be auto-deleted
 		temp_file_path = file_path + '.processed.tmp'
 
@@ -264,7 +306,7 @@ def _find_edi_835_files(path: str, extension_pattern: str = DEFAULT_EXTENSION_PA
 	Returns:
 		List of matching filenames
 	"""
-	pattern = re.compile(extension_pattern)
+	pattern = re.compile(extension_pattern, re.IGNORECASE)
 	files = []
 	for file in os.listdir(path):
 		if pattern.search(file):
