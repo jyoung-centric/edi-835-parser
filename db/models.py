@@ -319,8 +319,6 @@ def build_nm1_row(
         'id_qualifier': safe_text(nm1_dict.get('identification_code_qualifier')),
         'entity_id': safe_text(nm1_dict.get('identification_code')),
         'json_nm1': nm1_dict,
-        'name_prefix': safe_text(nm1_dict.get('name_prefix')),
-        'name_suffix': safe_text(nm1_dict.get('name_suffix')),
     }
 
 
