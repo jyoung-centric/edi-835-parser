@@ -14,39 +14,44 @@ __all__ = ['parse', 'parse_to_json', 'preprocess_edi_content']
 DEFAULT_EXTENSION_PATTERN = r'\.(DAT|txt|edi|DT\d{8})$'
 
 def normalize_x12_delimiters(edi_text: str) -> str:
-    """
-    Convert any X12 file delimiters to standard delimiters:
-        Element    -> *
-        Segment    -> ~
-        Component  -> :
-        Repetition -> ^
 
-    This function correctly updates both:
-        - The ISA delimiter definition positions
-        - The entire file content
+	def detect_actual_segment_terminator() -> str:
+		isa = edi_text[:106]
+		isa_defined = isa[105]
 
-    Args:
-        edi_text (str): Raw X12 EDI content
+		# check what character actually separates GS and ST
+		gs_index = edi_text.find("GS")
+		st_index = edi_text.find("ST", gs_index)
+		actual = edi_text[st_index - 1]
 
-    Returns:
-        str: Normalized X12 content
-    """
+		# prefer actual if ISA is inconsistent
+		if actual != isa_defined:
+			return actual
+
+		return isa_defined
+
     # Extract original delimiters from ISA fixed positions
-    isa = edi_text[:106]
 
-    element = isa[3]
-    repetition = isa[82]
-    component = isa[104]
-    segment = isa[105]
+	segment_terminator = detect_actual_segment_terminator()	
 
-    mapping = {
+	edi_text = edi_text.replace("\r", "").replace("\n", "")  # Remove newlines for consistent processing
+
+	isa = edi_text[:106]
+	element = isa[3]
+	repetition = isa[82]
+	component = isa[104]
+	segment = segment_terminator
+	repetition2 = ""
+	mapping = {
         element: "*",
         repetition: "^",
         component: ":",
         segment: "~",
+		repetition2: "^"
     }
+	normalized =  "".join(mapping.get(c, c) for c in edi_text)
 
-    return "".join(mapping.get(c, c) for c in edi_text)
+	return normalized  # Ensure no newlines remain
 
 def needs_x12_normalization(file_path: str) -> str:
     with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -196,7 +201,7 @@ def parse_to_json(path: str, debug: bool = False, preprocess: bool = True, exten
 				if hasattr(first_ts, 'file_path') and first_ts.file_path.endswith('.processed.tmp'):
 					temp_file_path = first_ts.file_path
 					if os.path.exists(temp_file_path):
-						os.unlink(temp_file_path)
+						#os.unlink(temp_file_path)
 						print(f"Temporary file deleted: {temp_file_path}")
 
 
@@ -254,7 +259,7 @@ def _build_transaction_sets(file_path: str, preprocess: bool = True) -> List[Tra
 
 	# Check for special characters that need preprocessing
 	needs_norm = needs_x12_normalization(file_path)	
-
+	print(f"File {file_path} needs normalization: {needs_norm}")
 	if (needs_norm) and preprocess:
 		# Preprocess the content
 		
