@@ -111,9 +111,9 @@ def build_payments_835_row(
     transactions = json_data.get('interchange', {}).get('transactions', [])
     transaction = transactions[transaction_index] if transaction_index < len(transactions) else {}
 
-    bpr = transaction.get('BPR', {})
-    trn = transaction.get('TRN', {})
-    n1_loop = transaction.get('N1_loop', [])
+    bpr = transaction.get('BPR') or {}
+    trn = transaction.get('TRN') or {}
+    n1_loop = transaction.get('N1_loop') or []
 
     payee_loop = find_org_by_type(n1_loop, 'PE')
     payee_id = None
@@ -171,10 +171,10 @@ def build_edi_transaction_row(
                     payment_date, payer_id, payee_id, check_amount, check_date,
                     json_tr (NOT NULL)
     """
-    bpr = transaction.get('BPR', {})
-    trn = transaction.get('TRN', {})
+    bpr = transaction.get('BPR') or {}
+    trn = transaction.get('TRN') or {}
 
-    payee_loop = find_org_by_type(transaction.get('N1_loop', []), 'PE')
+    payee_loop = find_org_by_type(transaction.get('N1_loop') or [], 'PE')
     payee_id = None
     if payee_loop:
         payee_id = safe_text(payee_loop.get('N1', {}).get('identification_code'))

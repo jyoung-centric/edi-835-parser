@@ -92,9 +92,11 @@ def process_file(
 
     if seed_db and conn is not None:
         from db.seed import seed_file
+        from db.seed_bulk import seed_file_copy
         raw_edi = open(file_path, encoding='utf-8', errors='replace').read()
         file_id = generate_file_id(file_name)
-        db_stats = seed_file(conn, file_id, file_name, json_data, raw_edi)
+        #db_stats = seed_file(conn, file_id, file_name, json_data, raw_edi)
+        db_stats= seed_file_copy(conn, file_id, file_name, json_data, raw_edi)
         result['db_stats'] = db_stats
 
     if output_dir is not None:

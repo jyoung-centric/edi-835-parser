@@ -1,0 +1,26 @@
+{
+  "interchange": {
+    "ISA": null,
+    "GS": null,
+    "transactions": [
+      {
+        "ST": {
+          "transaction_set_identifier_code": "835",
+          "transaction_set_control_number": "1234"
+        },
+        "BPR": null,
+        "TRN": null,
+        "DTM": [],
+        "N1_loop": [],
+        "CLP_loop": [],
+        "PLB": [],
+        "SE": {
+          "number_of_included_segments": "33",
+          "transaction_set_control_number": "1234"
+        }
+      }
+    ],
+    "GE": null,
+    "IEA": null
+  }
+}

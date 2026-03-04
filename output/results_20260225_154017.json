@@ -1,0 +1,10 @@
+[
+  {
+    "FileName": "N3997028_EDI_20250825_20250825022552.DAT",
+    "Status": "Error",
+    "Transactions": 0,
+    "Claims": 0,
+    "ServiceLines": 0,
+    "Error": "invalid input syntax for type integer: \"ee58b601-bea5-4c3f-b4f5-c55c76cabd14\"\nCONTEXT:  COPY payments_835, line 1, column id: \"ee58b601-bea5-4c3f-b4f5-c55c76cabd14\"\n"
+  }
+]

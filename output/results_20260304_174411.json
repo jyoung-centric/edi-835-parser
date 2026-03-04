@@ -1,0 +1,10 @@
+[
+  {
+    "FileName": "PT13882.0021984 1.DT20240821",
+    "Status": "Error",
+    "Transactions": 0,
+    "Claims": 0,
+    "ServiceLines": 0,
+    "Error": "invalid input syntax for type integer: \"8c6e9181-ada5-41ab-8118-e2ab238e901a\"\nCONTEXT:  COPY payments_835, line 1, column id: \"8c6e9181-ada5-41ab-8118-e2ab238e901a\"\n"
+  }
+]

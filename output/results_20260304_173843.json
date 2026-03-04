@@ -1,0 +1,10 @@
+[
+  {
+    "FileName": "emedny_sample.txt",
+    "Status": "Error",
+    "Transactions": 0,
+    "Claims": 0,
+    "ServiceLines": 0,
+    "Error": "'NoneType' object has no attribute 'get'"
+  }
+]
