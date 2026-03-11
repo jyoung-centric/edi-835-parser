@@ -201,7 +201,7 @@ def parse_to_json(path: str, debug: bool = False, preprocess: bool = True, exten
 				if hasattr(first_ts, 'file_path') and first_ts.file_path.endswith('.processed.tmp'):
 					temp_file_path = first_ts.file_path
 					if os.path.exists(temp_file_path):
-						#os.unlink(temp_file_path)
+						os.unlink(temp_file_path)
 						print(f"Temporary file deleted: {temp_file_path}")
 
 

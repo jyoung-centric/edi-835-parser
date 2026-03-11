@@ -31,7 +31,7 @@ from db.models import generate_file_id
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_EXTENSION_PATTERN = r'\.(DAT|txt|edi|DT\d{8})$'
+DEFAULT_EXTENSION_PATTERN = r'\.(DAT|txt|edi|PCT|[a-zA-Z]{1,2}\d{8}|\d{6}|\d{8})$|^[^.]+$'
 
 
 # ---------------------------------------------------------------------------

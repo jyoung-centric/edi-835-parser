@@ -1,0 +1,10 @@
+[
+  {
+    "FileName": "CHA3963483_835_20251122_5010.PCT",
+    "Status": "Error",
+    "Transactions": 0,
+    "Claims": 0,
+    "ServiceLines": 0,
+    "Error": "invalid literal for int() with base 10: ''"
+  }
+]
