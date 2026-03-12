@@ -106,7 +106,7 @@ def build_payments_835_row(
 
     Schema columns: file_id, file_name, receive_date_time, check_number,
                     payment_date, payment_amount, payer_id, payee_id,
-                    json_transaction, raw_edi
+                    json_transaction, raw_json_transaction, raw_edi
     """
     transactions = json_data.get('interchange', {}).get('transactions', [])
     transaction = transactions[transaction_index] if transaction_index < len(transactions) else {}
@@ -125,6 +125,18 @@ def build_payments_835_row(
         namespace = uuid.UUID('6ba7b810-9dad-11d1-80b4-00c04fd430c8')
         txn_file_id = str(uuid.uuid5(namespace, f"{file_name}::txn_{transaction_index}"))
 
+    # Single-transaction JSON: wrap only this transaction in the interchange envelope
+    interchange = json_data.get('interchange', {})
+    single_transaction_json = {
+        'interchange': {
+            'ISA': interchange.get('ISA'),
+            'GS': interchange.get('GS'),
+            'transactions': [transaction],
+            'GE': interchange.get('GE'),
+            'IEA': interchange.get('IEA'),
+        }
+    }
+
     return {
         'file_id': txn_file_id,
         'file_name': safe_text(file_name),
@@ -134,7 +146,8 @@ def build_payments_835_row(
         'payment_amount': safe_decimal(bpr.get('monetary_amount')),
         'payer_id': safe_text(trn.get('originating_company_identifier')),
         'payee_id': payee_id,
-        'json_transaction': json_data,
+        'json_transaction': single_transaction_json,
+        'raw_json_transaction': json_data,
         'raw_edi': raw_edi,
     }
 

@@ -185,8 +185,8 @@ class DatabaseManager:
                 insert_query = """
                     INSERT INTO payments_835
                     (file_id, file_name, receive_date_time, check_number, payment_date,
-                     payment_amount, payer_id, payee_id, json_transaction, raw_edi)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                     payment_amount, payer_id, payee_id, json_transaction, raw_json_transaction, raw_edi)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                     RETURNING id;
                 """
 
@@ -211,6 +211,7 @@ class DatabaseManager:
                     payer_id,
                     payee_id,
                     Json(single_transaction_json),
+                    Json(json_data),
                     raw_edi
                 ))
 

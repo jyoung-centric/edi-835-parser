@@ -40,7 +40,9 @@ CREATE TABLE bot.payments_835 (
     payer_id TEXT,
     payee_id TEXT,
     json_transaction JSONB NOT NULL,
-    raw_edi TEXT
+    raw_json_transaction JSONB NOT NULL,
+    raw_edi TEXT,
+    file_processing_details JSONB DEFAULT NULL
 );
 
 -- Raw file metadata
