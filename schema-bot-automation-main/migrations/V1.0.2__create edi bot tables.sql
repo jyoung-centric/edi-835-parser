@@ -21,8 +21,7 @@ CREATE TABLE payments_835 (
     payment_amount NUMERIC(18,2),
     payer_id TEXT,
     payee_id TEXT,
-    json_transaction JSONB NOT NULL,
-    raw_edi TEXT
+    json_transaction JSONB NOT NULL
 );
 
 CREATE TABLE raw_835_files (
@@ -31,7 +30,9 @@ CREATE TABLE raw_835_files (
     removed_date_time TIMESTAMP,
     file_id UUID NOT NULL REFERENCES payments_835(file_id) ON DELETE CASCADE UNIQUE,
     receive_date_time TIMESTAMP DEFAULT now(),
-    archive_s3_key TEXT
+    archive_s3_key TEXT,
+    raw_json_transaction JSONB,
+    raw_edi TEXT
 );
 
 CREATE TABLE edi_transactions (

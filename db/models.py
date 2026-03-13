@@ -106,7 +106,7 @@ def build_payments_835_row(
 
     Schema columns: file_id, file_name, receive_date_time, check_number,
                     payment_date, payment_amount, payer_id, payee_id,
-                    json_transaction, raw_json_transaction, raw_edi
+                    json_transaction
     """
     transactions = json_data.get('interchange', {}).get('transactions', [])
     transaction = transactions[transaction_index] if transaction_index < len(transactions) else {}
@@ -147,8 +147,6 @@ def build_payments_835_row(
         'payer_id': safe_text(trn.get('originating_company_identifier')),
         'payee_id': payee_id,
         'json_transaction': single_transaction_json,
-        'raw_json_transaction': json_data,
-        'raw_edi': raw_edi,
     }
 
 
@@ -158,18 +156,23 @@ def build_payments_835_row(
 
 def build_raw_835_file_row(
     file_id: str,
+    json_data: Dict,
+    raw_edi: str,
     s3_key: Optional[str] = None
 ) -> Dict[str, Any]:
     """
     Build row for raw_835_files table.
 
     Schema columns: file_id (UUID FK → payments_835.file_id),
-                    receive_date_time, archive_s3_key
+                    receive_date_time, archive_s3_key,
+                    raw_json_transaction, raw_edi
     """
     return {
         'file_id': file_id,
         'receive_date_time': datetime.now(),
         'archive_s3_key': safe_text(s3_key),
+        'raw_json_transaction': json_data,
+        'raw_edi': raw_edi,
     }
 
 

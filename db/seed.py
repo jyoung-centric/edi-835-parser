@@ -112,7 +112,7 @@ def seed_file(
             logger.debug(f"Inserted payments_835 file_id={txn_file_id}")
 
             # 2. raw_835_files — FK is file_id UUID (not int id)
-            raw_file_row = build_raw_835_file_row(txn_file_id)
+            raw_file_row = build_raw_835_file_row(txn_file_id, json_data, raw_edi)
             raw_file_id = insert_row(cursor, 'raw_835_files', raw_file_row)
             logger.debug(f"Inserted raw_835_files id={raw_file_id}")
 

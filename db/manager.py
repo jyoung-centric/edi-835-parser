@@ -182,11 +182,12 @@ class DatabaseManager:
                 payee_id = trn.get("originating_company_identifier")
 
                 # Insert into payments_835
+                # Insert into payments_835 (processed summary)
                 insert_query = """
                     INSERT INTO payments_835
                     (file_id, file_name, receive_date_time, check_number, payment_date,
-                     payment_amount, payer_id, payee_id, json_transaction, raw_json_transaction, raw_edi)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                     payment_amount, payer_id, payee_id, json_transaction)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
                     RETURNING id;
                 """
 
@@ -211,11 +212,22 @@ class DatabaseManager:
                     payer_id,
                     payee_id,
                     Json(single_transaction_json),
-                    Json(json_data),
-                    raw_edi
                 ))
 
                 result = self.cursor.fetchone()
+
+                # Insert into raw_835_files (raw data)
+                raw_insert_query = """
+                    INSERT INTO raw_835_files
+                    (file_id, receive_date_time, raw_json_transaction, raw_edi)
+                    VALUES (%s, %s, %s, %s);
+                """
+                self.cursor.execute(raw_insert_query, (
+                    file_id,
+                    datetime.now(),
+                    Json(json_data),
+                    raw_edi,
+                ))
 
                 # Save first record ID to return
                 if txn_index == 0:

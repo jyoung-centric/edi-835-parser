@@ -40,8 +40,6 @@ CREATE TABLE bot.payments_835 (
     payer_id TEXT,
     payee_id TEXT,
     json_transaction JSONB NOT NULL,
-    raw_json_transaction JSONB NOT NULL,
-    raw_edi TEXT,
     file_processing_details JSONB DEFAULT NULL
 );
 
@@ -52,7 +50,9 @@ CREATE TABLE bot.raw_835_files (
     removed_date_time TIMESTAMP,
     file_id UUID NOT NULL REFERENCES bot.payments_835(file_id) ON DELETE CASCADE UNIQUE,
     receive_date_time TIMESTAMP DEFAULT now(),
-    archive_s3_key TEXT
+    archive_s3_key TEXT,
+    raw_json_transaction JSONB,
+    raw_edi TEXT
 );
 
 -- Normalized tables for structured queries

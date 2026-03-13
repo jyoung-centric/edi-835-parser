@@ -185,7 +185,7 @@ def seed_file_copy(
             _insert_row(cursor, 'payments_835', payments_row)
 
             # 2. raw_835_files — FK via file_id UUID
-            raw_row = build_raw_835_file_row(payments_row['file_id'])
+            raw_row = build_raw_835_file_row(payments_row['file_id'], json_data, raw_edi)
             raw_file_id = _insert_row(cursor, 'raw_835_files', raw_row)
 
             # 3. edi_transactions — FK via raw_file_id (int)
