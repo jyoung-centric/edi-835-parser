@@ -11,7 +11,7 @@ import re
 __all__ = ['parse', 'parse_to_json', 'preprocess_edi_content']
 
 # Default extension pattern for EDI files
-DEFAULT_EXTENSION_PATTERN = r'\.(DAT|txt|edi|DT\d{8})$'
+DEFAULT_EXTENSION_PATTERN = r'\.(DAT|txt|edi|PCT|[a-zA-Z]{1,2}\d{8}|\d{6}|\d{8})$|^[^.]+$'
 
 def normalize_x12_delimiters(edi_text: str) -> str:
 

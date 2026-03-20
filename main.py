@@ -34,6 +34,35 @@ logger = logging.getLogger(__name__)
 DEFAULT_EXTENSION_PATTERN = r'\.(DAT|txt|edi|PCT|[a-zA-Z]{1,2}\d{8}|\d{6}|\d{8})$|^[^.]+$'
 
 
+def extensions_to_regex(ext_input: str) -> str:
+    """Convert user-friendly extension input to a regex pattern.
+
+    Accepts:
+      - A raw regex (returned as-is if it contains regex metacharacters)
+      - Space-separated extensions:  "DAT txt edi"
+      - Comma-separated extensions:  "DAT,txt,edi" or ".DAT,.txt,.edi"
+      - A single extension:          "835" or ".835"
+
+    Returns a regex pattern like r'\\.(DAT|txt|edi)$'
+    """
+    # If input looks like it's already a regex (contains metacharacters
+    # beyond a leading dot), return as-is
+    regex_metacharacters = set(r'\^$*+?{}[]|()')
+    has_meta = any(c in regex_metacharacters for c in ext_input)
+    if has_meta:
+        return ext_input
+
+    # Split on commas and/or whitespace
+    parts = re.split(r'[,\s]+', ext_input.strip())
+    parts = [p.strip().lstrip('.') for p in parts if p.strip()]
+
+    if not parts:
+        return DEFAULT_EXTENSION_PATTERN
+
+    escaped = [re.escape(p) for p in parts]
+    return r'\.(' + '|'.join(escaped) + r')$'
+
+
 # ---------------------------------------------------------------------------
 # File discovery
 # ---------------------------------------------------------------------------
@@ -178,7 +207,8 @@ def main() -> None:
     parser.add_argument(
         '--extensions',
         default=DEFAULT_EXTENSION_PATTERN,
-        help=r'Regex pattern for file extensions (default: \.(DAT|txt|edi|DT\d{8})$)',
+        help='File extensions to match. Accepts plain extensions (e.g. "DAT txt edi", '
+             '"DAT,txt,edi", ".835") or a regex pattern.',
     )
 
     args = parser.parse_args()
@@ -209,7 +239,8 @@ def main() -> None:
         if not os.path.isdir(directory):
             print(f"ERROR: Directory not found: {directory}", file=sys.stderr)
             sys.exit(1)
-        files, skipped_files = find_edi_files(directory, args.extensions)
+        ext_pattern = extensions_to_regex(args.extensions)
+        files, skipped_files = find_edi_files(directory, ext_pattern)
         if not files:
             print(f"No EDI files found in {directory}", file=sys.stderr)
             sys.exit(1)
@@ -252,7 +283,7 @@ def main() -> None:
     for file_path in files:
         file_name = os.path.basename(file_path)
         try:
-            result = process_file(file_path, args.seed_db, conn, args.output_dir, args.extensions)
+            result = process_file(file_path, args.seed_db, conn, args.output_dir, ext_pattern)
             total['files'] += 1
             total['transactions'] += result['transactions']
             total['claims'] += result['claims']
