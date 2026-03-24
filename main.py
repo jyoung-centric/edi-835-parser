@@ -38,29 +38,41 @@ def extensions_to_regex(ext_input: str) -> str:
     """Convert user-friendly extension input to a regex pattern.
 
     Accepts:
-      - A raw regex (returned as-is if it contains regex metacharacters)
+      - A raw regex (contains regex metacharacters) — merged with default pattern
       - Space-separated extensions:  "DAT txt edi"
       - Comma-separated extensions:  "DAT,txt,edi" or ".DAT,.txt,.edi"
       - A single extension:          "835" or ".835"
 
-    Returns a regex pattern like r'\\.(DAT|txt|edi)$'
+    The resulting pattern always includes the default extensions so that
+    passing a custom value never drops files that would otherwise be matched
+    by the default configuration.
+
+    Returns a combined regex pattern.
     """
-    # If input looks like it's already a regex (contains metacharacters
-    # beyond a leading dot), return as-is
-    regex_metacharacters = set(r'\^$*+?{}[]|()')
-    has_meta = any(c in regex_metacharacters for c in ext_input)
-    if has_meta:
+    # If caller passed the default unchanged, return it directly.
+    if ext_input == DEFAULT_EXTENSION_PATTERN:
         return ext_input
 
-    # Split on commas and/or whitespace
-    parts = re.split(r'[,\s]+', ext_input.strip())
-    parts = [p.strip().lstrip('.') for p in parts if p.strip()]
+    # Detect whether the input is already a regex (contains metacharacters).
+    regex_metacharacters = set(r'\^$*+?{}[]|()')
+    has_meta = any(c in regex_metacharacters for c in ext_input)
 
-    if not parts:
-        return DEFAULT_EXTENSION_PATTERN
+    if has_meta:
+        custom_pattern = ext_input
+    else:
+        # Split on commas and/or whitespace to get plain extension tokens.
+        parts = re.split(r'[,\s]+', ext_input.strip())
+        parts = [p.strip().lstrip('.') for p in parts if p.strip()]
 
-    escaped = [re.escape(p) for p in parts]
-    return r'\.(' + '|'.join(escaped) + r')$'
+        if not parts:
+            return DEFAULT_EXTENSION_PATTERN
+
+        escaped = [re.escape(p) for p in parts]
+        custom_pattern = r'\.(' + '|'.join(escaped) + r')$'
+
+    # Merge custom pattern with the default so default-extension files are
+    # never inadvertently skipped when a custom value is provided.
+    return f'(?:{custom_pattern})|(?:{DEFAULT_EXTENSION_PATTERN})'
 
 
 # ---------------------------------------------------------------------------
@@ -241,12 +253,23 @@ def main() -> None:
             sys.exit(1)
         ext_pattern = extensions_to_regex(args.extensions)
         files, skipped_files = find_edi_files(directory, ext_pattern)
-        if not files:
-            print(f"No EDI files found in {directory}", file=sys.stderr)
-            sys.exit(1)
         print(f"Found {len(files)} EDI file(s) in {directory}")
         if skipped_files:
             print(f"Skipped {len(skipped_files)} file(s) with non-matching extensions")
+        if not files:
+            # All files were skipped — write the results JSON if requested, then exit.
+            if args.output_dir and skipped_files:
+                skipped_results = [
+                    {'FileName': name, 'Status': 'Skipped', 'Reason': 'Extension did not match pattern'}
+                    for name in skipped_files
+                ]
+                timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+                results_path = os.path.join(args.output_dir, f'results_{timestamp}.json')
+                with open(results_path, 'w', encoding='utf-8') as f:
+                    json.dump(skipped_results, f, indent=2)
+                print(f"Results saved → {results_path}")
+            print(f"No EDI files matched in {directory}", file=sys.stderr)
+            sys.exit(1)
 
     # ------------------------------------------------------------------
     # Open DB connection (shared across all files for efficiency)
