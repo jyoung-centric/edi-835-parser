@@ -31,7 +31,7 @@ from db.models import generate_file_id
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_EXTENSION_PATTERN = r'\.(DAT|txt|edi|PCT|[a-zA-Z]{1,2}\d{8}|\d{6}|\d{8})$|^[^.]+$'
+DEFAULT_EXTENSION_PATTERN = r'\.(DAT|txt|edi|PCT|835|[a-zA-Z]{1,2}\d{8}|\d{6}|\d{8})$|^[^.]+$'
 
 
 def extensions_to_regex(ext_input: str) -> str:
@@ -312,13 +312,16 @@ def main() -> None:
             total['claims'] += result['claims']
             total['service_lines'] += result['service_lines']
             print_result(result, args.seed_db)
-            file_results.append({
+            entry = {
                 'FileName': file_name,
                 'Status': 'Success' if result['claims'] > 0 else 'Fail',
                 'Transactions': result['transactions'],
                 'Claims': result['claims'],
                 'ServiceLines': result['service_lines'],
-            })
+            }
+            if result['claims'] == 0:
+                entry['Reason'] = 'No claims found (file may contain only PLB adjustments or zero-pay transactions)'
+            file_results.append(entry)
         except Exception as exc:
             logger.debug("Exception processing %s", file_name, exc_info=True)
             errors.append((file_name, str(exc)))

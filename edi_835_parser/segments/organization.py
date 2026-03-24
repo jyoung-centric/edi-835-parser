@@ -16,7 +16,14 @@ class Organization:
 		self.identifier = segment[0]
 		self.type = segment[1]
 		self.name = segment[2]
-		self.identification_code = int(segment[4]) if len(segment) >= 5 and segment[4] else None
+		raw = segment[4] if len(segment) >= 5 else ''
+		if raw:
+			try:
+				self.identification_code = int(raw)
+			except (ValueError, TypeError):
+				self.identification_code = raw
+		else:
+			self.identification_code = None
 
 	def __repr__(self):
 		return '\n'.join(str(item) for item in self.__dict__.items())
