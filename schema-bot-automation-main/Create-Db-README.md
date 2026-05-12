@@ -53,10 +53,10 @@ To create bot user and database for the existing local or Aurora PostgreSQL inst
         GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA bot TO botuser;
         GRANT USAGE ON ALL SEQUENCES IN SCHEMA bot TO botuser;
         
-        -- Default permissions for future objects
-        ALTER DEFAULT PRIVILEGES IN SCHEMA bot GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO botuser;
-        ALTER DEFAULT PRIVILEGES IN SCHEMA bot GRANT USAGE ON SEQUENCES TO botuser;
-        ALTER DEFAULT PRIVILEGES IN SCHEMA bot GRANT EXECUTE ON FUNCTIONS TO botuser;
+        -- Default permissions for future objects created by bot
+        ALTER DEFAULT PRIVILEGES FOR ROLE bot IN SCHEMA bot GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO botuser;
+        ALTER DEFAULT PRIVILEGES FOR ROLE bot IN SCHEMA bot GRANT USAGE ON SEQUENCES TO botuser;
+        ALTER DEFAULT PRIVILEGES FOR ROLE bot IN SCHEMA bot GRANT EXECUTE ON FUNCTIONS TO botuser;
      ```
 
 

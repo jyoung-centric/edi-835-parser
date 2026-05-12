@@ -253,7 +253,7 @@ edi-835-parser/
 │   ├── migrations/               # Flyway migration scripts
 │   │   ├── V1.0.1__create_test_table.sql
 │   │   ├── V1.0.2__create edi bot tables.sql
-│   │   └── V1.0.3__add_name_prefix_suffix_to_nm1_entities.sql
+│   │   └── V1.0.3__align_edi_835_parser_schema.sql
 │   └── compose.yaml              # Docker Compose for Flyway deployment
 ├── sql/                          # SQL utility queries
 ├── tests/
@@ -298,7 +298,7 @@ docker compose run --rm flyway migrate
 | `payers` / `payees` | Organization name and ID from N1_loop (PR / PE) |
 | `claims` | CLP data: patient control number, ICN, status, charge and net amounts |
 | `service_lines` | SVC data: HCPCS code, modifiers, charge, payment, units |
-| `nm1_entities` | Patient/provider names with prefix and suffix (V1.0.3) |
+| `nm1_entities` | Patient/provider names, identifiers, and source NM1 JSON |
 | `cas_adjustments` | One row per adjustment reason code within each CAS segment |
 | `plb_adjustments` | Provider-level balance adjustments (PLB segment) |
 
