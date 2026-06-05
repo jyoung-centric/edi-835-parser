@@ -17,10 +17,10 @@ class Entity:
 		self.segment = segment
 		segment = split_segment(segment)
 
-		self.identifier = segment[0]
-		self.entity = segment[1]
-		self.type = segment[2]
-		self.last_name = segment[3]
+		self.identifier = get_element(segment, 0)
+		self.entity = get_element(segment, 1)
+		self.type = get_element(segment, 2)
+		self.last_name = get_element(segment, 3)
 		self.first_name = get_element(segment, 4)
 		self.middle_name = get_element(segment, 5)
 		self.name_prefix = get_element(segment, 6)
