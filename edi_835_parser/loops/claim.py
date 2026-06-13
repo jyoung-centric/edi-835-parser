@@ -15,6 +15,7 @@ class Claim:
 	initiating_identifier = ClaimSegment.identification
 	terminating_identifiers = [
 		ClaimSegment.identification,
+		'PLB',
 		'SE'
 	]
 

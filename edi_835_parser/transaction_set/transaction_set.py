@@ -1,5 +1,6 @@
 from typing import List, Iterator, Optional, Dict, Any
 from collections import namedtuple
+from decimal import Decimal, InvalidOperation
 import json
 
 import pandas as pd
@@ -11,6 +12,7 @@ from edi_835_parser.segments.utilities import find_identifier, split_segment
 from edi_835_parser.segments.interchange import Interchange as InterchangeSegment
 from edi_835_parser.segments.financial_information import FinancialInformation as FinancialInformationSegment
 from edi_835_parser.segments.trace import Trace as TraceSegment
+from edi_835_parser.segments.provider_adjustment import ProviderAdjustment as ProviderAdjustmentSegment
 
 BuildAttributeResponse = namedtuple('BuildAttributeResponse', 'key value segment segments')
 
@@ -25,6 +27,7 @@ class TransactionSet:
 			claims: List[ClaimLoop],
 			organizations: List[OrganizationLoop],
 			file_path: str,
+			provider_adjustments: Optional[List[ProviderAdjustmentSegment]] = None,
 	):
 		self.interchange = interchange
 		self.financial_information = financial_information
@@ -32,6 +35,7 @@ class TransactionSet:
 		self.claims = claims
 		self.organizations = organizations
 		self.file_path = file_path
+		self.provider_adjustments = provider_adjustments if provider_adjustments else []
 
 	def __repr__(self):
 		return '\n'.join(str(item) for item in self.__dict__.items())
@@ -88,6 +92,7 @@ class TransactionSet:
 		from core.parser_monkeypatch import  apply_json_mixins
 
 		apply_json_mixins()
+		plb_data = self._get_plb_data()
 		
 		return {
 			"interchange": {
@@ -104,7 +109,8 @@ class TransactionSet:
 						"DTM": [],  # Transaction level DTM segments
 						"N1_loop": [org.to_dict() for org in self.organizations if hasattr(org, 'to_dict')],
 						"CLP_loop": [claim.to_dict() for claim in self.claims if hasattr(claim, 'to_dict')],
-						"PLB": [],  # Provider level adjustment segments
+						"PLB": plb_data,
+						"PLB_TOTAL": self._sum_plb_amounts(plb_data),
 						"SE": {
 							"number_of_included_segments": "33",  # You may want to calculate this
 							"transaction_set_control_number": "1234"  # Should match ST
@@ -115,6 +121,29 @@ class TransactionSet:
 				"IEA": None
 			}
 		}
+
+	def _get_plb_data(self) -> List[Dict[str, Any]]:
+		plb_data = []
+		for provider_adjustment in self.provider_adjustments:
+			if hasattr(provider_adjustment, 'to_adjustment_dicts'):
+				plb_data.extend(provider_adjustment.to_adjustment_dicts())
+
+		return plb_data
+
+	@staticmethod
+	def _sum_plb_amounts(plb_data: List[Dict[str, Any]]) -> str:
+		total = Decimal("0")
+		for plb in plb_data:
+			amount = plb.get("provider_adjustment_amount")
+			if amount is None or str(amount).strip() == "":
+				continue
+
+			try:
+				total += Decimal(str(amount).strip())
+			except (InvalidOperation, ValueError):
+				continue
+
+		return format(total, "f")
 
 
 	@staticmethod
@@ -275,6 +304,7 @@ class TransactionSet:
 		trace = None
 		claims = []
 		organizations = []
+		provider_adjustments = []
 
 		with open(file_path) as f:
 			file = f.read()
@@ -309,7 +339,18 @@ class TransactionSet:
 			if response.key == 'claim':
 				claims.append(response.value)
 
-		return TransactionSet(interchange, financial_information, trace, claims, organizations, file_path)
+			if response.key == 'provider adjustment':
+				provider_adjustments.append(response.value)
+
+		return TransactionSet(
+			interchange,
+			financial_information,
+			trace,
+			claims,
+			organizations,
+			file_path,
+			provider_adjustments=provider_adjustments,
+		)
 
 	@classmethod
 	def build_attribute(cls, segment: Optional[str], segments: Iterator[str]) -> BuildAttributeResponse:
@@ -332,6 +373,10 @@ class TransactionSet:
 		if identifier == TraceSegment.identification:
 			trace = TraceSegment(segment)
 			return BuildAttributeResponse('trace', trace, None, segments)
+
+		if identifier == ProviderAdjustmentSegment.identification:
+			provider_adjustment = ProviderAdjustmentSegment(segment)
+			return BuildAttributeResponse('provider adjustment', provider_adjustment, None, segments)
 
 		if identifier == OrganizationLoop.initiating_identifier:
 			organization, segments, segment = OrganizationLoop.build(segment, segments)

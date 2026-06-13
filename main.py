@@ -240,6 +240,7 @@ def main() -> None:
     # ------------------------------------------------------------------
     # Resolve files to process
     # ------------------------------------------------------------------
+    ext_pattern = extensions_to_regex(args.extensions)
     skipped_files: List[str] = []
     if args.file:
         if not os.path.isfile(args.file):
@@ -251,7 +252,6 @@ def main() -> None:
         if not os.path.isdir(directory):
             print(f"ERROR: Directory not found: {directory}", file=sys.stderr)
             sys.exit(1)
-        ext_pattern = extensions_to_regex(args.extensions)
         files, skipped_files = find_edi_files(directory, ext_pattern)
         print(f"Found {len(files)} EDI file(s) in {directory}")
         if skipped_files:

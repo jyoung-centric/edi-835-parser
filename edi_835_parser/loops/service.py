@@ -17,6 +17,7 @@ class Service:
 	terminating_identifiers = [
 		ServiceSegment.identification,
 		ClaimSegment.identification,
+		'PLB',
 		'SE'
 	]
 
