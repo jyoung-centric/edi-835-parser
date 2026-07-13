@@ -110,17 +110,10 @@ def parse_metadata_arg(metadata: Optional[str]) -> Dict[str, Any]:
     return parsed
 
 
-def build_raw_file_metadata(
-    location: Optional[str],
-    source_system: Optional[str],
-    metadata: Optional[str],
-) -> Optional[Dict[str, Any]]:
-    """Build the metadata JSONB payload for raw_835_files."""
+def build_raw_file_metadata(metadata: Optional[str]) -> Optional[Dict[str, Any]]:
+    """Build the metadata JSONB payload for raw_835_files (arbitrary extra fields only;
+    location/source_system have dedicated columns — see --location/--source-system)."""
     raw_metadata = parse_metadata_arg(metadata)
-    if location is not None:
-        raw_metadata['location'] = location
-    if source_system is not None:
-        raw_metadata['source_system'] = source_system
     return raw_metadata or None
 
 
@@ -135,6 +128,8 @@ def process_file(
     output_dir: Optional[str] = None,
     extension_pattern: str = DEFAULT_EXTENSION_PATTERN,
     raw_file_metadata: Optional[Dict[str, Any]] = None,
+    location: Optional[str] = None,
+    source_system: Optional[str] = None,
 ) -> dict:
     """
     Parse a single EDI 835 file and optionally seed all normalized DB tables.
@@ -173,6 +168,8 @@ def process_file(
             json_data,
             raw_edi,
             raw_file_metadata,
+            location,
+            source_system,
         )
         result['db_stats'] = db_stats
 
@@ -260,17 +257,17 @@ def main() -> None:
     )
     parser.add_argument(
         '--location',
-        help='Location value to store in raw_835_files.metadata',
+        help='Location value to store in raw_835_files.location',
     )
     parser.add_argument(
         '--source-system',
         '--source_system',
         dest='source_system',
-        help='Source system value to store in raw_835_files.metadata',
+        help='Source system value to store in raw_835_files.source_system',
     )
     parser.add_argument(
         '--metadata',
-        help='Additional raw_835_files metadata as a JSON object',
+        help='Additional raw_835_files.metadata as a JSON object',
     )
 
     args = parser.parse_args()
@@ -282,7 +279,7 @@ def main() -> None:
     )
 
     try:
-        raw_file_metadata = build_raw_file_metadata(args.location, args.source_system, args.metadata)
+        raw_file_metadata = build_raw_file_metadata(args.metadata)
     except ValueError as exc:
         parser.error(str(exc))
 
@@ -368,6 +365,8 @@ def main() -> None:
                 args.output_dir,
                 ext_pattern,
                 raw_file_metadata,
+                args.location,
+                args.source_system,
             )
             total['files'] += 1
             total['transactions'] += result['transactions']

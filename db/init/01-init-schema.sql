@@ -1,5 +1,6 @@
 -- Initialize bot schema for EDI 835 parser test database
--- Based on V1.0.2__create edi bot tables.sql
+-- Based on V1.0.2__create edi bot tables.sql, V1.0.3__align_edi_835_parser_schema.sql,
+-- and V1.0.4__add_raw_835_files_location_source.sql
 
 -- Create bot schema
 CREATE SCHEMA IF NOT EXISTS bot;
@@ -40,6 +41,7 @@ CREATE TABLE bot.payments_835 (
     payer_id TEXT,
     payee_id TEXT,
     json_transaction JSONB NOT NULL,
+    raw_json_transaction JSONB NOT NULL,
     file_processing_details JSONB DEFAULT NULL
 );
 
@@ -51,6 +53,8 @@ CREATE TABLE bot.raw_835_files (
     file_id UUID NOT NULL REFERENCES bot.payments_835(file_id) ON DELETE CASCADE UNIQUE,
     receive_date_time TIMESTAMP DEFAULT now(),
     archive_s3_key TEXT,
+    location TEXT,
+    source_system TEXT,
     metadata JSONB,
     raw_json_transaction JSONB,
     raw_edi TEXT

@@ -64,7 +64,9 @@ def seed_file(
     file_name: str,
     json_data: Dict,
     raw_edi: str,
-    raw_file_metadata: Optional[Dict[str, Any]] = None
+    raw_file_metadata: Optional[Dict[str, Any]] = None,
+    location: Optional[str] = None,
+    source_system: Optional[str] = None,
 ) -> Dict[str, Any]:
     """
     Insert all normalized tables for a single EDI 835 file.
@@ -122,6 +124,8 @@ def seed_file(
                 json_data,
                 raw_edi,
                 metadata=raw_file_metadata,
+                location=location,
+                source_system=source_system,
             )
             if raw_file_row.get('raw_json_transaction') is None:
                 raw_file_row['raw_json_transaction'] = DEFAULT_RAW_JSON_TRANSACTION
