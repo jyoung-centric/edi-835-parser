@@ -5,6 +5,9 @@ ALTER TABLE bot.payments_835
     ADD COLUMN IF NOT EXISTS raw_json_transaction JSONB,
     ADD COLUMN IF NOT EXISTS file_processing_details JSONB DEFAULT NULL;
 
+ALTER TABLE bot.raw_835_files
+    ADD COLUMN IF NOT EXISTS metadata JSONB;
+
 UPDATE bot.payments_835
 SET raw_json_transaction = json_transaction
 WHERE raw_json_transaction IS NULL;

@@ -21,6 +21,9 @@ from .models import (
 
 logger = logging.getLogger(__name__)
 
+DEFAULT_RAW_JSON_TRANSACTION = ""
+JSON_COLUMNS = {'raw_json_transaction'}
+
 
 def insert_row(cursor: Cursor, table: str, row_dict: Dict[str, Any]) -> int:
     """
@@ -31,7 +34,7 @@ def insert_row(cursor: Cursor, table: str, row_dict: Dict[str, Any]) -> int:
     """
     processed = {}
     for key, value in row_dict.items():
-        if isinstance(value, (dict, list)):
+        if key in JSON_COLUMNS or isinstance(value, (dict, list)):
             processed[key] = Json(value)
         else:
             processed[key] = value
@@ -60,7 +63,8 @@ def seed_file(
     file_id: str,
     file_name: str,
     json_data: Dict,
-    raw_edi: str
+    raw_edi: str,
+    raw_file_metadata: Optional[Dict[str, Any]] = None
 ) -> Dict[str, Any]:
     """
     Insert all normalized tables for a single EDI 835 file.
@@ -106,13 +110,21 @@ def seed_file(
 
             # 1. payments_835 — one row per transaction
             payments_row = build_payments_835_row(file_id, file_name, json_data, raw_edi, txn_index)
+            payments_row.setdefault('raw_json_transaction', DEFAULT_RAW_JSON_TRANSACTION)
             insert_row(cursor, 'payments_835', payments_row)
             # Capture the file_id used for this transaction (may differ for txn_index > 0)
             txn_file_id = payments_row['file_id']
             logger.debug(f"Inserted payments_835 file_id={txn_file_id}")
 
             # 2. raw_835_files — FK is file_id UUID (not int id)
-            raw_file_row = build_raw_835_file_row(txn_file_id, json_data, raw_edi)
+            raw_file_row = build_raw_835_file_row(
+                txn_file_id,
+                json_data,
+                raw_edi,
+                metadata=raw_file_metadata,
+            )
+            if raw_file_row.get('raw_json_transaction') is None:
+                raw_file_row['raw_json_transaction'] = DEFAULT_RAW_JSON_TRANSACTION
             raw_file_id = insert_row(cursor, 'raw_835_files', raw_file_row)
             logger.debug(f"Inserted raw_835_files id={raw_file_id}")
 

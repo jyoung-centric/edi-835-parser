@@ -11,6 +11,7 @@ Usage:
 
     # Parse and seed all normalized database tables
     python main.py --file path/to/file.txt --seed-db
+    python main.py --file path/to/file.txt --seed-db --location ATL --source-system claims-api --metadata '{"batch_id":"123"}'
     python main.py --dir path/to/dir/ --seed-db
 
 Recognized file extensions: .txt, .835, .edi, .DAT
@@ -24,7 +25,7 @@ import os
 import re
 import sys
 from datetime import datetime
-from typing import List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import edi_835_parser
 from db.models import generate_file_id
@@ -96,6 +97,33 @@ def find_edi_files(directory: str, extension_pattern: str = DEFAULT_EXTENSION_PA
     return results, skipped
 
 
+def parse_metadata_arg(metadata: Optional[str]) -> Dict[str, Any]:
+    """Parse --metadata as a JSON object."""
+    if not metadata:
+        return {}
+    try:
+        parsed = json.loads(metadata)
+    except json.JSONDecodeError as exc:
+        raise ValueError(f"--metadata must be valid JSON: {exc.msg}") from exc
+    if not isinstance(parsed, dict):
+        raise ValueError("--metadata must be a JSON object")
+    return parsed
+
+
+def build_raw_file_metadata(
+    location: Optional[str],
+    source_system: Optional[str],
+    metadata: Optional[str],
+) -> Optional[Dict[str, Any]]:
+    """Build the metadata JSONB payload for raw_835_files."""
+    raw_metadata = parse_metadata_arg(metadata)
+    if location is not None:
+        raw_metadata['location'] = location
+    if source_system is not None:
+        raw_metadata['source_system'] = source_system
+    return raw_metadata or None
+
+
 # ---------------------------------------------------------------------------
 # Per-file processing
 # ---------------------------------------------------------------------------
@@ -106,6 +134,7 @@ def process_file(
     conn=None,
     output_dir: Optional[str] = None,
     extension_pattern: str = DEFAULT_EXTENSION_PATTERN,
+    raw_file_metadata: Optional[Dict[str, Any]] = None,
 ) -> dict:
     """
     Parse a single EDI 835 file and optionally seed all normalized DB tables.
@@ -137,7 +166,14 @@ def process_file(
         raw_edi = open(file_path, encoding='utf-8', errors='replace').read()
         file_id = generate_file_id(file_name)
         #db_stats = seed_file(conn, file_id, file_name, json_data, raw_edi)
-        db_stats= seed_file_copy(conn, file_id, file_name, json_data, raw_edi)
+        db_stats = seed_file_copy(
+            conn,
+            file_id,
+            file_name,
+            json_data,
+            raw_edi,
+            raw_file_metadata,
+        )
         result['db_stats'] = db_stats
 
     if output_dir is not None:
@@ -222,6 +258,20 @@ def main() -> None:
         help='File extensions to match. Accepts plain extensions (e.g. "DAT txt edi", '
              '"DAT,txt,edi", ".835") or a regex pattern.',
     )
+    parser.add_argument(
+        '--location',
+        help='Location value to store in raw_835_files.metadata',
+    )
+    parser.add_argument(
+        '--source-system',
+        '--source_system',
+        dest='source_system',
+        help='Source system value to store in raw_835_files.metadata',
+    )
+    parser.add_argument(
+        '--metadata',
+        help='Additional raw_835_files metadata as a JSON object',
+    )
 
     args = parser.parse_args()
 
@@ -230,6 +280,11 @@ def main() -> None:
         format='%(asctime)s  %(levelname)-8s  %(name)s: %(message)s',
         datefmt='%H:%M:%S',
     )
+
+    try:
+        raw_file_metadata = build_raw_file_metadata(args.location, args.source_system, args.metadata)
+    except ValueError as exc:
+        parser.error(str(exc))
 
     # ------------------------------------------------------------------
     # Validate --output-dir
@@ -306,7 +361,14 @@ def main() -> None:
     for file_path in files:
         file_name = os.path.basename(file_path)
         try:
-            result = process_file(file_path, args.seed_db, conn, args.output_dir, ext_pattern)
+            result = process_file(
+                file_path,
+                args.seed_db,
+                conn,
+                args.output_dir,
+                ext_pattern,
+                raw_file_metadata,
+            )
             total['files'] += 1
             total['transactions'] += result['transactions']
             total['claims'] += result['claims']

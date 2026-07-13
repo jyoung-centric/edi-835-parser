@@ -51,6 +51,7 @@ CREATE TABLE bot.raw_835_files (
     file_id UUID NOT NULL REFERENCES bot.payments_835(file_id) ON DELETE CASCADE UNIQUE,
     receive_date_time TIMESTAMP DEFAULT now(),
     archive_s3_key TEXT,
+    metadata JSONB,
     raw_json_transaction JSONB,
     raw_edi TEXT
 );

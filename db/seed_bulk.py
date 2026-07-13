@@ -14,7 +14,7 @@ for maximum throughput.
 import io
 import json
 import logging
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 from psycopg2.extensions import connection as Connection
 from psycopg2.extras import execute_values, Json
@@ -35,6 +35,9 @@ from .models import (
 
 logger = logging.getLogger(__name__)
 
+DEFAULT_RAW_JSON_TRANSACTION = ""
+JSON_COLUMNS = {'raw_json_transaction'}
+
 
 # =========================================================
 # INSERT helper — returns auto-generated ids
@@ -46,7 +49,7 @@ def _insert_row(cursor, table: str, row: Dict[str, Any]) -> int:
     values = []
     for col in columns:
         v = row[col]
-        values.append(Json(v) if isinstance(v, (dict, list)) else v)
+        values.append(Json(v) if col in JSON_COLUMNS or isinstance(v, (dict, list)) else v)
     cols_str = ', '.join(columns)
     placeholders = ', '.join(['%s'] * len(columns))
     sql = f"INSERT INTO {table} ({cols_str}) VALUES ({placeholders}) RETURNING id"
@@ -66,7 +69,7 @@ def _batch_insert_returning(cursor, table: str, rows: List[Dict[str, Any]]) -> L
         vals = []
         for col in columns:
             v = row[col]
-            vals.append(Json(v) if isinstance(v, (dict, list)) else v)
+            vals.append(Json(v) if col in JSON_COLUMNS or isinstance(v, (dict, list)) else v)
         tuples.append(tuple(vals))
 
     cols_str = ', '.join(columns)
@@ -129,6 +132,7 @@ def seed_file_copy(
     file_name: str,
     json_data: Dict,
     raw_edi: str,
+    raw_file_metadata: Optional[Dict[str, Any]] = None,
 ) -> Dict[str, Any]:
     """Seed all normalized tables for one EDI 835 file.
 
@@ -182,10 +186,18 @@ def seed_file_copy(
             payments_row = build_payments_835_row(
                 file_id, file_name, json_data, raw_edi, txn_index,
             )
+            payments_row.setdefault('raw_json_transaction', DEFAULT_RAW_JSON_TRANSACTION)
             _insert_row(cursor, 'payments_835', payments_row)
 
             # 2. raw_835_files — FK via file_id UUID
-            raw_row = build_raw_835_file_row(payments_row['file_id'], json_data, raw_edi)
+            raw_row = build_raw_835_file_row(
+                payments_row['file_id'],
+                json_data,
+                raw_edi,
+                metadata=raw_file_metadata,
+            )
+            if raw_row.get('raw_json_transaction') is None:
+                raw_row['raw_json_transaction'] = DEFAULT_RAW_JSON_TRANSACTION
             raw_file_id = _insert_row(cursor, 'raw_835_files', raw_row)
 
             # 3. edi_transactions — FK via raw_file_id (int)

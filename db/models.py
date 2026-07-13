@@ -158,19 +158,21 @@ def build_raw_835_file_row(
     file_id: str,
     json_data: Dict,
     raw_edi: str,
-    s3_key: Optional[str] = None
+    s3_key: Optional[str] = None,
+    metadata: Optional[Dict[str, Any]] = None
 ) -> Dict[str, Any]:
     """
     Build row for raw_835_files table.
 
     Schema columns: file_id (UUID FK → payments_835.file_id),
-                    receive_date_time, archive_s3_key,
+                    receive_date_time, archive_s3_key, metadata,
                     raw_json_transaction, raw_edi
     """
     return {
         'file_id': file_id,
         'receive_date_time': datetime.now(),
         'archive_s3_key': safe_text(s3_key),
+        'metadata': metadata,
         'raw_json_transaction': json_data,
         'raw_edi': raw_edi,
     }
