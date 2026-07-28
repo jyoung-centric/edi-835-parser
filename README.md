@@ -218,7 +218,11 @@ EDI 835 sample files are in `tests/test_edi_835_files/`:
         }],
         "CAS": [],
         "SVC_loop": [{
-          "SVC": { "procedure_code": "99213", "line_item_charge_amount": "150.00" },
+          "SVC": {
+            "service_type_code": "99213",
+            "service_modifiers": ["25"],
+            "charge_amount": "150.00"
+          },
           "DTM": [{ "date_time_qualifier": "472", "date": "20240101" }],
           "CAS": []
         }]

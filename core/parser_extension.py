@@ -111,6 +111,7 @@ class ServiceLoopJsonMixin(JsonMixin):
         return {
             "SVC": {
                 "service_type_code": str(self.service.code),
+                "service_modifiers": list(self.service.modifiers),
                 "charge_amount": str(self.service.charge_amount),
                 "payment_amount": str(self.service.paid_amount),
                 "revenue_code": "",

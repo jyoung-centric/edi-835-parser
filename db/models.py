@@ -302,13 +302,21 @@ def build_service_line_row(
                     post_date_time
     """
     svc = svc_loop_dict.get('SVC', {})
+    modifiers = svc.get('service_modifiers') or []
+    if isinstance(modifiers, str):
+        modifiers = [modifiers]
+    elif not isinstance(modifiers, (list, tuple)):
+        modifiers = []
+    modifiers = [safe_text(value) for value in modifiers[:4]]
+    modifiers.extend([None] * (4 - len(modifiers)))
+
     return {
         'claim_id': claim_id,
         'hcpcs_code': safe_text(svc.get('service_type_code')),
-        'modifier1': None,
-        'modifier2': None,
-        'modifier3': None,
-        'modifier4': None,
+        'modifier1': modifiers[0],
+        'modifier2': modifiers[1],
+        'modifier3': modifiers[2],
+        'modifier4': modifiers[3],
         'line_item_charge_amount': safe_decimal(svc.get('charge_amount')),
         'service_line_payment_amount': safe_decimal(svc.get('payment_amount')),
         'revenue_code': safe_text(svc.get('revenue_code')),
