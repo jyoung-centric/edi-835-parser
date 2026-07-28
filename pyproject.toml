@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "edi-835-parser"
-version = "1.0.8"
+version = "1.0.17"
 description = "A simple EDI 835 file format parser."
-authors = ["Keiron Stoddart <keiron.stoddart@gmail.com>"]
+authors = [""]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "edi_835_parser"}]
