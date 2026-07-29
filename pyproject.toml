@@ -2,7 +2,7 @@
 name = "edi-835-parser"
 version = "1.0.17"
 description = "A simple EDI 835 file format parser."
-authors = [""]
+authors = ["Jeremy Young"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "edi_835_parser"}]
