@@ -39,17 +39,17 @@ class ClaimLoopJsonMixin(JsonMixin):
     def _get_nm1_data(self) -> List[Dict[str, Any]]:
         """Extract NM1 (Name) data for the claim"""
         nm1_data = []
-        if self.patient:
+        for entity in self.entities:
             nm1_data.append({
-                "entity_identifier_code": str(self.patient.entity),
-                "entity_type_qualifier": str(self.patient.type),
-                "last_name": self.patient.last_name or "",
-                "first_name": self.patient.first_name or "",
-                "middle_name": self.patient.middle_name or "",
-                "name_prefix": self.patient.name_prefix or "",
-                "name_suffix": self.patient.name_suffix or "",
-                "identification_code_qualifier": str(self.patient.identification_code_qualifier) if self.patient.identification_code_qualifier else "",
-                "identification_code": str(self.patient.identification_code) if self.patient.identification_code else "",
+                "entity_identifier_code": str(entity.entity),
+                "entity_type_qualifier": str(entity.type),
+                "last_name": entity.last_name or "",
+                "first_name": entity.first_name or "",
+                "middle_name": entity.middle_name or "",
+                "name_prefix": entity.name_prefix or "",
+                "name_suffix": entity.name_suffix or "",
+                "identification_code_qualifier": str(entity.identification_code_qualifier) if entity.identification_code_qualifier else "",
+                "identification_code": str(entity.identification_code) if entity.identification_code else "",
                 "entity_relationship_code": "",
                 "entity_identifier_code_2": "",
                 "identification_code_qualifier_2": ""
